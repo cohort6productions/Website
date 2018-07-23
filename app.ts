@@ -39,6 +39,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get('/', (req, res) => {
+        console.log(req.headers);
         visitors++;
         console.log("count: ", visitors);
         fs.writeFileSync("./visitors.json", JSON.stringify({

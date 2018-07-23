@@ -3,11 +3,11 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
-@import url('font-awesome.min.css');
+@import 'libs/html-grid';
+@import 'font-awesome.min.css';
 
 /*
-	Big Picture by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -15,12 +15,12 @@
 // Breakpoints.
 
 	@include breakpoints((
-		xxlarge: ( 1681px,  1920px ),
-		xlarge:  ( 1281px,  1680px ),
-		large:   ( 1001px,  1280px ),
-		medium:  ( 737px,   1000px ),
-		small:   ( 481px,   736px  ),
-		xsmall:  ( null,    480px  )
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  )
 	));
 
 // Base.
@@ -31,80 +31,28 @@
 
 // Component.
 
+	@import 'components/row';
 	@import 'components/box';
 	@import 'components/button';
+	@import 'components/features';
 	@import 'components/form';
 	@import 'components/icon';
 	@import 'components/image';
 	@import 'components/list';
 	@import 'components/actions';
+	@import 'components/contact';
 	@import 'components/icons';
+	@import 'components/menu';
 	@import 'components/section';
+	@import 'components/split';
+	@import 'components/spotlights';
 	@import 'components/table';
-	@import 'components/poptrox-popup';
-	@import 'components/gallery';
+	@import 'components/wrapper';
 
 // Layout.
 
 	@import 'layout/header';
-	@import 'layout/main';
+	@import 'layout/wrapper';
 	@import 'layout/footer';
-
-/* Intro */
-
-	#intro {
-		background: url('images/overlay.png'), url('../../images/intro.jpg');
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
-	}
-
-/* One */
-
-	#one {
-		background: url('images/overlay.png'), url('../../images/one.jpg');
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* Two */
-
-	#two {
-		background: url('images/overlay.png'), url('../../images/two.jpg');
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* Contact */
-
-	#contact {
-		overflow: hidden;
-		padding-bottom: 0;
-
-		.box {
-			@include vendor('transition', 'transform #{_duration(fade-in)} ease');
-			@include vendor('transform', 'translateY(0)');
-			position: relative;
-		}
-
-		&.inactive {
-			.box {
-				@include vendor('transform', 'translateY(100%)');
-			}
-		}
-
-		@include breakpoint('<=small') {
-			.box {
-				padding: 1.5em 1.5em 2em 1.5em;
-			}
-		}
-
-		@include breakpoint('<=xsmall') {
-			.box {
-				padding: 1em 1em 2em 1em;
-			}
-		}
-	}
+	@import 'layout/sidebar';
+	@import 'layout/intro';
