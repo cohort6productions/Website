@@ -56,7 +56,7 @@ li.team-member {
   transition: opacity 0.6s;
 }
 
-.team-members a:hover .team-member-overlay {
+.team-members .personal-website:hover .team-member-overlay {
   /* display: flex; */
   opacity: 0.76;
 }
@@ -105,6 +105,6 @@ li.team-member {
   background-image: url("../../images/stephen.jpeg")
 }
 
-li.team-member > p {
+li.team-member .team-member-name {
   font-size: 20px;
 }
