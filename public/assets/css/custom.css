@@ -4,6 +4,9 @@
   object-fit: cover;
   /*magic*/
 }
+#team {
+  background-color: #493382
+}
 
 ul.team-members {
   display: flex;
