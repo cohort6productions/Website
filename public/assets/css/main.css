@@ -3597,11 +3597,15 @@ body.is-preload #sidebar nav ul li {
 
 #intro {
 	background-attachment: fixed;
-	background-image: url("../../images/jumbotron.jpg");
-	background-position: top right;
+	background-image:  linear-gradient(
+		rgba(41, 41, 41, 0.5),
+		rgba(80, 80, 80, 0.5)
+	  ),url("../../images/jumbotron.jpg");
+	background-position: left;
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #000;
+	color: #F8F8F8;
+	padding: 0;
 }
 
 #intro p {
@@ -3626,5 +3630,5 @@ body.is-preload #sidebar nav ul li {
 	}
 }
 #intro h1 {
-	color: #000000;
+	color: #F8F8F8;
 }
