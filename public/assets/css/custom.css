@@ -4,6 +4,7 @@
   object-fit: cover;
   /*magic*/
 }
+
 #team {
   background-color: #493382
 }
@@ -28,9 +29,11 @@ li.team-member {
   justify-content: space-between;
 }
 
-.team-members a,.team-members a:visited , .team-members a:active{
+.team-members a,
+.team-members a:visited,
+.team-members a:active {
   text-decoration: none;
-  outline:none;
+  outline: none;
   margin: auto;
   border: none;
 }
@@ -56,7 +59,7 @@ li.team-member {
   transition: opacity 0.6s;
 }
 
-.team-members .personal-website:hover .team-member-overlay {
+.team-members .team-member-a:hover .team-member-overlay {
   /* display: flex; */
   opacity: 0.76;
 }
@@ -65,46 +68,121 @@ li.team-member {
   margin: 0;
 }
 
-#icon-andrewc {
+.icon-andrewc {
   background-image: url("../../images/andrewc.jpeg")
 }
 
-#icon-andrewl {
+.icon-andrewl {
   background-image: url("../../images/andrewl.jpeg")
 }
 
-#icon-brad {
+.icon-brad {
   background-image: url("../../images/brad.jpeg")
 }
 
-#icon-harrison {
+.icon-harrison {
   background-image: url("../../images/harrison.jpeg")
 }
 
-#icon-ivan {
+.icon-ivan {
   background-image: url("../../images/ivan.jpeg")
 }
 
-#icon-jacob {
+.icon-jacob {
   background-image: url("../../images/jacob.jpeg")
 }
 
-#icon-lucas {
+.icon-lucas {
   background-image: url("../../images/lucas.jpeg")
 }
 
-#icon-mangal {
+.icon-mangal {
   background-image: url("../../images/mangal.jpg")
 }
 
-#icon-parker {
+.icon-parker {
   background-image: url("../../images/parker.jpeg")
 }
 
-#icon-stephen {
+.icon-stephen {
   background-image: url("../../images/stephen.jpeg")
 }
 
 li.team-member .team-member-name {
   font-size: 20px;
+}
+
+#team-member-modal.modal-show {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+  /* background-color: rgba(129, 61, 15, 0.829); */
+  opacity: 0.96;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.modal-show {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  transition: 0.2s;
+}
+
+.modal-dialog {
+  padding: 40px;
+    background-color: white;
+    min-width: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 9px 34px #555;
+    color: black;
+    opacity: 0;
+    transition: 0.6s;
+}
+.modal-dialog.modal-show{
+  opacity: 1;
+}
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-header h3 {
+  color: black;
+  padding: 20px;
+}
+
+.modal-body b {
+  color: black;
+}
+
+.modal-body {
+  padding: 20px 0;
+  border-top: solid 1px #aaaaaa;
+  border-bottom: solid 1px #aaaaaa;
+  display: flex;
+  flex-direction: column;
+}
+.modal-body a:hover {
+  color: #aaaaaa;
+}
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-modal {
+  background-color: #493382;
+  box-shadow: 1px 1px 4px #555;
 }
