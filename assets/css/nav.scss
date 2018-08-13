@@ -1,0 +1,10 @@
+nav.navbar {
+    background-color: $primary-color;
+    .navbar-brand {
+        color: $white;
+        transition: 0.6s;
+    }
+    .navbar-brand:hover {
+        color: $secondary-color;
+    }
+}

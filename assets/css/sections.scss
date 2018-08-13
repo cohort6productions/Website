@@ -1,0 +1,52 @@
+.jumbotron {
+    height: calc(100vh - 56px);
+    margin: 0;
+    background-image: url("../images/computer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+        text-align: center;
+        color: $white;
+    }
+    h1 {
+        color: $white;
+    }
+    hr {
+        background-color: $secondary-color;
+    }
+}
+
+section#why-cohort-6 {
+    background-color: $primary-color;
+    color: $white;
+}
+
+section#what-we-do {
+    background-color: $white;
+    color: $black;
+}
+
+section#why-clients-love-us {
+    background-color: $secondary-color;
+    color: $black;
+}
+
+section#our-work {
+    background-color: $primary-color;
+    color: $white;
+}
+
+section#our-team {
+    background-color: $grey;
+    color: $black;
+}
+
+section#testimonials {
+    background-color: $secondary-color;
+    color: $black;
+}
+
+footer#contact {
+    background-color: $primary-color;
+    color: $white;
+}
