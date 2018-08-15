@@ -1,10 +1,10 @@
 /*
   main
 */
-
 h3 {
   text-align: center;
   font-size: 2.5rem;
+  padding-top: 5%;
 }
 
 /*
@@ -22,15 +22,72 @@ h3 {
   hero
 */
 #header {
-  background-image: url("../images/computer.jpg");
   width: 100vw;
   height: 100vh;
-  max-height: 960px;
-  /* position: relative; */
-  background-size: contain;
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.3), rgba(40, 40, 40, 0.3)), url("../images/computer.jpg");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 15%;
 }
 
+#header > div {
+  /* font-family: Spectral; */
+  /* font-style: normal; */
+  /* font-weight: 500; */
+  /* line-height: 31px; */
+  /* font-size: 24px; */
+  /* text-align: center; */
+  color: #F9F9F9;
+}
+
+@media (max-width: 1023px) {
+  #header {
+    height: 50vh;
+    font-size: 0.75rem;
+    padding: 0 7%;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+  h5 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 424px) {
+  #header {
+    height: 30vh;
+    padding: 0 3%;
+  }
+  #header p {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
 
 
 
