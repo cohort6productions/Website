@@ -1,9 +1,58 @@
+/*
+  main
+*/
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/*
+  section 1 ?
+*/
+
 .section-1-images {
   width: 100%;
   height: 100%;
   object-fit: cover;
   /*magic*/
 }
+
+/*
+  hero
+*/
+#header {
+  background-image: url("../images/computer.jpg");
+  width: 100vw;
+  height: 100vh;
+  max-height: 960px;
+  /* position: relative; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/*
+  what we do
+*/
+
+.service-box {
+  padding: 5% 2%;
+}
+
+.service-box > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+/*
+  team
+*/
 
 #team {
   background-color: #493382
@@ -129,6 +178,10 @@ li.team-member .team-member-name {
     justify-content: center;
     align-items: center;
 }
+
+/*
+  team modal
+*/
 
 main.modal-show {
   -webkit-filter: blur(4px);
