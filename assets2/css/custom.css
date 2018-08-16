@@ -1,0 +1,467 @@
+/*
+  main
+*/
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.grey-bg {
+  background: #e7e7e7;
+}
+
+
+section {
+  padding-top: 5%;
+}
+
+/*
+  favicon
+*/
+
+.fa-linkedin,
+.fa-linkedin-in {
+  color: #0E76A8;
+}
+
+.fa-github,
+.fa-github-square {
+  color: #2B414D;
+}
+
+.fa-twitter,
+.fa-twitter-square {
+  color: #26A6D1;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-youtube {
+  color: #cc181e;
+}
+
+.fa-medium {
+  color: #66CDAA;
+}
+
+.fab {
+  padding: 0 1%;
+}
+
+/*
+  section 1 ?
+*/
+
+.section-1-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*magic*/
+}
+
+/*
+  hero
+*/
+#header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../images/background/computer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 15%;
+}
+
+#header > div {
+  /* font-family: Spectral; */
+  /* font-style: normal; */
+  /* font-weight: 500; */
+  /* line-height: 31px; */
+  /* font-size: 24px; */
+  /* text-align: center; */
+  color: #F9F9F9;
+}
+
+@media (max-width: 1023px) {
+  #header {
+    height: 50vh;
+    font-size: 0.75rem;
+    padding: 0 7%;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+  h5 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 424px) {
+  #header {
+    height: 30vh;
+    padding: 0 3%;
+  }
+  #header p {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+/*
+  why C6P
+*/
+
+
+/*
+  our-work
+*/
+
+#our-work {
+  height: 80vh;
+}
+
+#our-work > div {
+  height: 80vh;
+}
+
+.carousel {
+  height: 700px;
+}
+
+.our-work-btn  {
+  text-align: center;
+}
+
+.project-dealing-room {
+  /* height: 80vh; */
+  background-image: url("../images/project/dealing-room.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/*
+  what we do
+*/
+
+#what-we-do {
+  padding-top: 5%;
+}
+
+.service-box {
+  padding: 5% 2%;
+}
+
+.service-box > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+/*
+  why us
+*/
+
+#why-clients-love-us > div > h3 {
+  margin-bottom: 5%;
+}
+
+.why-love-us-pic {
+  object-position: top;
+  object-fit: contain;
+}
+
+.why-love-us-h3 {
+  text-align: left;
+}
+
+.why-love-us-pic,
+.why-love-us-word {
+  padding: 0 45px 60px 45px;
+}
+
+
+
+
+/*
+  team
+*/
+
+#team {
+  background-color: #493382
+}
+
+ul.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 900px; */
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+li.team-member {
+  padding: 0;
+  /* margin: 10px; */
+  margin: 10px 0px;
+  /* width: 150px; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.team-members a,
+.team-members a:visited,
+.team-members a:active {
+  text-decoration: none;
+  outline: none;
+  /* margin: auto; */
+  /* border: none; */
+  /* padding-left: 2%; */
+  /* border: red 1px solid; */
+}
+
+.team-member-icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.team-member-overlay {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 140, 21);
+  opacity: 0;
+  color: black;
+  transition: opacity 0.6s;
+}
+
+.team-members .team-member-a:hover .team-member-overlay {
+  opacity: 0.76;
+}
+
+.team-member-overlay p {
+  margin: 0;
+}
+
+.team-member-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  min-width: 250px;
+}
+
+.team-member-name {
+  padding-bottom: 5%;
+}
+
+.icon-andrewc {
+  background-image: url("../images/team/andrewc.jpeg")
+}
+
+.icon-andrewl {
+  background-image: url("../images/team/andrewl.jpeg")
+}
+
+.icon-brad {
+  background-image: url("../images/team/brad.jpeg")
+}
+
+.icon-harrison {
+  background-image: url("../images/team/harrison.jpeg")
+}
+
+.icon-ivan {
+  background-image: url("../images/team/ivan.jpeg")
+}
+
+.icon-jacob {
+  background-image: url("../images/team/jacob.jpeg")
+}
+
+.icon-lucas {
+  background-image: url("../images/team/lucas.jpeg")
+}
+
+.icon-mangal {
+  background-image: url("../images/team/mangal.jpg")
+}
+
+.icon-parker {
+  background-image: url("../images/team/parker.jpeg")
+}
+
+.icon-stephen {
+  background-image: url("../images/team/stephen.jpeg")
+}
+
+li.team-member .team-member-name {
+  font-size: 20px;
+}
+
+/*
+  team modal
+*/
+
+#team-member-modal.modal-show {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+  /* background-color: rgba(129, 61, 15, 0.829); */
+  opacity: 0.96;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.modal-show {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  transition: 0.2s;
+}
+
+.modal-dialog {
+  padding: 40px;
+    background-color: white;
+    min-width: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 9px 34px #555;
+    color: black;
+    opacity: 0;
+    transition: 0.6s;
+}
+.modal-dialog.modal-show{
+  opacity: 1;
+}
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-header h3 {
+  color: black;
+  padding: 20px;
+}
+
+.modal-body b {
+  color: black;
+}
+
+.modal-body {
+  padding: 20px 0;
+  border-top: solid 1px #aaaaaa;
+  border-bottom: solid 1px #aaaaaa;
+  display: flex;
+  flex-direction: column;
+}
+.modal-body a:hover {
+  color: #aaaaaa;
+}
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-modal {
+  background-color: #493382;
+  box-shadow: 1px 1px 4px #555;
+}
+
+/*
+  contact
+*/
+#contact {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background/contact.png");
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 0 15%;
+}
+
+@media (max-width: 1023px) {
+  #contact {
+    background-position: right;
+  }
+
+  .contact-add > p {
+    font-size: 0.9rem;
+  }
+}
+
+#contact h3 {
+  text-align: left;
+  padding-left: 0;
+}
+
+.contact-main,
+.contact-add,
+.contact-social {
+  font-size: 1.050rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 1.5% 0 0 0;
+}
+
+
+.contact-main {
+  padding-right: 5%;
+}
