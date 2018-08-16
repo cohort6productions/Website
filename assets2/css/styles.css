@@ -1,0 +1,76 @@
+nav.navbar {
+  background-color: #172a4e;
+}
+nav.navbar .navbar-brand {
+  color: #ffffff;
+  transition: 0.6s;
+}
+nav.navbar .navbar-brand:hover {
+  color: #ffd700;
+}
+
+header {
+  height: calc(100vh - 56px);
+  margin: 0;
+  background-image: url("../images/computer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header p {
+  text-align: center;
+  color: #ffffff;
+}
+header h1 {
+  color: #ffffff;
+}
+header hr {
+  background-color: #ffd700;
+}
+
+section#why-cohort-6 {
+  background-color: #172a4e;
+  color: #ffffff;
+}
+
+section#what-we-do {
+  background-color: #ffffff;
+  color: #111111;
+}
+section#what-we-do .service-box {
+  padding: 20px;
+}
+section#what-we-do img {
+  width: 100%;
+  padding: 40px;
+}
+
+section#why-clients-love-us {
+  background-color: #ffd700;
+  color: #111111;
+}
+
+section#our-work {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+section#our-team {
+  background-color: #f9f9f9;
+  color: #111111;
+}
+
+section#testimonials {
+  background-color: #ffd700;
+  color: #111111;
+}
+
+footer#contact {
+  background-color: #172a4e;
+  color: #ffffff;
+}
+
+section, footer {
+  padding: 60px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
