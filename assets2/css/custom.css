@@ -67,7 +67,7 @@ section {
 #header {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(40, 40, 40, 0.3), rgba(40, 40, 40, 0.3)), url("../images/computer.jpg");
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../images/background/computer.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,6 +136,34 @@ section {
   why C6P
 */
 
+
+/*
+  our-work
+*/
+
+#our-work {
+  height: 80vh;
+}
+
+#our-work > div {
+  height: 80vh;
+}
+
+.carousel {
+  height: 700px;
+}
+
+.our-work-btn  {
+  text-align: center;
+}
+
+.project-dealing-room {
+  /* height: 80vh; */
+  background-image: url("../images/project/dealing-room.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -267,43 +295,43 @@ li.team-member {
 }
 
 .icon-andrewc {
-  background-image: url("../images/andrewc.jpeg")
+  background-image: url("../images/team/andrewc.jpeg")
 }
 
 .icon-andrewl {
-  background-image: url("../images/andrewl.jpeg")
+  background-image: url("../images/team/andrewl.jpeg")
 }
 
 .icon-brad {
-  background-image: url("../images/brad.jpeg")
+  background-image: url("../images/team/brad.jpeg")
 }
 
 .icon-harrison {
-  background-image: url("../images/harrison.jpeg")
+  background-image: url("../images/team/harrison.jpeg")
 }
 
 .icon-ivan {
-  background-image: url("../images/ivan.jpeg")
+  background-image: url("../images/team/ivan.jpeg")
 }
 
 .icon-jacob {
-  background-image: url("../images/jacob.jpeg")
+  background-image: url("../images/team/jacob.jpeg")
 }
 
 .icon-lucas {
-  background-image: url("../images/lucas.jpeg")
+  background-image: url("../images/team/lucas.jpeg")
 }
 
 .icon-mangal {
-  background-image: url("../images/mangal.jpg")
+  background-image: url("../images/team/mangal.jpg")
 }
 
 .icon-parker {
-  background-image: url("../images/parker.jpeg")
+  background-image: url("../images/team/parker.jpeg")
 }
 
 .icon-stephen {
-  background-image: url("../images/stephen.jpeg")
+  background-image: url("../images/team/stephen.jpeg")
 }
 
 li.team-member .team-member-name {
@@ -395,7 +423,7 @@ main.modal-show {
 #contact {
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/contact.png");
+  background-image: url("../images/background/contact.png");
   background-position: initial;
   background-size: cover;
   background-repeat: no-repeat;
