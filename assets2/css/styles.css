@@ -40,40 +40,6 @@ h3 {
   font-size: 2.5rem;
 }
 
-@media (max-width: 1023px) {
-  h1 {
-    font-size: 2.75rem;
-  }
-
-  h3 {
-    font-size: 2.25rem;
-  }
-
-  h5 {
-    font-size: 1.75rem;
-  }
-
-  p {
-    font-size: 1.25rem;
-  }
-}
-@media (max-width: 424px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1.25rem;
-  }
-
-  p {
-    font-size: 0.75rem;
-  }
-}
 .team-member-icon {
   width: 130px;
   height: 130px;
@@ -165,22 +131,6 @@ header hr {
   background-color: #ffd700;
 }
 
-@media (max-width: 1023px) {
-  header {
-    height: 50vh;
-    font-size: 0.75rem;
-    padding: 0 7%;
-  }
-}
-@media (max-width: 424px) {
-  header {
-    height: 30vh;
-    padding: 0 3%;
-  }
-  header p {
-    display: none;
-  }
-}
 section#why-cohort-6 {
   background-color: #ffffff;
   color: #111111;
@@ -195,7 +145,7 @@ section#what-we-do .service-box {
 }
 section#what-we-do img {
   width: 100%;
-  padding: 40px;
+  padding: 20px;
 }
 
 section#why-clients-love-us {

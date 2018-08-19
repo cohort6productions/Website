@@ -31,24 +31,6 @@ header {
   }
 }
 
-@media (max-width: 1023px) {
-  header {
-    height: 50vh;
-    font-size: 0.75rem;
-    padding: 0 7%;
-  }
-}
-
-@media (max-width: 424px) {
-  header {
-    height: 30vh;
-    padding: 0 3%;
-    p {
-      display: none;
-    }
-  }
-}
-
 section#why-cohort-6 {
   background-color: $white;
   color: $black;
@@ -62,7 +44,7 @@ section#what-we-do {
   }
   img {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
   }
 }
 
