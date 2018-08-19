@@ -243,15 +243,15 @@ section#testimonials {
   color: $black;
 }
 
-footer#contact {
+section#contact {
   // background-color: $primary-color;
   color: $black;
   width: 100vw;
   height: 100vh;
-  // background-image: url("../images/background/contact.png");
+  background-image: url("../images/background/contact.png");
   // background-position: right;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,7 +279,7 @@ footer#contact {
 }
 
 @media (max-width: 1023px) {
-  footer#contact {
+  section#contact {
     // background-position: right;
     .contact-add>p {
       font-size: 0.9rem;

@@ -315,10 +315,13 @@ section#testimonials {
   color: #111111;
 }
 
-footer#contact {
+section#contact {
   color: #111111;
   width: 100vw;
   height: 100vh;
+  background-image: url("../images/background/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,13 +329,13 @@ footer#contact {
   /* text-align: center; */
   padding: 0 15%;
 }
-footer#contact h3 {
+section#contact h3 {
   text-align: left;
   padding-left: 0;
 }
-footer#contact .contact-main,
-footer#contact .contact-add,
-footer#contact .contact-social {
+section#contact .contact-main,
+section#contact .contact-add,
+section#contact .contact-social {
   font-size: 1.05rem;
   font-family: Open Sans;
   font-style: normal;
@@ -340,12 +343,12 @@ footer#contact .contact-social {
   line-height: normal;
   padding: 1.5% 0 0 0;
 }
-footer#contact .contact-main {
+section#contact .contact-main {
   padding-right: 5%;
 }
 
 @media (max-width: 1023px) {
-  footer#contact .contact-add > p {
+  section#contact .contact-add > p {
     font-size: 0.9rem;
   }
 }
