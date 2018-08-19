@@ -60,22 +60,42 @@ section#why-clients-love-us {
       
       .why-love-us-pic,
       .why-love-us-word {
-        padding: 0 45px 2% 45px;
+        padding: 5% 60px 5% 60px;
       }
       .why-love-us-pic {
         object-position: center;
         object-fit: initial;
 
         img {
-          width: 50%;
           display: block;
           margin-left: auto;
           margin-right: auto;
+          width: 25vw;
         }
       }
-      .why-love-us-word {       
+      .why-love-us-word {
+        width: 25vw;
+
         .why-love-us-h3 {
           text-align: left;
+        }
+
+        .one-thing-box {
+          display: flex;
+          flex-direction: row;
+
+          .one-thing-tick {
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 2vw;
+            }
+          }
+
+          .one-thing-word {
+            padding-left: 5%;
+          }
         }
       }
     }

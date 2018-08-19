@@ -160,20 +160,36 @@ section#why-clients-love-us > div .row {
 }
 section#why-clients-love-us > div .row .why-love-us-pic,
 section#why-clients-love-us > div .row .why-love-us-word {
-  padding: 0 45px 2% 45px;
+  padding: 5% 60px 5% 60px;
 }
 section#why-clients-love-us > div .row .why-love-us-pic {
   object-position: center;
   object-fit: initial;
 }
 section#why-clients-love-us > div .row .why-love-us-pic img {
-  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 25vw;
+}
+section#why-clients-love-us > div .row .why-love-us-word {
+  width: 25vw;
 }
 section#why-clients-love-us > div .row .why-love-us-word .why-love-us-h3 {
   text-align: left;
+}
+section#why-clients-love-us > div .row .why-love-us-word .one-thing-box {
+  display: flex;
+  flex-direction: row;
+}
+section#why-clients-love-us > div .row .why-love-us-word .one-thing-box .one-thing-tick img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2vw;
+}
+section#why-clients-love-us > div .row .why-love-us-word .one-thing-box .one-thing-word {
+  padding-left: 5%;
 }
 
 section#our-work {
