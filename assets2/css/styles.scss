@@ -1,16 +1,101 @@
 //Globals go in here
-
-$font-stack : Helvetica,
+$font-stack: Helvetica,
 sans-serif;
 $primary-color: #172a4e;
 $secondary-color: #ffd700;
 $white: #ffffff;
 $grey: #f9f9f9;
 $black: #111111;
+body {
+    overflow-x: hidden;
+    /*
+      fontawesome
+    */
+    .fa-linkedin,
+    .fa-linkedin-in {
+        color: #0E76A8;
+    }
+    .fa-github,
+    .fa-github-square {
+        color: #2B414D;
+    }
+    .fa-twitter,
+    .fa-twitter-square {
+        color: #26A6D1;
+    }
+    .fa-facebook-square {
+        color: #3b5998;
+    }
+    .fa-youtube {
+        color: #cc181e;
+    }
+    .fa-medium {
+        color: #66CDAA;
+    }
+    .fab {
+        padding: 0 1%;
+    }
+}
+
+section,
+footer {
+    padding: 60px 0;
+    padding-top: 5%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.team-member-icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-size: cover;
+  }
+
+.icon-andrewc {
+    background-image: url("../images/team/andrewc.jpeg")
+}
+
+.icon-andrewl {
+    background-image: url("../images/team/andrewl.jpeg")
+}
+
+.icon-brad {
+    background-image: url("../images/team/brad.jpeg")
+}
+
+.icon-harrison {
+    background-image: url("../images/team/harrison.jpeg")
+}
+
+.icon-ivan {
+    background-image: url("../images/team/ivan.jpeg")
+}
+
+.icon-jacob {
+    background-image: url("../images/team/jacob.jpeg")
+}
+
+.icon-lucas {
+    background-image: url("../images/team/lucas.jpeg")
+}
+
+.icon-mangal {
+    background-image: url("../images/team/mangal.jpg")
+}
+
+.icon-parker {
+    background-image: url("../images/team/parker.jpeg")
+}
+
+.icon-stephen {
+    background-image: url("../images/team/stephen.jpeg")
+}
 
 @import 'nav';
 @import 'sections';
-
-section, footer {
-    padding: 60px 0;
-}
+@import 'modal';

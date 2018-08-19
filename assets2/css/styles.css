@@ -1,3 +1,92 @@
+body {
+  overflow-x: hidden;
+  /*
+    fontawesome
+  */
+}
+body .fa-linkedin,
+body .fa-linkedin-in {
+  color: #0E76A8;
+}
+body .fa-github,
+body .fa-github-square {
+  color: #2B414D;
+}
+body .fa-twitter,
+body .fa-twitter-square {
+  color: #26A6D1;
+}
+body .fa-facebook-square {
+  color: #3b5998;
+}
+body .fa-youtube {
+  color: #cc181e;
+}
+body .fa-medium {
+  color: #66CDAA;
+}
+body .fab {
+  padding: 0 1%;
+}
+
+section,
+footer {
+  padding: 60px 0;
+  padding-top: 5%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.team-member-icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.icon-andrewc {
+  background-image: url("../images/team/andrewc.jpeg");
+}
+
+.icon-andrewl {
+  background-image: url("../images/team/andrewl.jpeg");
+}
+
+.icon-brad {
+  background-image: url("../images/team/brad.jpeg");
+}
+
+.icon-harrison {
+  background-image: url("../images/team/harrison.jpeg");
+}
+
+.icon-ivan {
+  background-image: url("../images/team/ivan.jpeg");
+}
+
+.icon-jacob {
+  background-image: url("../images/team/jacob.jpeg");
+}
+
+.icon-lucas {
+  background-image: url("../images/team/lucas.jpeg");
+}
+
+.icon-mangal {
+  background-image: url("../images/team/mangal.jpg");
+}
+
+.icon-parker {
+  background-image: url("../images/team/parker.jpeg");
+}
+
+.icon-stephen {
+  background-image: url("../images/team/stephen.jpeg");
+}
+
 nav.navbar {
   background-color: #172a4e;
 }
@@ -11,14 +100,29 @@ nav.navbar .navbar-brand:hover {
 
 header {
   height: calc(100vh - 56px);
+  width: 100vw;
   margin: 0;
-  background-image: url("../images/computer.jpg");
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../images/background/computer.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0 15%;
+}
+header div {
+  color: #F9F9F9;
 }
 header p {
   text-align: center;
   color: #ffffff;
+}
+header .heading-p1 {
+  font-size: 1.5rem;
 }
 header h1 {
   color: #ffffff;
@@ -28,12 +132,12 @@ header hr {
 }
 
 section#why-cohort-6 {
-  background-color: #172a4e;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 section#what-we-do {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   color: #111111;
 }
 section#what-we-do .service-box {
@@ -41,22 +145,131 @@ section#what-we-do .service-box {
 }
 section#what-we-do img {
   width: 100%;
-  padding: 40px;
+  padding: 20px;
 }
 
 section#why-clients-love-us {
-  background-color: #ffd700;
+  background-color: #ffffff;
   color: #111111;
+}
+section#why-clients-love-us > div > h3 {
+  margin-bottom: 5%;
+}
+section#why-clients-love-us .why-love-us-pic {
+  object-position: top;
+  object-fit: contain;
+}
+section#why-clients-love-us .why-love-us-h3 {
+  text-align: left;
+}
+section#why-clients-love-us .why-love-us-pic,
+section#why-clients-love-us .why-love-us-word {
+  padding: 0 45px 0 45px;
 }
 
 section#our-work {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   color: #111111;
+}
+section#our-work .carousel {
+  height: 80vh;
+}
+section#our-work .carousel .w-100 {
+  height: 80vh;
+  object-fit: contain;
+  object-position: center;
+}
+section#our-work .service-box {
+  padding: 5% 2%;
+}
+section#our-work .service-box > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+section#our-work .our-work-btn {
+  text-align: center;
+}
+section#our-work .project-dealing-room {
+  /* height: 80vh; */
+  background-image: url("../images/project/dealing-room.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section#our-team {
   background-color: #f9f9f9;
   color: #111111;
+  padding-top: 5%;
+}
+section#our-team .grey-bg {
+  background: #e7e7e7;
+}
+section#our-team ul.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 900px; */
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+section#our-team li.team-member {
+  padding: 0;
+  /* margin: 10px; */
+  margin: 10px 0px;
+  /* width: 150px; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+section#our-team .team-members a,
+section#our-team .team-members a:visited,
+section#our-team .team-members a:active {
+  text-decoration: none;
+  outline: none;
+  /* margin: auto; */
+  /* border: none; */
+  /* padding-left: 2%; */
+  /* border: red 1px solid; */
+}
+section#our-team .team-member-overlay {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd700;
+  opacity: 0;
+  color: black;
+  transition: opacity 0.6s;
+  cursor: pointer;
+}
+section#our-team .team-members .team-member-a:hover .team-member-overlay {
+  opacity: 0.76;
+}
+section#our-team .team-member-overlay p {
+  margin: 0;
+}
+section#our-team .team-member-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  min-width: 250px;
+}
+section#our-team .team-member-name {
+  padding-bottom: 5%;
+}
+section#our-team li.team-member .team-member-name {
+  font-size: 20px;
 }
 
 section#testimonials {
@@ -65,12 +278,75 @@ section#testimonials {
 }
 
 footer#contact {
-  background-color: #172a4e;
-  color: #ffffff;
+  color: #111111;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 0 15%;
+}
+footer#contact h3 {
+  text-align: left;
+  padding-left: 0;
+}
+footer#contact .contact-main,
+footer#contact .contact-add,
+footer#contact .contact-social {
+  font-size: 1.05rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 1.5% 0 0 0;
+}
+footer#contact .contact-main {
+  padding-right: 5%;
 }
 
-section, footer {
-  padding: 60px 0;
+@media (max-width: 1023px) {
+  footer#contact .contact-add > p {
+    font-size: 0.9rem;
+  }
+}
+section#team-member-modal.modal-show {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+}
+section#team-member-modal.modal-show .modal-content {
+  border-radius: 15px;
+}
+section#team-member-modal.modal-show .modal-body {
+  display: flex;
+  flex-direction: column;
+}
+section#team-member-modal.modal-show .team-member-icon {
+  align-self: center;
+  margin-bottom: 20px;
+}
+section#team-member-modal.modal-show .link-holders i {
+  width: 25px;
+  text-align: left;
+  padding: 0;
+}
+
+main.modal-show {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=styles.css.map */

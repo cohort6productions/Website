@@ -1,59 +1,225 @@
 header {
-    height: calc(100vh - 56px);
-    margin: 0;
-    background-image: url("../images/computer.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    p {
-        text-align: center;
-        color: $white;
-    }
-    h1 {
-        color: $white;
-    }
-    hr {
-        background-color: $secondary-color;
-    }
+  height: calc(100vh - 56px);
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../images/background/computer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0 15%;
+  div {
+    color: #F9F9F9;
+  }
+  p {
+    text-align: center;
+    color: $white;
+  }
+  .heading-p1 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    color: $white;
+  }
+  hr {
+    background-color: $secondary-color;
+  }
 }
 
 section#why-cohort-6 {
-    background-color: $primary-color;
-    color: $white;
+  background-color: $white;
+  color: $black;
 }
 
 section#what-we-do {
-    background-color: $white;
-    color: $black;
-    .service-box {
-        padding: 20px;
-    }
-    img {
-        width: 100%;
-        padding: 40px;
-    }
+  background-color: $grey;
+  color: $black;
+  .service-box {
+    padding: 20px;
+  }
+  img {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 section#why-clients-love-us {
-    background-color: $secondary-color;
-    color: $black;
+  background-color: $white;
+  color: $black;
+  >div {
+    >h3 {
+      margin-bottom: 5%;
+    }
+  }
+  .why-love-us-pic {
+    object-position: top;
+    object-fit: contain;
+  }
+  .why-love-us-h3 {
+    text-align: left;
+  }
+  .why-love-us-pic,
+  .why-love-us-word {
+    padding: 0 45px 0 45px;
+  }
 }
 
 section#our-work {
-    background-color: $white;
-    color: $black;
+  background-color: $grey;
+  color: $black;
+  // height: 80vh;
+  .carousel {
+    height: 80vh;
+    .w-100 {
+      height: 80vh;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .service-box {
+    padding: 5% 2%;
+  }
+  .service-box>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .our-work-btn {
+    text-align: center;
+  }
+  .project-dealing-room {
+    /* height: 80vh; */
+    background-image: url("../images/project/dealing-room.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 section#our-team {
-    background-color: $grey;
-    color: $black;
+  background-color: $grey;
+  color: $black;
+  padding-top: 5%;
+  .grey-bg {
+    background: #e7e7e7;
+  }
+  ul.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width: 900px; */
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  li.team-member {
+    padding: 0;
+    /* margin: 10px; */
+    margin: 10px 0px;
+    /* width: 150px; */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+  .team-members a,
+  .team-members a:visited,
+  .team-members a:active {
+    text-decoration: none;
+    outline: none;
+    /* margin: auto; */
+    /* border: none; */
+    /* padding-left: 2%; */
+    /* border: red 1px solid; */
+  }
+  .team-member-overlay {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    opacity: 0;
+    color: black;
+    transition: opacity 0.6s;
+    cursor: pointer;
+  }
+  .team-members .team-member-a:hover .team-member-overlay {
+    opacity: 0.76;
+  }
+  .team-member-overlay p {
+    margin: 0;
+  }
+  .team-member-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    min-width: 250px;
+  }
+  .team-member-name {
+    padding-bottom: 5%;
+  }
+  li.team-member .team-member-name {
+    font-size: 20px;
+  }
 }
 
 section#testimonials {
-    background-color: $secondary-color;
-    color: $black;
+  background-color: $secondary-color;
+  color: $black;
 }
 
 footer#contact {
-    background-color: $primary-color;
-    color: $white;
+  // background-color: $primary-color;
+  color: $black;
+  width: 100vw;
+  height: 100vh;
+  // background-image: url("../images/background/contact.png");
+  // background-position: right;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 0 15%;
+  h3 {
+    text-align: left;
+    padding-left: 0;
+  }
+  .contact-main,
+  .contact-add,
+  .contact-social {
+    font-size: 1.050rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 1.5% 0 0 0;
+  }
+  
+  .contact-main {
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1023px) {
+  footer#contact {
+    // background-position: right;
+    .contact-add>p {
+      font-size: 0.9rem;
+    }
+  }
 }
