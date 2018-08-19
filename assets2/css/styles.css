@@ -74,6 +74,53 @@ h3 {
     font-size: 0.75rem;
   }
 }
+.team-member-icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.icon-andrewc {
+  background-image: url("../images/team/andrewc.jpeg");
+}
+
+.icon-andrewl {
+  background-image: url("../images/team/andrewl.jpeg");
+}
+
+.icon-brad {
+  background-image: url("../images/team/brad.jpeg");
+}
+
+.icon-harrison {
+  background-image: url("../images/team/harrison.jpeg");
+}
+
+.icon-ivan {
+  background-image: url("../images/team/ivan.jpeg");
+}
+
+.icon-jacob {
+  background-image: url("../images/team/jacob.jpeg");
+}
+
+.icon-lucas {
+  background-image: url("../images/team/lucas.jpeg");
+}
+
+.icon-mangal {
+  background-image: url("../images/team/mangal.jpg");
+}
+
+.icon-parker {
+  background-image: url("../images/team/parker.jpeg");
+}
+
+.icon-stephen {
+  background-image: url("../images/team/stephen.jpeg");
+}
+
 nav.navbar {
   background-color: #172a4e;
 }
@@ -167,19 +214,20 @@ section#why-clients-love-us .why-love-us-h3 {
 }
 section#why-clients-love-us .why-love-us-pic,
 section#why-clients-love-us .why-love-us-word {
-  padding: 0 45px 60px 45px;
+  padding: 0 45px 0 45px;
 }
 
 section#our-work {
   background-color: #f9f9f9;
   color: #111111;
-  height: 80vh;
-}
-section#our-work div {
-  height: 80vh;
 }
 section#our-work .carousel {
-  height: 700px;
+  height: 80vh;
+}
+section#our-work .carousel .w-100 {
+  height: 80vh;
+  object-fit: contain;
+  object-position: center;
 }
 section#our-work .service-box {
   padding: 5% 2%;
@@ -206,15 +254,9 @@ section#our-team {
   background-color: #f9f9f9;
   color: #111111;
   padding-top: 5%;
-  /*
-    team
-  */
 }
 section#our-team .grey-bg {
   background: #e7e7e7;
-}
-section#our-team #team {
-  background-color: #493382;
 }
 section#our-team ul.team-members {
   display: flex;
@@ -223,6 +265,7 @@ section#our-team ul.team-members {
   /* max-width: 900px; */
   padding: 0 20px;
   margin: 0 auto;
+  padding-top: 5%;
 }
 section#our-team li.team-member {
   padding: 0;
@@ -245,12 +288,6 @@ section#our-team .team-members a:active {
   /* padding-left: 2%; */
   /* border: red 1px solid; */
 }
-section#our-team .team-member-icon {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
-  background-size: cover;
-}
 section#our-team .team-member-overlay {
   width: 130px;
   height: 130px;
@@ -259,10 +296,11 @@ section#our-team .team-member-overlay {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e78c15;
+  background-color: #ffd700;
   opacity: 0;
   color: black;
   transition: opacity 0.6s;
+  cursor: pointer;
 }
 section#our-team .team-members .team-member-a:hover .team-member-overlay {
   opacity: 0.76;
@@ -279,36 +317,6 @@ section#our-team .team-member-des {
 }
 section#our-team .team-member-name {
   padding-bottom: 5%;
-}
-section#our-team .icon-andrewc {
-  background-image: url("../images/team/andrewc.jpeg");
-}
-section#our-team .icon-andrewl {
-  background-image: url("../images/team/andrewl.jpeg");
-}
-section#our-team .icon-brad {
-  background-image: url("../images/team/brad.jpeg");
-}
-section#our-team .icon-harrison {
-  background-image: url("../images/team/harrison.jpeg");
-}
-section#our-team .icon-ivan {
-  background-image: url("../images/team/ivan.jpeg");
-}
-section#our-team .icon-jacob {
-  background-image: url("../images/team/jacob.jpeg");
-}
-section#our-team .icon-lucas {
-  background-image: url("../images/team/lucas.jpeg");
-}
-section#our-team .icon-mangal {
-  background-image: url("../images/team/mangal.jpg");
-}
-section#our-team .icon-parker {
-  background-image: url("../images/team/parker.jpeg");
-}
-section#our-team .icon-stephen {
-  background-image: url("../images/team/stephen.jpeg");
 }
 section#our-team li.team-member .team-member-name {
   font-size: 20px;
@@ -352,6 +360,43 @@ footer#contact .contact-main {
   footer#contact .contact-add > p {
     font-size: 0.9rem;
   }
+}
+section#team-member-modal.modal-show {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+}
+section#team-member-modal.modal-show .modal-content {
+  border-radius: 15px;
+}
+section#team-member-modal.modal-show .modal-body {
+  display: flex;
+  flex-direction: column;
+}
+section#team-member-modal.modal-show .team-member-icon {
+  align-self: center;
+  margin-bottom: 20px;
+}
+section#team-member-modal.modal-show .link-holders i {
+  width: 25px;
+  text-align: left;
+  padding: 0;
+}
+
+main.modal-show {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=styles.css.map */

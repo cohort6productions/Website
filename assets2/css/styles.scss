@@ -78,5 +78,54 @@ h3 {
     }
 }
 
+
+.team-member-icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-size: cover;
+  }
+
+.icon-andrewc {
+    background-image: url("../images/team/andrewc.jpeg")
+}
+
+.icon-andrewl {
+    background-image: url("../images/team/andrewl.jpeg")
+}
+
+.icon-brad {
+    background-image: url("../images/team/brad.jpeg")
+}
+
+.icon-harrison {
+    background-image: url("../images/team/harrison.jpeg")
+}
+
+.icon-ivan {
+    background-image: url("../images/team/ivan.jpeg")
+}
+
+.icon-jacob {
+    background-image: url("../images/team/jacob.jpeg")
+}
+
+.icon-lucas {
+    background-image: url("../images/team/lucas.jpeg")
+}
+
+.icon-mangal {
+    background-image: url("../images/team/mangal.jpg")
+}
+
+.icon-parker {
+    background-image: url("../images/team/parker.jpeg")
+}
+
+.icon-stephen {
+    background-image: url("../images/team/stephen.jpeg")
+}
+
 @import 'nav';
 @import 'sections';
+@import 'modal';
