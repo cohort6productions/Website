@@ -133,8 +133,26 @@ section {
 }
 
 /*
-  why C6P
+  why us
 */
+
+#why-clients-love-us > div > h3 {
+  margin-bottom: 5%;
+}
+
+.why-love-us-pic {
+  object-position: top;
+  object-fit: contain;
+}
+
+.why-love-us-h3 {
+  text-align: left;
+}
+
+.why-love-us-pic,
+.why-love-us-word {
+  padding: 0 45px 0 45px;
+}
 
 
 /*
@@ -142,16 +160,23 @@ section {
 */
 
 #our-work {
-  /* height: 80vh; */
+  padding-top: 0;
 }
 
-#our-work > div {
-  /* height: 80vh; */
+.our-work-btn > a {
+  padding: 0 2%;
+}
+
+.carousel-indicators > li {
+  margin: 0 5%;
 }
 
 .carousel {
+  margin-top: 2%;
   height: 80vh;
+  object-fit: contain;
 }
+
 
 .w-100 {
   height: 80vh;
@@ -193,31 +218,6 @@ section {
   width: 50%;
   margin-bottom: 5%;
 }
-
-/*
-  why us
-*/
-
-#why-clients-love-us > div > h3 {
-  margin-bottom: 5%;
-}
-
-.why-love-us-pic {
-  object-position: top;
-  object-fit: contain;
-}
-
-.why-love-us-h3 {
-  text-align: left;
-}
-
-.why-love-us-pic,
-.why-love-us-word {
-  padding: 0 45px 0 45px;
-}
-
-
-
 
 /*
   team
