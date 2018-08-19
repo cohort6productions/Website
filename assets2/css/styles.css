@@ -144,8 +144,18 @@ section#what-we-do .service-box {
   padding: 20px;
 }
 section#what-we-do img {
-  width: 100%;
-  padding: 20px;
+  width: 40%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section#what-we-do h5 {
+  text-align: center;
+}
+section#what-we-do p {
+  padding: 0 15% 0 15%;
+  text-align: center;
 }
 
 section#why-clients-love-us {
@@ -153,7 +163,7 @@ section#why-clients-love-us {
   color: #111111;
 }
 section#why-clients-love-us > div > h3 {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 section#why-clients-love-us > div .row {
   align-items: center;
@@ -175,6 +185,9 @@ section#why-clients-love-us > div .row .why-love-us-pic img {
 section#why-clients-love-us > div .row .why-love-us-word {
   width: 25vw;
 }
+section#why-clients-love-us > div .row .why-love-us-word p {
+  padding-right: 10%;
+}
 section#why-clients-love-us > div .row .why-love-us-word .why-love-us-h3 {
   text-align: left;
 }
@@ -190,6 +203,7 @@ section#why-clients-love-us > div .row .why-love-us-word .one-thing-box .one-thi
 }
 section#why-clients-love-us > div .row .why-love-us-word .one-thing-box .one-thing-word {
   padding-left: 5%;
+  padding-right: 5%;
 }
 
 section#our-work {
@@ -197,10 +211,15 @@ section#our-work {
   color: #111111;
 }
 section#our-work .carousel {
-  height: 80vh;
+  width: 688px;
+  height: 341px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 section#our-work .carousel .w-100 {
-  height: 80vh;
+  width: 688px;
+  height: 341px;
   object-fit: contain;
   object-position: center;
 }
