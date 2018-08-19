@@ -55,10 +55,14 @@ section#why-clients-love-us {
     >h3 {
       margin-bottom: 5%;
     }
+    >.row {
+      align-items: center;
+    }
   }
   .why-love-us-pic {
-    object-position: top;
-    object-fit: contain;
+    object-position: center;
+    // object-fit: contain;
+    width: 50%;
   }
   .why-love-us-h3 {
     text-align: left;
