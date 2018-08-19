@@ -343,8 +343,14 @@ section#contact .contact-social {
   line-height: normal;
   padding: 1.5% 0 0 0;
 }
+section#contact .contact-main .contact-icons,
+section#contact .contact-add .contact-icons,
+section#contact .contact-social .contact-icons {
+  width: 2vw;
+  padding-right: 3%;
+}
 section#contact .contact-main {
-  padding-right: 5%;
+  padding-right: 8%;
 }
 
 @media (max-width: 1023px) {

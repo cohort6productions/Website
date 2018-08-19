@@ -258,10 +258,12 @@ section#contact {
   align-items: center;
   /* text-align: center; */
   padding: 0 20% 0 -20%;
+
   h3 {
     text-align: left;
     padding-left: 0;
   }
+
   .contact-main,
   .contact-add,
   .contact-social {
@@ -271,10 +273,15 @@ section#contact {
     font-weight: 300;
     line-height: normal;
     padding: 1.5% 0 0 0;
+
+    .contact-icons {
+      width: 2vw;
+      padding-right: 3%;
+    }
   }
   
   .contact-main {
-    padding-right: 5%;
+    padding-right: 8%;
   }
 }
 
