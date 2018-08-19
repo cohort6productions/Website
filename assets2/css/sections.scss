@@ -60,6 +60,11 @@ section#why-clients-love-us {
     object-position: top;
     object-fit: contain;
   }
+
+  img {
+    width: 100%;
+    padding: 20px;
+  }
   .why-love-us-h3 {
     text-align: left;
   }
@@ -67,12 +72,16 @@ section#why-clients-love-us {
   .why-love-us-word {
     padding: 0 45px 0 45px;
   }
+  ul {
+    li {
+      list-style-image: url("../images/checked.svg");
+    }
+  }
 }
 
 section#our-work {
   background-color: $grey;
-  color: $black;
-  // height: 80vh;
+  color: $black; // height: 80vh;
   .carousel {
     height: 80vh;
     .w-100 {
@@ -184,8 +193,7 @@ footer#contact {
   // background-color: $primary-color;
   color: $black;
   width: 100vw;
-  height: 100vh;
-  // background-image: url("../images/background/contact.png");
+  height: 100vh; // background-image: url("../images/background/contact.png");
   // background-position: right;
   // background-size: cover;
   // background-repeat: no-repeat;
@@ -209,7 +217,6 @@ footer#contact {
     line-height: normal;
     padding: 1.5% 0 0 0;
   }
-  
   .contact-main {
     padding-right: 5%;
   }

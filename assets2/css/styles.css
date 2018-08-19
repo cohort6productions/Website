@@ -159,12 +159,19 @@ section#why-clients-love-us .why-love-us-pic {
   object-position: top;
   object-fit: contain;
 }
+section#why-clients-love-us img {
+  width: 100%;
+  padding: 20px;
+}
 section#why-clients-love-us .why-love-us-h3 {
   text-align: left;
 }
 section#why-clients-love-us .why-love-us-pic,
 section#why-clients-love-us .why-love-us-word {
   padding: 0 45px 0 45px;
+}
+section#why-clients-love-us ul li {
+  list-style-image: url("../images/checked.svg");
 }
 
 section#our-work {
