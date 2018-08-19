@@ -155,19 +155,25 @@ section#why-clients-love-us {
 section#why-clients-love-us > div > h3 {
   margin-bottom: 5%;
 }
-section#why-clients-love-us > div > .row {
+section#why-clients-love-us > div .row {
   align-items: center;
 }
-section#why-clients-love-us .why-love-us-pic {
+section#why-clients-love-us > div .row .why-love-us-pic,
+section#why-clients-love-us > div .row .why-love-us-word {
+  padding: 0 45px 2% 45px;
+}
+section#why-clients-love-us > div .row .why-love-us-pic {
   object-position: center;
+  object-fit: initial;
+}
+section#why-clients-love-us > div .row .why-love-us-pic img {
   width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-section#why-clients-love-us .why-love-us-h3 {
+section#why-clients-love-us > div .row .why-love-us-word .why-love-us-h3 {
   text-align: left;
-}
-section#why-clients-love-us .why-love-us-pic,
-section#why-clients-love-us .why-love-us-word {
-  padding: 0 45px 0 45px;
 }
 
 section#our-work {
