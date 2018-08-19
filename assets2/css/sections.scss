@@ -43,38 +43,75 @@ section#what-we-do {
     padding: 20px;
   }
   img {
-    width: 100%;
-    padding: 20px;
+    width: 40%;
+    padding: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h5 {
+    text-align: center;
+  }
+  p {
+    padding: 0 15% 0 15%;
+    text-align: center;
   }
 }
 
 section#why-clients-love-us {
   background-color: $white;
   color: $black;
-  >div {
-    >h3 {
-      margin-bottom: 5%;
+  div.container {
+    h3 {
+      margin-bottom: 3%;
     }
-  }
-  .why-love-us-pic {
-    object-position: top;
-    object-fit: contain;
-  }
-
-  img {
-    width: 100%;
-    padding: 20px;
-  }
-  .why-love-us-h3 {
-    text-align: left;
-  }
-  .why-love-us-pic,
-  .why-love-us-word {
-    padding: 0 45px 0 45px;
-  }
-  ul {
-    li {
-      list-style-image: url("../images/checked.svg");
+    div {
+      div.why-clients-love-us-sections {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        padding: 20px;
+        p {
+          padding-right: 10%;
+        }
+        div {
+          .one-thing-box {
+            display: flex;
+            flex-direction: row;
+          }
+          .one-thing-word {
+            padding-left: 5%;
+            padding-right: 5%;
+          }
+        }
+        >div.why-love-us-pic {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 80%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      div.why-clients-love-us-sections {
+        flex-direction: row !important;
+        justify-content: space-between;
+        >div {
+          width: 40%;
+        }
+        >div.why-love-us-pic {
+          display: block !important;
+          img {
+            width: 100% !important;
+            margin-bottom: 0;
+          }
+        }
+      }
+      div.why-clients-love-us-right {
+        flex-direction: row-reverse !important;
+      }
     }
   }
 }
@@ -83,9 +120,16 @@ section#our-work {
   background-color: $grey;
   color: $black; // height: 80vh;
   .carousel {
-    height: 80vh;
+    // height: 80vh;
+    width: 688px;
+    height: 341px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     .w-100 {
-      height: 80vh;
+      // height: 80vh;
+      width: 688px;
+      height: 341px;
       object-fit: contain;
       object-position: center;
     }
@@ -124,15 +168,13 @@ section#our-team {
     flex-wrap: wrap;
     justify-content: center;
     /* max-width: 900px; */
-    padding: 0 20px;
+    padding: 0 0 0 13%;
     margin: 0 auto;
     padding-top: 5%;
   }
   li.team-member {
     padding: 0;
-    /* margin: 10px; */
-    margin: 10px 0px;
-    /* width: 150px; */
+    margin: 10px 0px 3% 0;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -144,14 +186,10 @@ section#our-team {
   .team-members a:active {
     text-decoration: none;
     outline: none;
-    /* margin: auto; */
-    /* border: none; */
-    /* padding-left: 2%; */
-    /* border: red 1px solid; */
   }
   .team-member-overlay {
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -173,7 +211,7 @@ section#our-team {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10%;
+    padding-left: 5%;
     min-width: 250px;
   }
   .team-member-name {
@@ -189,41 +227,75 @@ section#testimonials {
   color: $black;
 }
 
-footer#contact {
+section#contact {
   // background-color: $primary-color;
   color: $black;
   width: 100vw;
-  height: 100vh; // background-image: url("../images/background/contact.png");
-  // background-position: right;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("../images/background/contact.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   /* text-align: center; */
-  padding: 0 15%;
+  padding: 0 20% 0 -20%;
   h3 {
     text-align: left;
     padding-left: 0;
   }
-  .contact-main,
-  .contact-add,
-  .contact-social {
-    font-size: 1.050rem;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding: 1.5% 0 0 0;
+  .contain-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+      font-size: 1.050rem;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding: 1.5% 0 0 0;
+      .contact-icons {
+        width: 30px;
+        padding-right: 10px;
+      }
+    }
+    >div:not(.contact-main) {
+      display: flex;
+      flex-direction: column;
+      div {
+        padding-right: 15px;
+      }
+    }
   }
-  .contact-main {
-    padding-right: 5%;
+  @media (min-width: 768px) {
+    .contain-content {
+      >div:not(.contact-main) {
+        flex-direction: row;
+        justify-content: flex-start;
+        div {
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contain-content {
+    flex-direction: row;
+    .contact-main {
+      width: 45%;
+    }
+    >div:not(.contact-main) {
+      width: 50%;
+    }
   }
 }
 
 @media (max-width: 1023px) {
-  footer#contact {
+  section#contact {
     // background-position: right;
     .contact-add>p {
       font-size: 0.9rem;
