@@ -49,35 +49,39 @@ h3 {
 }
 
 .icon-andrewc {
-  background-image: url("../images/team/andrewc.jpeg");
+  background-image: url("../image/Team/AndrewCheung.JPG");
 }
 
 .icon-andrewl {
-  background-image: url("../images/team/andrewl.jpeg");
+  background-image: url("../image/Team/AndrewLaw.JPG");
 }
 
 .icon-brad {
-  background-image: url("../images/team/brad.jpeg");
+  background-image: url("../image/Team/Brad.JPG");
 }
 
 .icon-harrison {
-  background-image: url("../images/team/harrison.jpeg");
+  background-image: url("../image/Team/Harrison.JPG");
 }
 
 .icon-ivan {
-  background-image: url("../images/team/ivan.jpeg");
+  background-image: url("../image/Team/Ivan.JPG");
 }
 
 .icon-jacob {
-  background-image: url("../images/team/jacob.jpeg");
+  background-image: url("../image/Team/Jacob.JPG");
+}
+
+.icon-judith {
+  background-image: url("../image/Team/Judith.JPG");
 }
 
 .icon-lucas {
-  background-image: url("../images/team/lucas.jpeg");
+  background-image: url("../image/Team/Lucas.JPG");
 }
 
 .icon-mangal {
-  background-image: url("../images/team/mangal.jpg");
+  background-image: url("../image/Team/Mangal.JPG");
 }
 
 .icon-parker {
@@ -85,7 +89,11 @@ h3 {
 }
 
 .icon-stephen {
-  background-image: url("../images/team/stephen.jpeg");
+  background-image: url("../image/Team/Stephen.JPG");
+}
+
+.icon-terence {
+  background-image: url("../image/Team/Terence.JPG");
 }
 
 nav.navbar {
@@ -103,7 +111,7 @@ header {
   height: calc(100vh - 56px);
   width: 100vw;
   margin: 0;
-  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../images/background/computer.jpg");
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero section/hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,22 +122,32 @@ header {
   text-align: center;
   font-size: 1.25rem;
   padding: 0 15%;
-}
-header div {
-  color: #F9F9F9;
-}
-header p {
   text-align: center;
   color: #ffffff;
 }
-header .heading-p1 {
-  font-size: 1.5rem;
+header div {
+  color: #F9F9F9;
 }
 header h1 {
   color: #ffffff;
 }
 header hr {
   background-color: #ffd700;
+}
+header .heading-span1 {
+  font-family: "Spectral", Times, "Times New Roman", Serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 0 12%;
+}
+header .heading-span1 .decorated {
+  font-weight: 500;
+  text-decoration: underline;
+}
+header .heading-span2 {
+  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+  font-size: 0.75rem;
+  padding: 2% 25%;
 }
 
 section#why-cohort-6 {
@@ -338,32 +356,45 @@ section#contact {
   color: #111111;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background/contact.png");
+  background-image: url("../image/Contact us/contact.png");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* text-align: center; */
   padding: 0 20% 0 -20%;
 }
 section#contact h3 {
   text-align: left;
   padding-left: 0;
+  margin-bottom: 0;
 }
 section#contact .contain-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+section#contact .contain-content .contact-main {
+  padding-right: 6%;
+}
+section#contact .contain-content .contact-main h5,
+section#contact .contain-content div .contact-add h5 {
+  opacity: 0;
+  margin-bottom: 2px;
 }
 section#contact .contain-content div {
-  font-size: 1.05rem;
+  font-size: 0.75rem;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding: 1.5% 0 0 0;
+}
+section#contact .contain-content div .contact-social h5 {
+  font-size: 1rem;
+  font-weight: 700;
 }
 section#contact .contain-content div .contact-icons {
   width: 30px;
@@ -374,6 +405,7 @@ section#contact .contain-content > div:not(.contact-main) {
   flex-direction: column;
 }
 section#contact .contain-content > div:not(.contact-main) div {
+  padding-top: 0;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
@@ -382,7 +414,7 @@ section#contact .contain-content > div:not(.contact-main) div {
     justify-content: flex-start;
   }
   section#contact .contain-content > div:not(.contact-main) div {
-    padding-right: 15px;
+    padding-right: 13%;
   }
 }
 
