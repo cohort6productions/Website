@@ -2,7 +2,7 @@ header {
   height: calc(100vh - 56px);
   width: 100vw;
   margin: 0;
-  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../../image/Hero\ section/hero-bg.jpg");
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero\ section/hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@ section#contact {
   color: $black;
   width: 100vw;
   height: 100vh;
-  background-image: url("../images/background/contact.png");
+  background-image: url("../image/Contact\ us/contact.png");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
