@@ -1,6 +1,13 @@
+//Globlas import
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Spectral:300,400,700');
+
 //Globals go in here
-$font-stack: Helvetica,
-sans-serif;
+//Fonts
+$font-stack: Helvetica, sans-serif;
+$headers-and-stress: "Spectral", Times, "Times New Roman", Serif;
+$bodys-and-content: "Open Sans", Helvetica, Arial, Sans-Serif;
+
+//Colors
 $primary-color: #172a4e;
 $secondary-color: #ffd700;
 $white: #ffffff;
