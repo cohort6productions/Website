@@ -2,7 +2,7 @@ header {
   height: calc(100vh - 56px);
   width: 100vw;
   margin: 0;
-  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../images/background/computer.jpg");
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../../image/Hero\ section/hero-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,21 +13,36 @@ header {
   text-align: center;
   font-size: 1.25rem;
   padding: 0 15%;
+  text-align: center;
+  color: $white;
   div {
     color: #F9F9F9;
   }
-  p {
-    text-align: center;
-    color: $white;
-  }
-  .heading-p1 {
-    font-size: 1.5rem;
-  }
+
   h1 {
     color: $white;
   }
+  
   hr {
     background-color: $secondary-color;
+  }
+
+  .heading-span1 {
+    font-family: $headers-and-stress;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0 12%;
+
+    .decorated {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+
+  .heading-span2 {
+    font-family: $bodys-and-content;
+    font-size: 0.75rem;
+    padding: 2% 25%;
   }
 }
 
