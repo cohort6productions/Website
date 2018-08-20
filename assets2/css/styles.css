@@ -190,6 +190,20 @@ section#why-clients-love-us div.container div div.why-clients-love-us-sections >
   width: 80%;
   margin-bottom: 20px;
 }
+section#why-clients-love-us div.container div div.why-clients-love-us-sections ul {
+  padding: 0;
+}
+section#why-clients-love-us div.container div div.why-clients-love-us-sections ul li {
+  list-style: none;
+  display: flex;
+}
+section#why-clients-love-us div.container div div.why-clients-love-us-sections ul li span {
+  padding-right: 10px;
+}
+section#why-clients-love-us div.container div div.why-clients-love-us-sections ul li span img {
+  height: 20px;
+  width: 20px;
+}
 @media (min-width: 768px) {
   section#why-clients-love-us div.container div.why-clients-love-us-sections {
     flex-direction: row !important;
