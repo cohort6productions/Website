@@ -268,23 +268,42 @@ section#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* text-align: center; */
   padding: 0 20% 0 -20%;
   h3 {
     text-align: left;
     padding-left: 0;
+    margin-bottom: 0;
   }
   .contain-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    justify-content: flex-start;
+
+    .contact-main {
+      padding-right: 6%;
+    }
+
+    .contact-main h5,
+    div .contact-add h5 {
+      opacity: 0;
+      margin-bottom: 2px;
+    }
+
     div {
-      font-size: 1.050rem;
+      font-size: 0.75rem;
       font-family: Open Sans;
       font-style: normal;
       font-weight: 300;
       line-height: normal;
-      padding: 1.5% 0 0 0;
+      // padding: 1.5% 0 0 0;
+
+      .contact-social h5 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
       .contact-icons {
         width: 30px;
         padding-right: 10px;
@@ -294,6 +313,7 @@ section#contact {
       display: flex;
       flex-direction: column;
       div {
+        padding-top: 0;
         padding-right: 15px;
       }
     }
@@ -304,7 +324,8 @@ section#contact {
         flex-direction: row;
         justify-content: flex-start;
         div {
-          padding-right: 15px;
+          // padding-right: 15px;
+          padding-right: 13%;
         }
       }
     }
