@@ -57,6 +57,13 @@ h3 {
   background-size: cover;
 }
 
+.team-member-icon-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
 .icon-andrewc {
   background-image: url("../image/Team/AndrewCheung.JPG");
 }
@@ -106,10 +113,21 @@ h3 {
 }
 
 nav.navbar {
-  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  background-color: aliceblue;
 }
 nav.navbar .navbar-brand {
   color: #111111;
+  transition: 0.6s;
+}
+nav.navbar .navbar-brand:hover {
+  color: #ffd700;
+}
+
+nav.transparentNav {
+  background-color: rgba(0, 0, 0, 0);
   transition: 0.6s;
 }
 
@@ -431,6 +449,10 @@ section#contact .container .contain-content div {
 section#contact .container .contain-content div .contact-social h5 {
   font-size: 1rem;
   font-weight: 700;
+}
+section#contact .container .contain-content div .contact-social div {
+  flex-direction: row;
+  height: 2vh;
 }
 section#contact .container .contain-content div .contact-icons {
   width: 30px;
