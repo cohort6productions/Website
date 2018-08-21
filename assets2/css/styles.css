@@ -109,7 +109,7 @@ nav.navbar {
   position: fixed;
   z-index: 100;
   width: 100vw;
-  background-color: #172a4e;
+  background-color: aliceblue;
 }
 nav.navbar .navbar-brand {
   color: #111111;
@@ -121,6 +121,7 @@ nav.navbar .navbar-brand:hover {
 
 nav.transparentNav {
   background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
 }
 
 header {

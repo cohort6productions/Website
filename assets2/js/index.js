@@ -19,7 +19,7 @@ class ModalFunctions {
 
         $(window).scroll((e)=>{
             var fromTop = $(window).scrollTop();
-            if (fromTop > 80) {
+            if (fromTop > 100) {
                 $(".navbar").removeClass("transparentNav");
             } else {
                 $(".navbar").addClass("transparentNav");
