@@ -1,4 +1,6 @@
 nav.navbar {
+    position: fixed;
+    width: 100vw;
     background-color: $primary-color;
     .navbar-brand {
         color: $white;

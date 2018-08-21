@@ -97,6 +97,8 @@ h3 {
 }
 
 nav.navbar {
+  position: fixed;
+  width: 100vw;
   background-color: #172a4e;
 }
 nav.navbar .navbar-brand {
