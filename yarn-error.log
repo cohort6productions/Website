@@ -1,0 +1,26 @@
+Arguments: 
+  /usr/local/bin/node /home/ivanoung/.yarn/bin/yarn.js global add sass
+
+PATH: 
+  /home/ivanoung/bin:/home/ivanoung/.local/bin:/home/ivanoung/.yarn/bin:/home/ivanoung/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath_target_571878437:/mnt/c/ProgramData/Oracle/Java/javapath_target_550722734:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/d/Program file/Nodejs:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Users/ivan_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ivan_/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ivan_/AppData/Roaming/npm:/mnt/c/Users/ivan_/AppData/Local/hyper/app-2.0.0/resources/bin:/mnt/c/Users/ivan_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ivan_/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, scandir '/home/ivanoung/.config/yarn/link'
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
