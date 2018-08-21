@@ -1,10 +1,7 @@
-
-
 header {
   height: calc(100vh - 56px);
   width: 100vw;
-  margin: 0;
-  // background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero\ section/hero-bg.jpg");
+  margin: 0; // background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero\ section/hero-bg.jpg");
   background-image: url("../image/Hero\ section/macantosh.jpg");
   background-position: center;
   background-size: cover;
@@ -21,7 +18,6 @@ header {
   div {
     color: #F9F9F9;
   }
-
   .punchline {
     @include bold;
     font-family: $headers-and-stress;
@@ -29,8 +25,6 @@ header {
     text-transform: uppercase;
     color: $black;
   }
-  
-
   .heading-span2 {
     font-family: $bodys-and-content;
     font-size: 0.75rem;
@@ -41,26 +35,22 @@ header {
       color: $black;
       text-align: center;
       letter-spacing: .05rem;
-
     }
   }
 }
 
 // Added style for overall common elements
-.sections-header{
+.sections-header {
   @include bold;
   font-size: 2.8rem;
   text-transform: uppercase;
 }
 
-.content-sections{
+.content-sections {
   padding: 13vh 10vw;
 }
 
 //End of added style for overall common elements
-
-
-
 section#why-cohort-6 {
   background-color: $white;
   color: $black;
@@ -230,11 +220,10 @@ section#our-team {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    .member-container{
+    .member-container {
       width: 100%;
       display: grid;
       grid-template-columns: 30% 70%;
-
     }
   }
   .team-members a,
@@ -264,31 +253,26 @@ section#our-team {
   .team-member-overlay p {
     margin: 0;
   }
-
-
   .team-member-des {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5%;
-    // min-width: 250px;
+    padding-left: 5%; // min-width: 250px;
     .team-member-name {
       @include bold;
       font-size: 10px;
-    
     }
-    .social-links{
+    .social-links {
       width: 50%;
       display: flex;
       justify-content: space-between;
-      a{
-        img.team-social-icons{
+      a {
+        img.team-social-icons {
           width: 60%;
         }
       }
     }
   }
-  
   li.team-member .team-member-name {
     font-size: 20px;
   }
@@ -312,52 +296,54 @@ section#contact {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
   padding: 0 20% 0 -20%;
-  h3 {
-    text-align: left;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .contain-content {
-    display: flex;
-    flex-direction: row;
-    // justify-content: space-evenly;
-    justify-content: flex-start;
-
-    .contact-main {
-      padding-right: 6%;
+  
+  .container {
+    h3.contact-header {
+      @include bold;
+      text-align: left;
+      padding-left: 0;
+      margin-bottom: 0;
     }
 
-    .contact-main h5,
-    div .contact-add h5 {
-      opacity: 0;
-      margin-bottom: 2px;
-    }
-
-    div {
-      font-size: 0.75rem;
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: 300;
-      line-height: normal;
-      // padding: 1.5% 0 0 0;
-
-      .contact-social h5 {
-        font-size: 1rem;
-        font-weight: 700;
-      }
-      .contact-icons {
-        width: 30px;
-        padding-right: 10px;
-      }
-    }
-    >div:not(.contact-main) {
+    .contain-content {
       display: flex;
-      flex-direction: column;
+      flex-direction: row; // justify-content: space-evenly;
+      justify-content: flex-start;
+      .contact-main {
+        padding-right: 6%;
+        .contact-text {
+          font-size: .8rem;
+          letter-spacing: .05rem;
+        }
+      }
+      .contact-main h5,
+      div .contact-add h5 {
+        opacity: 0;
+        margin-bottom: 2px;
+      }
       div {
-        padding-top: 0;
-        padding-right: 15px;
+        font-size: 0.75rem;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        .contact-social h5 {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        .contact-icons {
+          width: 30px;
+          padding-right: 10px;
+        }
+      }
+      div:not(.contact-main) {
+        display: flex;
+        flex-direction: column;
+        div {
+          padding-top: 0;
+          padding-right: 15px;
+        }
       }
     }
   }

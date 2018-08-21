@@ -396,47 +396,51 @@ section#contact {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
   padding: 0 20% 0 -20%;
 }
-section#contact h3 {
+section#contact .container h3.contact-header {
+  font-weight: 700;
   text-align: left;
   padding-left: 0;
   margin-bottom: 0;
 }
-section#contact .contain-content {
+section#contact .container .contain-content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-section#contact .contain-content .contact-main {
+section#contact .container .contain-content .contact-main {
   padding-right: 6%;
 }
-section#contact .contain-content .contact-main h5,
-section#contact .contain-content div .contact-add h5 {
+section#contact .container .contain-content .contact-main .contact-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+section#contact .container .contain-content .contact-main h5,
+section#contact .container .contain-content div .contact-add h5 {
   opacity: 0;
   margin-bottom: 2px;
 }
-section#contact .contain-content div {
+section#contact .container .contain-content div {
   font-size: 0.75rem;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-section#contact .contain-content div .contact-social h5 {
+section#contact .container .contain-content div .contact-social h5 {
   font-size: 1rem;
   font-weight: 700;
 }
-section#contact .contain-content div .contact-icons {
+section#contact .container .contain-content div .contact-icons {
   width: 30px;
   padding-right: 10px;
 }
-section#contact .contain-content > div:not(.contact-main) {
+section#contact .container .contain-content div:not(.contact-main) {
   display: flex;
   flex-direction: column;
 }
-section#contact .contain-content > div:not(.contact-main) div {
+section#contact .container .contain-content div:not(.contact-main) div {
   padding-top: 0;
   padding-right: 15px;
 }
