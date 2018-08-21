@@ -106,21 +106,18 @@ h3 {
 }
 
 nav.navbar {
-  background-color: #172a4e;
+  background-color: transparent;
 }
 nav.navbar .navbar-brand {
-  color: #ffffff;
+  color: #111111;
   transition: 0.6s;
-}
-nav.navbar .navbar-brand:hover {
-  color: #ffd700;
 }
 
 header {
   height: calc(100vh - 56px);
   width: 100vw;
   margin: 0;
-  background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero section/hero-bg.jpg");
+  background-image: url("../image/Hero section/macantosh.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,26 +134,24 @@ header {
 header div {
   color: #F9F9F9;
 }
-header h1 {
-  color: #ffffff;
-}
-header hr {
-  background-color: #ffd700;
-}
-header .heading-span1 {
+header .punchline {
+  font-weight: 700;
   font-family: "Spectral", Times, "Times New Roman", Serif;
-  font-size: 1.5rem;
-  font-weight: 200;
-  padding: 0 12%;
-}
-header .heading-span1 .decorated {
-  font-weight: 500;
-  text-decoration: underline;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  color: #111111;
 }
 header .heading-span2 {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-size: 0.75rem;
-  padding: 2% 25%;
+  padding: 2% 18%;
+}
+header .heading-span2 span {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #111111;
+  text-align: center;
+  letter-spacing: 0.05rem;
 }
 
 section#why-cohort-6 {
