@@ -333,6 +333,10 @@ section#contact {
           font-size: 1rem;
           font-weight: 700;
         }
+        .contact-social div {
+          flex-direction: row;
+          height: 2vh;
+        }
         .contact-icons {
           width: 30px;
           padding-right: 10px;

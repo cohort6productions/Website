@@ -443,6 +443,10 @@ section#contact .container .contain-content div .contact-social h5 {
   font-size: 1rem;
   font-weight: 700;
 }
+section#contact .container .contain-content div .contact-social div {
+  flex-direction: row;
+  height: 2vh;
+}
 section#contact .container .contain-content div .contact-icons {
   width: 30px;
   padding-right: 10px;
