@@ -14,6 +14,20 @@ $white: #ffffff;
 $grey: #f9f9f9;
 $black: #111111;
 
+//sdsds
+//templates
+@mixin light {
+    font-weight: 300;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
 body {
     overflow-x: hidden;
     /*
@@ -51,11 +65,19 @@ footer {
     padding-top: 5%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headers-and-stress;
+}
+
+p, span, body {
+    font-family: $bodys-and-content;
+    font-weight: 300;
+}
+
 h3 {
     text-align: center;
     font-size: 2.5rem;
 }
-
 
 .team-member-icon {
     width: 80px;
