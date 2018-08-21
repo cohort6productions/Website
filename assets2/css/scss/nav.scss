@@ -10,3 +10,7 @@ nav.navbar {
         color: $secondary-color;
     }
 }
+
+nav.transparentNav {
+    background-color: rgba($color: #000000, $alpha: 0.0);
+}

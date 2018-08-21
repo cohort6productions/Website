@@ -11,6 +11,20 @@ class ModalFunctions {
         $("#team-member-modal").on("hide.bs.modal", function () {
             that.closeModal();
         });
+
+        $("body").scrollspy({
+            target: ".navbar",
+            offset: 0
+        });
+
+        $(window).scroll((e)=>{
+            var fromTop = $(window).scrollTop();
+            if (fromTop > 80) {
+                $(".navbar").removeClass("transparentNav");
+            } else {
+                $(".navbar").addClass("transparentNav");
+            }
+        })
     }
     openModal(e) {
         var members = {
