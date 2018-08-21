@@ -98,6 +98,7 @@ h3 {
 
 nav.navbar {
   position: fixed;
+  z-index: 100;
   width: 100vw;
   background-color: #172a4e;
 }
