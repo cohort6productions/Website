@@ -416,7 +416,7 @@ section#contact {
   justify-content: center;
   padding: 0 20% 0 -20%;
 }
-section#contact .container h3.contact-header {
+section#contact .container .contact-header {
   font-weight: 700;
   text-align: left;
   padding-left: 0;
@@ -424,7 +424,6 @@ section#contact .container h3.contact-header {
 }
 section#contact .container .contain-content {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
 }
 section#contact .container .contain-content .contact-main {
@@ -458,38 +457,111 @@ section#contact .container .contain-content div .contact-icons {
   width: 30px;
   padding-right: 10px;
 }
-section#contact .container .contain-content div:not(.contact-main) {
+section#contact .container .contain-content .contact-main-2 {
   display: flex;
   flex-direction: column;
 }
-section#contact .container .contain-content div:not(.contact-main) div {
+section#contact .container .contain-content .contact-main-2 div {
   padding-top: 0;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
-  section#contact .contain-content > div:not(.contact-main) {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  section#contact .contain-content > div:not(.contact-main) div {
-    padding-right: 13%;
-  }
+section#contact .contact-mobile-bottom {
+  display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .contain-content {
     flex-direction: row;
   }
   .contain-content .contact-main {
     width: 45%;
   }
-  .contain-content > div:not(.contact-main) {
+  .contain-content .contact-main-2 {
     width: 50%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .contain-content .contact-main-2 div {
+    padding-right: 13%;
   }
 }
 @media (max-width: 1023px) {
-  section#contact .contact-add > p {
+  section#contact div .contain-content {
+    flex-direction: column;
+  }
+  section#contact div .contain-content .contact-main .contact-text {
+    width: 40vw;
+  }
+  section#contact div .contain-content .contact-main div .contact-add > p {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  section#contact {
+    background-image: none;
+    background-color: white;
+    padding-bottom: 0;
+  }
+  section#contact .container {
+    padding-bottom: 10%;
+  }
+  section#contact .container .contact-header {
+    text-align: center;
+  }
+  section#contact .container .contain-content {
+    text-align: center;
+  }
+  section#contact .container .contain-content .contact-main {
+    padding-right: 0;
+  }
+  section#contact .container .contain-content .contact-main .contact-text {
+    width: 60vw;
+    margin: 5% auto 15% auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section#contact .container .contain-content .contact-main-2 .contact-add {
+    padding-right: 0;
+    font-size: 1.5rem;
+  }
+  section#contact .container .contain-content .contact-main-2 .contact-social {
+    display: none;
+  }
+  section#contact .contact-mobile-bottom {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../image/Contact us/contact-mobile.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#contact .contact-mobile-bottom .contact-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#contact .contact-mobile-bottom .contact-social h5 {
+    font-size: 1.5rem;
+  }
+  section#contact .contact-mobile-bottom .contact-social div {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section#contact .contact-mobile-bottom .contact-social div img {
+    width: 30px;
+    height: 30px;
+    padding: auto 5px auto 5px;
+  }
+}
+@media (min-width: 766px) {
+  section#contact .contain-content .contact-main-2 .contact-add a p {
+    font-size: 0.8rem;
   }
 }
 section#team-member-modal.modal-show {
