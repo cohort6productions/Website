@@ -2,38 +2,38 @@ section#our-work {
     background-color: $grey;
     color: $black; // height: 80vh;
     .carousel {
-      // height: 80vh;
-      width: 688px;
-      height: 341px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      .w-100 {
-        // height: 80vh;
-        width: 688px;
-        height: 341px;
-        object-fit: contain;
-        object-position: center;
-      }
+		// height: 80vh;
+		width: 688px;
+		height: 341px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		.w-100 {
+			// height: 80vh;
+			width: 688px;
+			height: 341px;
+			object-fit: contain;
+			object-position: center;
+		}
     }
     .service-box {
-      padding: 5% 2%;
+    	padding: 5% 2%;
     }
     .service-box>img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      margin-bottom: 5%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		margin-bottom: 5%;
     }
     .our-work-btn {
-      text-align: center;
+    	text-align: center;
     }
     .project-dealing-room {
-      /* height: 80vh; */
-      background-image: url("../images/project/dealing-room.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+		/* height: 80vh; */
+		background-image: url("../images/project/dealing-room.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
     }
-  }
+}
