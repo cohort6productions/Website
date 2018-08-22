@@ -1,0 +1,40 @@
+section#team-member-modal.modal-show {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	overflow: hidden;
+	outline: 0;
+
+	.modal-content {
+		border-radius: 15px;
+	}
+	.modal-body {
+		display: flex;
+		flex-direction: column;
+	}
+	.team-member-icon {
+		align-self: center;
+		margin-bottom: 20px;
+	}
+	.link-holders i {
+		width: 25px;
+		text-align: left;
+		padding: 0;
+	}
+}
+
+main.modal-show {
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter: blur(4px);
+	filter: blur(4px);
+	transition: 0.2s;
+}
+
+
