@@ -319,26 +319,40 @@ section#our-work .container .our-work-btn div hr {
   border-width: 5px;
   margin-top: 0.5rem;
 }
-section#our-work .container .project-banner {
+section#our-work .container .banner-box {
   width: 80vw;
   height: 75vh;
+  display: block;
+  position: relative;
+  border: 0;
+}
+section#our-work .container .banner-box .project-banner {
+  width: 100%;
+  height: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  border: 0;
+}
+section#our-work .container .banner-box .project-desc-web {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding-left: 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  border: 0;
 }
-section#our-work .container .project-banner .project-desc-web {
-  padding-left: 7%;
-}
-section#our-work .container .project-banner .project-desc-web h4 {
+section#our-work .container .banner-box .project-desc-web h4 {
   font-size: 3rem;
   font-weight: 500;
   line-height: normal;
 }
-section#our-work .container .project-banner .project-desc-web p {
+section#our-work .container .banner-box .project-desc-web p {
   font-size: 1rem;
   max-width: 25vw;
   line-height: normal;
@@ -346,11 +360,11 @@ section#our-work .container .project-banner .project-desc-web p {
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
-section#our-work .container .project-banner .project-desc-web img {
-  width: 1.25vw;
-  margin-right: 2%;
+section#our-work .container .banner-box .project-desc-web .project-links img {
+  width: 1.5vw;
+  margin-right: 1%;
 }
-section#our-work .container .hide-banner {
+section#our-work .container .banner-box .hide-banner {
   display: none;
 }
 
