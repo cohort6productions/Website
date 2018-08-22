@@ -75,6 +75,16 @@ var modalFunctions = new ModalFunctions();
 
 $(document).ready(() => {
 
+    // nav bar animation
+    $("body").mousemove(function(e){
+        if (e.clientY <= 50) {
+            $(".navbar").slideDown();
+        }
+        else {
+            $(".navbar").slideUp();
+        }
+    })
+
     // our-work section
     $(".single-project-btn").on("click", function(){
         // move hr tag
