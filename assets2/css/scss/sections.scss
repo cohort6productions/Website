@@ -28,10 +28,10 @@ header {
   }
   .heading-span2 {
     font-family: $bodys-and-content;
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 2% 18%;
     span {
-      font-size: 1.2  rem;
+      font-size: 1.2 rem;
       @include light;
       color: $black;
       text-align: center;
@@ -72,13 +72,13 @@ section#what-we-do {
   }
   h5 {
     @include bold;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   p {
     // padding: 0 10%;
     @include light;
-    font-size: .7rem;
+    font-size: 1rem;
     letter-spacing: .05rem;
     text-align: center;
   }
@@ -210,21 +210,21 @@ section#our-team {
     /* max-width: 900px; */
     // padding: 0 0 0 13%;
     margin: 0 auto;
-    padding-top: 5%;
-  }
-  li.team-member {
-    width: 100%;
     padding: 0;
-    margin: 10px 0px 3% 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    .member-container {
+    li.team-member {
       width: 100%;
-      display: grid;
-      grid-template-columns: 30% 70%;
+      padding: 0;
+      margin: 10px 0px 3% 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      .member-container {
+        width: 100%;
+        display: flex;
+        padding: 0 0 0 5px;
+      }
     }
   }
   .team-members a,
@@ -298,7 +298,10 @@ section#contact {
   align-items: center;
   justify-content: center;
   padding: 0 20% 0 -20%;
-  
+  p,
+  a {
+    font-size: 1rem;
+  }
   .container {
     h3.contact-header {
       @include bold;
@@ -306,7 +309,6 @@ section#contact {
       padding-left: 0;
       margin-bottom: 0;
     }
-
     .contain-content {
       display: flex;
       flex-direction: row; // justify-content: space-evenly;
@@ -314,7 +316,6 @@ section#contact {
       .contact-main {
         padding-right: 6%;
         .contact-text {
-          font-size: .8rem;
           letter-spacing: .05rem;
         }
       }
@@ -330,7 +331,7 @@ section#contact {
         font-weight: 300;
         line-height: normal;
         .contact-social h5 {
-          font-size: 1rem;
+          font-size: 1.6rem;
           font-weight: 700;
         }
         .contact-social div {
