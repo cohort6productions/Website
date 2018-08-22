@@ -1,0 +1,213 @@
+section#contact {
+    color: $black;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/Contact\ us/contact.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20% 0 -20%;
+    
+    .container {
+      .contact-header {
+        @include bold;
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+  
+      .contain-content {
+        display: flex;
+        justify-content: flex-start;
+        .contact-main {
+          padding-right: 6%;
+          .contact-text {
+            font-size: .8rem;
+            letter-spacing: .05rem;
+          }
+        }
+        .contact-main h5,
+        div .contact-add h5 {
+          opacity: 0;
+          margin-bottom: 2px;
+        }
+        div {
+          font-size: 0.75rem;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          .contact-social h5 {
+            font-size: 1rem;
+            font-weight: 700;
+          }
+          .contact-social div {
+            flex-direction: row;
+            height: 2vh;
+          }
+          .contact-icons {
+            width: 30px;
+            padding-right: 10px;
+          }
+        }
+        .contact-main-2 {
+          display: flex;
+          flex-direction: column;
+          div {
+            padding-top: 0;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+    .contact-mobile-bottom{
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contain-content {
+      flex-direction: row;
+      .contact-main {
+        width: 45%;
+      }
+      .contact-main-2 {
+        width: 50%;
+        flex-direction: row;
+        justify-content: flex-start;
+        div {
+          padding-right: 13%;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    section#contact {
+      div {
+        .contain-content {
+          flex-direction: column;
+          .contact-main {
+            .contact-text {
+              width: 40vw;
+            }
+            div {
+              .contact-add {
+                >p {
+                  font-size: 0.9rem;
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    section#contact {
+      background-image: none;
+      background-color: white;
+      padding-bottom: 0;
+      
+      .container {
+        padding-bottom: 10%;
+        .contact-header {
+          text-align: center;
+        }
+        .contain-content {
+          text-align: center;
+  
+          .contact-main {
+            padding-right: 0;
+  
+            .contact-text {
+              width: 60vw;
+              margin: 5% auto 15% auto;
+              padding-left: 0;
+              padding-right: 0;
+            } 
+          }
+          .contact-main-2 {
+            .contact-add {
+              padding-right: 0;
+              font-size: 1.5rem;
+            }
+            .contact-social {
+              display: none;
+            }
+          }
+        }
+      }
+      .contact-mobile-bottom {
+        width: 100vw;
+        height: 50vh;
+        background-image: url("../image/Contact\ us/contact-mobile.png");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        .contact-social-mobile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h5 {
+            font-size: 1.5rem;
+          }
+          div {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+  
+            img {
+              width: 30px;
+              height: 30px;
+              padding-left: 5px;
+              padding-right: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // @media (min-width: 766px) {
+  //   section#contact {
+  //     .contain-content {
+  //       .contact-main-2 {
+  //         .contact-add {
+  //           > a {
+  //             > p {
+  //               font-size: 0.8rem;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  
+  @media (max-width: 400px) {
+    section#contact {
+      .contain-content {
+        .contact-main-2 {
+          .contact-add {
+            > a {
+              > p {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

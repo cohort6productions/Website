@@ -1,0 +1,54 @@
+header {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    // background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero\ section/hero-bg.jpg");
+    background-image: url("../image/Hero\ section/macantosh.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0 15%;
+    text-align: center;
+    color: $white;
+    div {
+      color: #F9F9F9;
+    }
+    .punchline {
+      @include bold;
+      font-family: $headers-and-stress;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+      color: $black;
+    }
+    .heading-span2 {
+      font-family: $bodys-and-content;
+      font-size: 0.75rem;
+      padding: 2% 18%;
+      span {
+        font-size: 1.2  rem;
+        @include light;
+        color: $black;
+        text-align: center;
+        letter-spacing: .05rem;
+      }
+    }
+  }
+  
+  @media (max-width: 400px) {
+    header#header {
+      .container {
+        .heading-span1 {
+          .punchline {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  

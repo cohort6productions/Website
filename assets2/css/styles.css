@@ -50,6 +50,16 @@ h3 {
   font-size: 2.5rem;
 }
 
+.sections-header {
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.content-sections {
+  padding: 13vh 10vw;
+}
+
 .team-member-icon {
   width: 80px;
   height: 80px;
@@ -172,16 +182,11 @@ header .heading-span2 span {
   letter-spacing: 0.05rem;
 }
 
-.sections-header {
-  font-weight: 700;
-  font-size: 2.8rem;
-  text-transform: uppercase;
+@media (max-width: 400px) {
+  header#header .container .heading-span1 .punchline {
+    font-size: 3.5rem;
+  }
 }
-
-.content-sections {
-  padding: 13vh 10vw;
-}
-
 section#why-cohort-6 {
   background-color: #ffffff;
   color: #111111;
@@ -538,30 +543,31 @@ section#contact .contact-mobile-bottom {
     justify-content: center;
     align-items: center;
   }
-  section#contact .contact-mobile-bottom .contact-social {
+  section#contact .contact-mobile-bottom .contact-social-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  section#contact .contact-mobile-bottom .contact-social h5 {
+  section#contact .contact-mobile-bottom .contact-social-mobile h5 {
     font-size: 1.5rem;
   }
-  section#contact .contact-mobile-bottom .contact-social div {
+  section#contact .contact-mobile-bottom .contact-social-mobile div {
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  section#contact .contact-mobile-bottom .contact-social div img {
+  section#contact .contact-mobile-bottom .contact-social-mobile div img {
     width: 30px;
     height: 30px;
-    padding: auto 5px auto 5px;
+    padding-left: 5px;
+    padding-right: 7px;
   }
 }
-@media (min-width: 766px) {
-  section#contact .contain-content .contact-main-2 .contact-add a p {
-    font-size: 0.8rem;
+@media (max-width: 400px) {
+  section#contact .contain-content .contact-main-2 .contact-add > a > p {
+    font-size: 0.9rem;
   }
 }
 section#team-member-modal.modal-show {
