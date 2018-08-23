@@ -36,11 +36,18 @@ footer {
   padding-top: 5%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Spectral", Times, "Times New Roman", Serif;
 }
 
-p, span, body {
+p,
+span,
+body {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 300;
 }
@@ -144,7 +151,6 @@ nav.transparentNav {
 header {
   height: 100vh;
   width: 100vw;
-  margin: 0;
   background-image: url("../image/Hero section/macantosh.jpg");
   background-position: center;
   background-size: cover;
@@ -154,39 +160,74 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.25rem;
-  padding: 0 15%;
-  text-align: center;
-  color: #ffffff;
 }
-header div {
-  color: #F9F9F9;
-}
-header .punchline {
+header .heading-span1 .punchline {
   font-weight: 700;
   font-family: "Spectral", Times, "Times New Roman", Serif;
-  font-size: 4.8rem;
   text-transform: uppercase;
   color: #111111;
 }
+@media (max-width: 599px) {
+  header .heading-span1 .punchline {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  header .heading-span1 .punchline {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 900px) {
+  header .heading-span1 .punchline {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  header .heading-span1 .punchline {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 1800px) {
+  header .heading-span1 .punchline {
+    font-size: 6rem;
+  }
+}
 header .heading-span2 {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
-  font-size: 0.75rem;
   padding: 2% 18%;
 }
 header .heading-span2 span {
-  font-size: 1.2 rem;
   font-weight: 300;
   color: #111111;
   text-align: center;
   letter-spacing: 0.05rem;
 }
-
-@media (max-width: 400px) {
-  header#header .container .heading-span1 .punchline {
-    font-size: 3.5rem;
+@media (max-width: 599px) {
+  header .heading-span2 span {
+    font-size: 0.81rem;
   }
 }
+@media (min-width: 600px) {
+  header .heading-span2 span {
+    font-size: 1.084rem;
+  }
+}
+@media (min-width: 900px) {
+  header .heading-span2 span {
+    font-size: 1.22rem;
+  }
+}
+@media (min-width: 1200px) {
+  header .heading-span2 span {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1800px) {
+  header .heading-span2 span {
+    font-size: 1.6rem;
+  }
+}
+
 section#why-cohort-6 {
   background-color: #ffffff;
   color: #111111;
@@ -322,8 +363,6 @@ section#our-work .container div .our-work-btn div hr {
 section#our-work .container div .banner-box {
   width: 80vw;
   max-width: 1055px;
-  height: 75vh;
-  max-height: 523px;
   display: block;
   position: relative;
 }

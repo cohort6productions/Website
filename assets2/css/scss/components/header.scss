@@ -1,8 +1,6 @@
 header {
     height: 100vh;
-    width: 100vw;
-    margin: 0;
-    // background: linear-gradient(0deg, rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.7)), url("../image/Hero\ section/hero-bg.jpg");
+    width: 100vw; // margin: 0;
     background-image: url("../image/Hero\ section/macantosh.jpg");
     background-position: center;
     background-size: cover;
@@ -12,43 +10,53 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.25rem;
-    padding: 0 15%;
-    text-align: center;
-    color: $white;
-    div {
-    	color: #F9F9F9;
-    }
-    .punchline {
-		@include bold;
-		font-family: $headers-and-stress;
-		font-size: 4.8rem;
-		text-transform: uppercase;
-		color: $black;
+    .heading-span1 {
+        .punchline {
+            @include bold;
+            font-family: $headers-and-stress;
+            text-transform: uppercase;
+            color: $black;
+            @include for-size(phone-only) {
+                font-size: 3rem;
+            }
+            @include for-size(tablet-portrait-up ) {
+                font-size: 4rem;
+            }
+            @include for-size(tablet-landscape-up) {
+                font-size: 4.5rem;
+            }
+            @include for-size(desktop-up) {
+                font-size: 4.8rem;
+            }
+            @include for-size(big-desktop-up) {
+                font-size: 6rem;
+            }
+        }
     }
     .heading-span2 {
-		font-family: $bodys-and-content;
-		font-size: 0.75rem;
-		padding: 2% 18%;
-		span {
-			font-size: 1.2  rem;
-			@include light;
-			color: $black;
-			text-align: center;
-			letter-spacing: .05rem;
-		}
+        font-family: $bodys-and-content;
+        padding: 2% 18%;
+        span {
+            @include light;
+            color: $black;
+            text-align: center;
+            letter-spacing: .05rem;
+            @include for-size(phone-only) {
+                font-size: 0.81rem;
+            }
+            @include for-size(tablet-portrait-up ) {
+                font-size: 1.084rem;
+            }
+            @include for-size(tablet-landscape-up) {
+                font-size: 1.22rem;
+            }
+            @include for-size(desktop-up) {
+                font-size: 1.3rem;
+            }
+            @include for-size(big-desktop-up) {
+                font-size: 1.6rem;
+            }
+            
+        }
     }
 }
-  
-  @media (max-width: 400px) {
-    header#header {
-	    .container {
-    	    .heading-span1 {
-        		.punchline {
-            		font-size: 3.5rem;
-        		}		
-    		}
-    	}
-    }
-}
-  
