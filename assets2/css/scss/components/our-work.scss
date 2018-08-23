@@ -17,6 +17,7 @@ section#our-work {
 				text-align: center;
 				margin-bottom: 2%;
 				div {
+	
 					font-family: Open Sans;
 					font-style: normal;
 					font-size: 1rem;
@@ -32,6 +33,7 @@ section#our-work {
 					}
 				}
 			}
+	
 			.banner-box {
 				// overlay settings
 				width: 80vw;
@@ -40,16 +42,19 @@ section#our-work {
 				max-height: 523px;
 				display:block;
 				position:relative;
+	
 				.project-banner {
 					width: 100%;
 					height: 100%;
 					background-position: center;
 					background-size: cover;
 					background-repeat: no-repeat;
-				}		
+				}
+		
 				.project-banner-mobile {
 					display: none;
-				}	
+				}
+	
 				.project-desc-web {
 					// overlay settings
 					width: 100%;
@@ -59,10 +64,11 @@ section#our-work {
 					left: 0;
 					z-index: 10;
 					padding-left: 7%;
-					// flex header and desc
+	
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
+	
 					h4 {
 						font-size: 3rem;
 						font-weight: 500;
@@ -73,7 +79,7 @@ section#our-work {
 					}
 					p {
 						font-size: 1rem;
-						max-width: 25vw;
+						max-width: 40%;
 						line-height: normal;
 						font-size: 10px;
 						letter-spacing: 0.05em;
@@ -117,7 +123,8 @@ section#our-work {
 					justify-content: center;
 					text-align: center;
 					margin-bottom: 2%;
-					div {		
+					div {
+		
 						font-family: Open Sans;
 						font-style: normal;
 						font-size: 1rem;
@@ -132,7 +139,8 @@ section#our-work {
 							margin-top: 0.5rem;
 						}
 					}
-				}		
+				}
+		
 				.banner-box {
 					// overlay settings
 					width: 80vw;
@@ -140,10 +148,12 @@ section#our-work {
 					height: 75vh;
 					max-height: calc(523px + 300px);
 					display:block;
-					position:relative;		
+					position:relative;
+		
 					.project-banner {
 						display: none;
-					}			
+					}
+			
 					.project-banner-mobile {
 						display: block;
 						width: 100%;
@@ -153,6 +163,7 @@ section#our-work {
 						background-size: cover;
 						background-repeat: no-repeat;
 					}
+		
 					.project-desc-web {
 						// overlay settings
 						width: 100%;
@@ -162,12 +173,13 @@ section#our-work {
 						left: 0;
 						z-index: auto;
 						padding-left: 5%;
-						// flex header and desc
+		
 						display: flex;
 						flex-direction: row;
 						justify-content: space-between;
 						align-items: center;
 						flex-wrap: wrap;
+		
 						h4 {
 							font-size: 3rem;
 							font-family: Spectral;
@@ -200,6 +212,8 @@ section#our-work {
 							width: 60%;
 							flex-direction: row;
 							flex-wrap: wrap;
+
+
 							img {
 								width: 3vw;
 								margin-right: 1%;
@@ -254,6 +268,7 @@ section#our-work {
 						}
 					}
 				}
+		
 				.banner-box {
 					// overlay settings
 					width: 100vw;
@@ -263,9 +278,11 @@ section#our-work {
 					display:block;
 					position:relative;
 					padding: 0 2% 0 2%;
+		
 					.project-banner {
 						display: none;
-					}			
+					}
+			
 					.project-banner-mobile {
 						display: block;
 						width: 100%;
@@ -274,7 +291,8 @@ section#our-work {
 						background-position: center;
 						background-size: cover;
 						background-repeat: no-repeat;
-					}		
+					}
+		
 					.project-desc-web {
 						// overlay settings
 						width: 100%;
@@ -284,12 +302,13 @@ section#our-work {
 						left: 0;
 						z-index: auto;
 						padding-left: 5%;
-						// flex header and desc
+		
 						display: flex;
 						flex-direction: row;
 						justify-content: space-between;
 						align-items: center;
 						flex-wrap: wrap;
+		
 						h4 {
 							font-size: 1.5rem;
 							font-family: Spectral;
@@ -323,6 +342,7 @@ section#our-work {
 							flex-direction: row;
 							flex-wrap: wrap;
 							margin-top: 10%;
+
 							img {
 								width: 4vw;
 								margin-right: 1%;
@@ -341,34 +361,5 @@ section#our-work {
 				}
 			}
 		}
-	}
-}
-
-// banner import / style
-
-.dealing-room-banner-web {
-	background-image: url("../image/Our\ work/Dealing\ Room/web.jpg");
-}
-.coin-market-news-banner-web {
-	background-image: url("../image/Our\ work/Coin\ Market\ News/web.jpg");
-}
-
-.dealing-room-banner-mobile {
-	background-image: url("../image/Our\ work/Dealing\ Room/mobile.jpg");
-	@media (max-width: 1023px) and (min-width: 480px) {
-		background-image: url("../image/Our\ work/Dealing\ Room/mobile-lg.jpg");
-	}
-}
-.coin-market-news-banner-mobile {
-	background-image: url("../image/Our\ work/Coin\ Market\ News/mobile.jpg");
-	@media (max-width: 1023px) and (min-width: 480px) {
-		background-image: url("../image/Our\ work/Coin\ Market\ News/mobile-lg.jpg");
-	}
-}
-
-.coin-market-news-banner-desc {
-	color: #F9F9F9;
-	@media (max-width: 1023px) {
-		color: #555555;
 	}
 }
