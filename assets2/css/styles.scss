@@ -202,6 +202,34 @@ h3 {
     background-image: url("../image/Team/Terence.JPG")
 }
 
+.dealing-room-banner-web {
+	background-image: url("../image/Our\ work/Dealing\ Room/web.jpg");
+}
+.coin-market-news-banner-web {
+	background-image: url("../image/Our\ work/Coin\ Market\ News/web.jpg");
+}
+
+.dealing-room-banner-mobile {
+	background-image: url("../image/Our\ work/Dealing\ Room/mobile.jpg");
+	@media (max-width: 1023px) and (min-width: 480px) {
+		background-image: url("../image/Our\ work/Dealing\ Room/mobile-lg.jpg");
+	}
+}
+.coin-market-news-banner-mobile {
+	background-image: url("../image/Our\ work/Coin\ Market\ News/mobile.jpg");
+	@media (max-width: 1023px) and (min-width: 480px) {
+		background-image: url("../image/Our\ work/Coin\ Market\ News/mobile-lg.jpg");
+	}
+}
+
+.coin-market-news-banner-desc {
+	color: #F9F9F9;
+	@media (max-width: 1023px) {
+		color: #555555;
+	}
+}
+
+
 @import 'scss/components/nav';
 @import 'scss/components/header';
 @import 'scss/components/whyCohort6';

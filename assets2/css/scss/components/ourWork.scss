@@ -28,7 +28,7 @@ section#our-work {
 					hr {
 						width: 6vw;
 						border-color: #0E387C;
-						border-width: 5px;
+						border-width: 3px;
 						margin-top: 0.5rem;
 					}
 				}
@@ -38,8 +38,8 @@ section#our-work {
 				// overlay settings
 				width: 80vw;
 				max-width: 1055px;
-				// height: 75vh;
-				// max-height: 523px;
+				height: 75vh;
+				max-height: 523px;
 				display:block;
 				position:relative;
 	
@@ -73,12 +73,14 @@ section#our-work {
 						font-size: 3rem;
 						font-weight: 500;
 						line-height: normal;
+						.mobile-h4-hr {
+							width: 0;
+						}
 					}
 					p {
 						font-size: 1rem;
-						max-width: 25vw;
+						max-width: 40%;
 						line-height: normal;
-						font-size: 10px;
 						letter-spacing: 0.05em;
 						margin-bottom: 0;
 					}
@@ -132,7 +134,7 @@ section#our-work {
 						hr {
 							width: 6vw;
 							border-color: #0E387C;
-							border-width: 5px;
+							border-width: 3px;
 							margin-top: 0.5rem;
 						}
 					}
@@ -155,7 +157,7 @@ section#our-work {
 						display: block;
 						width: 100%;
 						height: 100%;
-						max-height: 50vh;
+						max-height: 40vh;
 						background-position: center;
 						background-size: cover;
 						background-repeat: no-repeat;
@@ -186,6 +188,13 @@ section#our-work {
 							width: 100%;
 							margin-top: 2%;
 						}
+						.mobile-h4-hr {
+							width: 18vw;
+							border-color: #0E387C;
+							border-width: 3px;
+							margin-top: 0;
+							margin-left: 0;
+						}
 						p {
 							width: 40%;
 							max-width: 25vw;
@@ -205,6 +214,135 @@ section#our-work {
 
 
 							img {
+								width: 3vw;
+								margin-right: 1%;
+							}
+							.app-store-icon {
+								width: 8vw;
+							}
+							.play-store-icon {
+								width: 10vw;
+							}
+						}
+					}
+				}
+				.hide-banner {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	section#our-work{
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			h3 {
+				text-align: center;
+			}
+			div {
+				.our-work-btn {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					text-align: center;
+					margin-bottom: 2%;
+					div {
+						font-family: Open Sans;
+						font-style: normal;
+						font-size: 0.75rem;
+						font-weight: 300;
+						line-height: normal;
+						text-align: center;
+						padding: 0 2%;
+						hr {
+							width: 12vw;
+							border-color: #0E387C;
+							border-width: 3px;
+							margin-top: 0.5rem;
+						}
+					}
+				}
+		
+				.banner-box {
+					// overlay settings
+					width: 100vw;
+					max-width: 100vw;
+					height: 60vh;
+					max-height: calc(523px + 300px);
+					display:block;
+					position:relative;
+					padding: 0 2% 0 2%;
+		
+					.project-banner {
+						display: none;
+					}
+			
+					.project-banner-mobile {
+						display: block;
+						width: 100%;
+						height: 100%;
+						max-height: 25vh;
+						background-position: center;
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+		
+					.project-desc-web {
+						// overlay settings
+						width: 100%;
+						height: auto;
+						position: relative;
+						top: 0;
+						left: 0;
+						z-index: auto;
+						padding-left: 5%;
+		
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
+						flex-wrap: wrap;
+		
+						h4 {
+							font-size: 1.5rem;
+							font-family: Spectral;
+							font-style: normal;
+							font-weight: 500;
+							line-height: normal;
+							width: 100%;
+							margin-top: 2%;
+							.mobile-h4-hr {
+								width: 18vw;
+								border-color: #0E387C;
+								border-width: 3px;
+								margin-top: 0;
+								margin-left: 0;
+							}
+						}
+						p {
+							width: 100%;
+							max-width: 60%;
+							font-family: Open Sans;
+							font-size: 0.75rem;
+							font-style: normal;
+							font-weight: 300;
+							letter-spacing: 0.05em;
+							line-height: normal;
+							color: #172A4E;
+							margin-bottom: 0;
+						}
+						.project-links {
+							width: 100%;
+							flex-direction: row;
+							flex-wrap: wrap;
+							margin-top: 10%;
+
+							img {
 								width: 4vw;
 								margin-right: 1%;
 							}
@@ -222,27 +360,5 @@ section#our-work {
 				}
 			}
 		}
-	}
-}
-
-
-
-.dealing-room-banner-web {
-	background-image: url("../image/Our\ work/Dealing\ Room/web.jpg");
-}
-.dealing-room-banner-mobile {
-	background-image: url("../image/Our\ work/Dealing\ Room/mobile.jpg");
-}
-.coin-market-news-banner-web {
-	background-image: url("../image/Our\ work/Coin\ Market\ News/web.jpg");
-}
-.coin-market-news-banner-mobile {
-	background-image: url("../image/Our\ work/Coin\ Market\ News/mobile.jpg");
-}
-
-.coin-market-news-banner-desc {
-	color: #F9F9F9;
-	@media (max-width: 1023px) {
-		color: #555555;
 	}
 }

@@ -1,0 +1,26 @@
+section#what-we-do {
+  background-color: $grey;
+  color: $black;
+  .service-box {
+    padding: 20px;
+  }
+  img {
+    width: 40%;
+    padding: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h5 {
+    @include bold;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  p {
+    // padding: 0 10%;
+    @include light;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    text-align: center;
+  }
+}

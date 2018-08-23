@@ -129,6 +129,41 @@ h3 {
   background-image: url("../image/Team/Terence.JPG");
 }
 
+.dealing-room-banner-web {
+  background-image: url("../image/Our work/Dealing Room/web.jpg");
+}
+
+.coin-market-news-banner-web {
+  background-image: url("../image/Our work/Coin Market News/web.jpg");
+}
+
+.dealing-room-banner-mobile {
+  background-image: url("../image/Our work/Dealing Room/mobile.jpg");
+}
+@media (max-width: 1023px) and (min-width: 480px) {
+  .dealing-room-banner-mobile {
+    background-image: url("../image/Our work/Dealing Room/mobile-lg.jpg");
+  }
+}
+
+.coin-market-news-banner-mobile {
+  background-image: url("../image/Our work/Coin Market News/mobile.jpg");
+}
+@media (max-width: 1023px) and (min-width: 480px) {
+  .coin-market-news-banner-mobile {
+    background-image: url("../image/Our work/Coin Market News/mobile-lg.jpg");
+  }
+}
+
+.coin-market-news-banner-desc {
+  color: #F9F9F9;
+}
+@media (max-width: 1023px) {
+  .coin-market-news-banner-desc {
+    color: #555555;
+  }
+}
+
 nav.navbar {
   position: fixed;
   z-index: 100;
@@ -195,12 +230,14 @@ nav.transparentNav {
 #hero .heading-span2 {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   padding: 2% 18%;
+  font-size: 1rem;
 }
 #hero .heading-span2 span {
   font-weight: 300;
   color: #111111;
   text-align: center;
   letter-spacing: 0.05rem;
+  font-size: 1.2 rem;
 }
 @media (max-width: 599px) {
   #hero .heading-span2 span {
@@ -435,12 +472,14 @@ section#our-work .container div .our-work-btn div {
 section#our-work .container div .our-work-btn div hr {
   width: 6vw;
   border-color: #0E387C;
-  border-width: 5px;
+  border-width: 3px;
   margin-top: 0.5rem;
 }
 section#our-work .container div .banner-box {
   width: 80vw;
   max-width: 1055px;
+  height: 75vh;
+  max-height: 523px;
   display: block;
   position: relative;
 }
@@ -471,11 +510,13 @@ section#our-work .container div .banner-box .project-desc-web h4 {
   font-weight: 500;
   line-height: normal;
 }
+section#our-work .container div .banner-box .project-desc-web h4 .mobile-h4-hr {
+  width: 0;
+}
 section#our-work .container div .banner-box .project-desc-web p {
   font-size: 1rem;
-  max-width: 25vw;
+  max-width: 40%;
   line-height: normal;
-  font-size: 10px;
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
@@ -522,7 +563,7 @@ section#our-work .container div .hide-banner {
   section#our-work .container div .our-work-btn div hr {
     width: 6vw;
     border-color: #0E387C;
-    border-width: 5px;
+    border-width: 3px;
     margin-top: 0.5rem;
   }
   section#our-work .container div .banner-box {
@@ -540,7 +581,7 @@ section#our-work .container div .hide-banner {
     display: block;
     width: 100%;
     height: 100%;
-    max-height: 50vh;
+    max-height: 40vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -568,6 +609,13 @@ section#our-work .container div .hide-banner {
     width: 100%;
     margin-top: 2%;
   }
+  section#our-work .container div .banner-box .project-desc-web .mobile-h4-hr {
+    width: 18vw;
+    border-color: #0E387C;
+    border-width: 3px;
+    margin-top: 0;
+    margin-left: 0;
+  }
   section#our-work .container div .banner-box .project-desc-web p {
     width: 40%;
     max-width: 25vw;
@@ -586,6 +634,121 @@ section#our-work .container div .hide-banner {
     flex-wrap: wrap;
   }
   section#our-work .container div .banner-box .project-desc-web .project-links img {
+    width: 3vw;
+    margin-right: 1%;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links .app-store-icon {
+    width: 8vw;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links .play-store-icon {
+    width: 10vw;
+  }
+  section#our-work .container div .hide-banner {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  section#our-work .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#our-work .container h3 {
+    text-align: center;
+  }
+  section#our-work .container div .our-work-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  section#our-work .container div .our-work-btn div {
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding: 0 2%;
+  }
+  section#our-work .container div .our-work-btn div hr {
+    width: 12vw;
+    border-color: #0E387C;
+    border-width: 3px;
+    margin-top: 0.5rem;
+  }
+  section#our-work .container div .banner-box {
+    width: 100vw;
+    max-width: 100vw;
+    height: 60vh;
+    max-height: calc(523px + 300px);
+    display: block;
+    position: relative;
+    padding: 0 2% 0 2%;
+  }
+  section#our-work .container div .banner-box .project-banner {
+    display: none;
+  }
+  section#our-work .container div .banner-box .project-banner-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section#our-work .container div .banner-box .project-desc-web {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: auto;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section#our-work .container div .banner-box .project-desc-web h4 {
+    font-size: 1.5rem;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    margin-top: 2%;
+  }
+  section#our-work .container div .banner-box .project-desc-web h4 .mobile-h4-hr {
+    width: 18vw;
+    border-color: #0E387C;
+    border-width: 3px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  section#our-work .container div .banner-box .project-desc-web p {
+    width: 100%;
+    max-width: 60%;
+    font-family: Open Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: normal;
+    color: #172A4E;
+    margin-bottom: 0;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links img {
     width: 4vw;
     margin-right: 1%;
   }
@@ -599,31 +762,6 @@ section#our-work .container div .hide-banner {
     display: none;
   }
 }
-.dealing-room-banner-web {
-  background-image: url("../image/Our work/Dealing Room/web.jpg");
-}
-
-.dealing-room-banner-mobile {
-  background-image: url("../image/Our work/Dealing Room/mobile.jpg");
-}
-
-.coin-market-news-banner-web {
-  background-image: url("../image/Our work/Coin Market News/web.jpg");
-}
-
-.coin-market-news-banner-mobile {
-  background-image: url("../image/Our work/Coin Market News/mobile.jpg");
-}
-
-.coin-market-news-banner-desc {
-  color: #F9F9F9;
-}
-@media (max-width: 1023px) {
-  .coin-market-news-banner-desc {
-    color: #555555;
-  }
-}
-
 section#our-team {
   background-color: #f9f9f9;
   color: #111111;
@@ -792,6 +930,10 @@ section#contact {
   justify-content: center;
   padding: 0 20% 0 -20%;
 }
+section#contact p,
+section#contact a {
+  font-size: 1rem;
+}
 section#contact .container .contact-header {
   font-weight: 700;
   text-align: left;
@@ -806,7 +948,6 @@ section#contact .container .contain-content .contact-main {
   padding-right: 6%;
 }
 section#contact .container .contain-content .contact-main .contact-text {
-  font-size: 0.8rem;
   letter-spacing: 0.05rem;
 }
 section#contact .container .contain-content .contact-main h5,
@@ -822,7 +963,7 @@ section#contact .container .contain-content div {
   line-height: normal;
 }
 section#contact .container .contain-content div .contact-social h5 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 section#contact .container .contain-content div .contact-social div {
@@ -941,7 +1082,7 @@ section#contact .contact-mobile-bottom {
     font-size: 0.9rem;
   }
 }
-section#team-member-modal.modal-show {
+section#team-member-modal {
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -953,18 +1094,18 @@ section#team-member-modal.modal-show {
   overflow: hidden;
   outline: 0;
 }
-section#team-member-modal.modal-show .modal-content {
+section#team-member-modal .modal-content {
   border-radius: 15px;
 }
-section#team-member-modal.modal-show .modal-body {
+section#team-member-modal .modal-body {
   display: flex;
   flex-direction: column;
 }
-section#team-member-modal.modal-show .team-member-icon {
+section#team-member-modal .team-member-icon {
   align-self: center;
   margin-bottom: 20px;
 }
-section#team-member-modal.modal-show .link-holders i {
+section#team-member-modal .link-holders i {
   width: 25px;
   text-align: left;
   padding: 0;
