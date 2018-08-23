@@ -36,11 +36,13 @@ header {
     .heading-span2 {
         font-family: $bodys-and-content;
         padding: 2% 18%;
+        font-size: 1rem;
         span {
             @include light;
             color: $black;
             text-align: center;
             letter-spacing: .05rem;
+            font-size: 1.2 rem;
             @include for-size(phone-only) {
                 font-size: 0.81rem;
             }

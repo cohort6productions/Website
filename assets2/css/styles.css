@@ -931,7 +931,7 @@ section#contact .contact-mobile-bottom {
     font-size: 0.9rem;
   }
 }
-section#team-member-modal.modal-show {
+section#team-member-modal {
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -943,18 +943,18 @@ section#team-member-modal.modal-show {
   overflow: hidden;
   outline: 0;
 }
-section#team-member-modal.modal-show .modal-content {
+section#team-member-modal .modal-content {
   border-radius: 15px;
 }
-section#team-member-modal.modal-show .modal-body {
+section#team-member-modal .modal-body {
   display: flex;
   flex-direction: column;
 }
-section#team-member-modal.modal-show .team-member-icon {
+section#team-member-modal .team-member-icon {
   align-self: center;
   margin-bottom: 20px;
 }
-section#team-member-modal.modal-show .link-holders i {
+section#team-member-modal .link-holders i {
   width: 25px;
   text-align: left;
   padding: 0;

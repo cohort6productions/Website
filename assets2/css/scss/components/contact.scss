@@ -11,7 +11,10 @@ section#contact {
     align-items: center;
     justify-content: center;
     padding: 0 20% 0 -20%;
-    
+	p,
+	a {
+		font-size: 1rem;
+	}
     .container {
 		.contact-header {
 			@include bold;
@@ -26,7 +29,6 @@ section#contact {
 			.contact-main {
 				padding-right: 6%;
 				.contact-text {
-					font-size: .8rem;
 					letter-spacing: .05rem;
 				}
 			}
@@ -42,7 +44,7 @@ section#contact {
 				font-weight: 300;
 				line-height: normal;
 				.contact-social h5 {
-					font-size: 1rem;
+					font-size: 1.6rem;
 					font-weight: 700;
 				}
 				.contact-social div {

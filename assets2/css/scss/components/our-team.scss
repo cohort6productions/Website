@@ -12,7 +12,7 @@ section#our-team {
 		/* max-width: 900px; */
 		// padding: 0 0 0 13%;
 		margin: 0 auto;
-		padding-top: 5%;
+    padding: 0;
     }
     li.team-member {
 		width: 100%;
@@ -25,8 +25,9 @@ section#our-team {
 		justify-content: start;
 		.member-container {
 			width: 100%;
-			display: grid;
-			grid-template-columns: 30% 70%;
+			// don't use grid yet because ie doesnt support it. Even though ie sucks we still need to support it
+			display: flex;
+			padding: 0 0 0 5px;
 		}
     }
     .team-members a,
