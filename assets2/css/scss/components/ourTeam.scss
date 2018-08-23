@@ -1,0 +1,171 @@
+section#our-team {
+    background-color: $grey;
+    color: $black;
+    padding-top: 5%;
+    .container {
+        width: 100%;
+        // sections-header
+
+        // Team member grid
+        .team-members {
+            width: 100%;
+            display: grid;
+            
+            @include for-size(phone-only) {
+                grid-template-columns: 100%;
+                grid-row-gap: 2vh;
+            }
+            @include for-size(tablet-portrait-up) {
+                grid-template-columns: repeat(2, 50%);
+                grid-row-gap: 2vh;
+            }
+            @include for-size(tablet-landscape-up) {
+                grid-template-columns: repeat(3, 33.33%);
+                grid-row-gap: 2.5vh;
+            }
+            @include for-size(desktop-up) {
+                grid-template-columns: repeat(3, 33.33%);
+                grid-row-gap: 3.5vh;
+            }
+            @include for-size(big-desktop-up) {
+                grid-template-columns: repeat(3, 33.33%);
+                grid-row-gap: 5vh;
+            }
+            .member-container {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 30% 70%; // Each team member's image
+                .team-member-a {
+                    width:100%;
+                    .team-member-img{
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                    .team-member-icon {
+                        display: none;
+                        .team-member-overlay {
+                            p {}
+                        }
+                    }
+                } // Each team member's description
+                .team-member-des {
+                    width: 100%;
+                    display: grid;
+                    // align-items: center;
+                    padding:5% 0 5% 15%;
+                    grid-template-rows: 50% 50%;
+                    
+
+                    .team-member-name {
+                        @include bold;
+                        align-self: flex-end;
+                        @include for-size(phone-only) {
+                            font-size: 1.6rem;
+                        }
+                        @include for-size(tablet-portrait-up) {
+                            font-size: 1.4rem;
+                        }
+                        @include for-size(tablet-landscape-up) {
+                            font-size: 1.5rem;
+                        }
+                        @include for-size(desktop-up) {
+                            font-size: 1.5rem;
+                        }
+                        @include for-size(big-desktop-up) {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .social-links {
+                        @include for-size(phone-only) {
+                            width: 80%;
+                        }
+                        @include for-size(tablet-portrait-up) {
+                            width: 70%;
+                        }
+                        @include for-size(tablet-landscape-up) {
+                            width: 70%;
+                        }
+                        @include for-size(desktop-up) {
+                            width: 70%;
+                        }
+                        @include for-size(big-desktop-up) {
+                            width: 70%;
+                        }
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        .social-links-icon {
+                            img.team-social-icons {
+                                @include for-size(phone-only) {
+                                    width: 60%;
+                                }
+                                @include for-size(tablet-portrait-up) {
+                                    width: 70%;
+                                }
+                                @include for-size(tablet-landscape-up) {
+                                    width: 65%;
+                                }
+                                @include for-size(desktop-up) {
+                                    width: 55%;
+                                }
+                                @include for-size(big-desktop-up) {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .team-member-overlay {
+    //     width: 80px;
+    //     height: 80px;
+    //     border-radius: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     background-color: $secondary-color;
+    //     opacity: 0;
+    //     color: black;
+    //     transition: opacity 0.6s;
+    //     cursor: pointer;
+    // }
+    // .team-members .team-member-a:hover .team-member-overlay {
+    //     opacity: 0.76;
+    // }
+    // .team-member-overlay p {
+    //     margin: 0;
+    // }
+    // // li.team-member .team-member-name {
+    // //     font-size: 20px;
+    // // }
+} 
+// .team-members a,
+// .team-members a:visited,
+// .team-members a:active {
+//     justify-self: center;
+//     text-decoration: none;
+//     outline: none;
+// } 
+
+// .team-members a,
+// .team-members a:visited,
+// .team-members a:active {
+// 	justify-self: center;
+// 	text-decoration: none;
+// 	outline: none;
+// }
+
+
+
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: center;
+/* max-width: 900px; */
+
+// padding: 0 0 0 13%;
+// margin: 0 auto;
+// padding-top: 5%;

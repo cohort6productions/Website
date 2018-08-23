@@ -1,16 +1,58 @@
 const members = {
-    andrewc: ["Andrew Cheung", "https://www.linkedin.com/in/dzinyungandrewcheung/", "https://www.andrew-cheung.com/"],
-    andrewl: ["Andrew Law", "https://www.linkedin.com/in/andrewlaw1/", "https://www.andrew-law.com"],
-    brad: ["Brad Wong", "https://www.linkedin.com/in/brad-wong-1070b4165/", "https://bwsl.me"],
-    harrison: ["Harrison Chan", "https://www.linkedin.com/in/harrixon-chan/", "https://harrixon.stream"],
-    ivan: ["Ivan Oung", "https://hk.linkedin.com/in/ivanoung", "https://www.ivanoung.io"],
-    jacob: ["Jacob Chan", "https://www.linkedin.com/in/pak-hei-chan-82bba4157/", "https://jacobcph.com"],
-    judith: ["Judith Curtit", "https://www.linkedin.com/in/judith-curtit-182b0357/", ""],
-    lucas: ["Lucas Ng", "https://www.linkedin.com/in/lucas-ng-008252164/", "https://lucas-ng.com"],
-    mangal: ["Mangal Limbu", "https://www.linkedin.com/in/mangal-limbu-05a951111", "https://lazehang.com"],
-    parker: ["Parker Chan", "https://www.linkedin.com/in/parker-chan-4b0678166/", "http://www.programmerparker.surge.sh"],
-    stephen: ["Stephen Chiang", "https://www.linkedin.com/in/stephen-chiang-31103582/", "https://skhchiang.com"],
-    terence: ["Terence So", "https://www.linkedin.com/in/terence-so-453b73165/", "http://www.terenceso.surge.sh"]
+    andrewc: ["Andrew C.", 
+    "https://www.linkedin.com/in/dzinyungandrewcheung/", "https://www.andrew-cheung.com/",
+        "./assets2/image/Team/AndrewCheung.JPG"
+    ],
+    andrewl: ["Andrew L.",
+        "https://www.linkedin.com/in/andrewlaw1/",
+        "https://www.andrew-law.com",
+        "./assets2/image/Team/AndrewLaw.JPG"
+    ],
+    brad: ["Brad",
+        "https://www.linkedin.com/in/brad-wong-1070b4165/",
+        "https://bwsl.me",
+        "./assets2/image/Team/Brad.JPG"
+    ],
+    harrison: ["Harrison",
+        "https://www.linkedin.com/in/harrixon-chan/",
+        "https://harrixon.stream",
+        "./assets2/image/Team/Harrison.JPG"
+    ],
+    ivan: ["Ivan",
+        "https://hk.linkedin.com/in/ivanoung",
+        "https://www.ivanoung.io",
+        "./assets2/image/Team/Ivan.JPG"
+    ],
+    jacob: ["Jacob",
+        "https://www.linkedin.com/in/pak-hei-chan-82bba4157/",
+        "https://jacobcph.com",
+        "./assets2/image/Team/Jacob.JPG"
+    ],
+    judith: ["Judith", 
+        "https://www.linkedin.com/in/judith-curtit-182b0357/",
+        "",
+        "./assets2/image/Team/Judith.JPG"
+    ],
+    lucas: ["Lucas",
+        "https://www.linkedin.com/in/lucas-ng-008252164/",
+        "https://lucas-ng.com",
+        "./assets2/image/Team/Lucas.JPG"
+    ],
+    mangal: ["Mangal", "https://www.linkedin.com/in/mangal-limbu-05a951111",
+        "https://lazehang.com",
+        "./assets2/image/Team/Mangal.JPG"
+    ],
+    parker: ["Parker",
+        "https://www.linkedin.com/in/parker-chan-4b0678166/", "http://www.programmerparker.surge.sh",
+        "./assets2/image/Team/Parker.jpeg"
+    ],
+    stephen: ["Stephen", "https://www.linkedin.com/in/stephen-chiang-31103582/", "https://skhchiang.com",
+        "./assets2/image/Team/Stephen.JPG"
+    ],
+    terence: ["Terence",
+        "https://www.linkedin.com/in/terence-so-453b73165/", "http://www.terenceso.surge.sh",
+        "./assets2/image/Team/Terence.JPG"
+    ]
 }
 
 class ModalFunctions {
@@ -76,17 +118,16 @@ var modalFunctions = new ModalFunctions();
 $(document).ready(() => {
 
     // nav bar animation
-    $("body").mousemove(function(e){
+    $("body").mousemove(function (e) {
         if (e.clientY <= 50) {
             $(".navbar").slideDown();
-        }
-        else {
+        } else {
             $(".navbar").slideUp();
         }
     })
 
     // our-work section
-    $(".single-project-btn").on("click", function(){
+    $(".single-project-btn").on("click", function () {
         // move hr tag
         $(".showing-project").remove();
         $(this).append(`<hr class="showing-project" />`);
@@ -99,26 +140,25 @@ $(document).ready(() => {
     // generate team-members section
     Object.keys(members).forEach(member => {
         $(".team-members").append(
-        `
-            <li class="team-member col-lg-4 col-md-12">
-                <div class="member-container">
-                    <a class="team-member-a" data-name=${member} data-toggle="modal" data-target="#team-member-modal">
-                        <div class="team-member-icon icon-${member}">
-                            <div class="team-member-overlay">
-                                <p>See more</p>
-                            </div>
+            `
+            <div class="member-container">
+                <div class="team-member-a" data-name=${member} data-toggle="modal" data-target="#team-member-modal">
+                    <img class="team-member-img"src="${members[member][3]}"/>
+                    <div class="team-member-icon">
+                        <div class="team-member-overlay">
+                            <p>See more</p>
                         </div>
-                    </a>
-                    <div class="team-member-des">
-                        <span class="team-member-name" data-name="${member}">${members[member][0]}</span>
-                        <div class="social-links">
-                            <a class="website" href=${members[member][2]}></a>
-                            <a class="github" href="http://www.google.com"></a>
-                            <a class="linkedin" href=${members[member][1]}></a>
-                        </div>
-                    </div>                    
+                    </div>
                 </div>
-            </li>
+                <div class="team-member-des">
+                    <span class="team-member-name" data-name="${member}">${members[member][0]}</span>
+                    <div class="social-links">
+                        <a class="social-links-icon website" href=${members[member][2]}></a>
+                        <a class="social-links-icon github" href="http://www.google.com"></a>
+                        <a class="social-links-icon linkedin" href=${members[member][1]}></a>
+                    </div>
+                </div>
+            </div>
         `
         );
     });

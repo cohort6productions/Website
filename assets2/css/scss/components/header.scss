@@ -1,6 +1,6 @@
-header {
+#hero {
     height: 100vh;
-    width: 100vw; // margin: 0;
+    width: 100vw;
     background-image: url("../image/Hero\ section/macantosh.jpg");
     background-position: center;
     background-size: cover;
@@ -19,7 +19,7 @@ header {
             @include for-size(phone-only) {
                 font-size: 3rem;
             }
-            @include for-size(tablet-portrait-up ) {
+            @include for-size(tablet-portrait-up) {
                 font-size: 4rem;
             }
             @include for-size(tablet-landscape-up) {
@@ -44,7 +44,7 @@ header {
             @include for-size(phone-only) {
                 font-size: 0.81rem;
             }
-            @include for-size(tablet-portrait-up ) {
+            @include for-size(tablet-portrait-up) {
                 font-size: 1.084rem;
             }
             @include for-size(tablet-landscape-up) {
@@ -56,7 +56,6 @@ header {
             @include for-size(big-desktop-up) {
                 font-size: 1.6rem;
             }
-            
         }
     }
 }
