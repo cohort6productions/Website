@@ -91,8 +91,8 @@ $(document).ready(() => {
         $(".showing-project").remove();
         $(this).append(`<hr class="showing-project" />`);
         // change banner
-        var project = "." + $(this).data("name") + "-banner-web";
-        $(".project-banner").addClass("hide-banner");
+        var project = "#" + $(this).data("name") + "-banner";
+        $(".banner-box").addClass("hide-banner");
         $(project).removeClass("hide-banner");
     })
 

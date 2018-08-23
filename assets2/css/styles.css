@@ -297,14 +297,14 @@ section#our-work .container {
 section#our-work .container h3 {
   text-align: center;
 }
-section#our-work .container .our-work-btn {
+section#our-work .container div .our-work-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   margin-bottom: 2%;
 }
-section#our-work .container .our-work-btn div {
+section#our-work .container div .our-work-btn div {
   font-family: Open Sans;
   font-style: normal;
   font-size: 1rem;
@@ -313,28 +313,31 @@ section#our-work .container .our-work-btn div {
   text-align: center;
   padding: 0 2%;
 }
-section#our-work .container .our-work-btn div hr {
+section#our-work .container div .our-work-btn div hr {
   width: 6vw;
   border-color: #0E387C;
   border-width: 5px;
   margin-top: 0.5rem;
 }
-section#our-work .container .banner-box {
+section#our-work .container div .banner-box {
   width: 80vw;
+  max-width: 1055px;
   height: 75vh;
+  max-height: 523px;
   display: block;
   position: relative;
-  border: 0;
 }
-section#our-work .container .banner-box .project-banner {
+section#our-work .container div .banner-box .project-banner {
   width: 100%;
   height: 100%;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 0;
 }
-section#our-work .container .banner-box .project-desc-web {
+section#our-work .container div .banner-box .project-banner-mobile {
+  display: none;
+}
+section#our-work .container div .banner-box .project-desc-web {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -345,14 +348,13 @@ section#our-work .container .banner-box .project-desc-web {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 0;
 }
-section#our-work .container .banner-box .project-desc-web h4 {
+section#our-work .container div .banner-box .project-desc-web h4 {
   font-size: 3rem;
   font-weight: 500;
   line-height: normal;
 }
-section#our-work .container .banner-box .project-desc-web p {
+section#our-work .container div .banner-box .project-desc-web p {
   font-size: 1rem;
   max-width: 25vw;
   line-height: normal;
@@ -360,14 +362,126 @@ section#our-work .container .banner-box .project-desc-web p {
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
-section#our-work .container .banner-box .project-desc-web .project-links img {
+section#our-work .container div .banner-box .project-desc-web .project-links img {
   width: 1.5vw;
   margin-right: 1%;
 }
-section#our-work .container .banner-box .hide-banner {
+section#our-work .container div .banner-box .project-desc-web .project-links .app-store-icon {
+  width: 0;
+}
+section#our-work .container div .banner-box .project-desc-web .project-links .play-store-icon {
+  width: 0;
+}
+section#our-work .container div .hide-banner {
   display: none;
 }
 
+@media (max-width: 1023px) {
+  section#our-work .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#our-work .container h3 {
+    text-align: center;
+  }
+  section#our-work .container div .our-work-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  section#our-work .container div .our-work-btn div {
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding: 0 2%;
+  }
+  section#our-work .container div .our-work-btn div hr {
+    width: 6vw;
+    border-color: #0E387C;
+    border-width: 5px;
+    margin-top: 0.5rem;
+  }
+  section#our-work .container div .banner-box {
+    width: 80vw;
+    max-width: 1055px;
+    height: 75vh;
+    max-height: calc(523px + 300px);
+    display: block;
+    position: relative;
+  }
+  section#our-work .container div .banner-box .project-banner {
+    display: none;
+  }
+  section#our-work .container div .banner-box .project-banner-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section#our-work .container div .banner-box .project-desc-web {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: auto;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section#our-work .container div .banner-box .project-desc-web h4 {
+    font-size: 3rem;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    margin-top: 2%;
+  }
+  section#our-work .container div .banner-box .project-desc-web p {
+    width: 40%;
+    max-width: 25vw;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: normal;
+    color: #172A4E;
+    margin-bottom: 0;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links {
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links img {
+    width: 4vw;
+    margin-right: 1%;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links .app-store-icon {
+    width: 12vw;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links .play-store-icon {
+    width: 14vw;
+  }
+  section#our-work .container div .hide-banner {
+    display: none;
+  }
+}
 .dealing-room-banner-web {
   background-image: url("../image/Our work/Dealing Room/web.jpg");
 }
@@ -386,6 +500,11 @@ section#our-work .container .banner-box .hide-banner {
 
 .coin-market-news-banner-desc {
   color: #F9F9F9;
+}
+@media (max-width: 1023px) {
+  .coin-market-news-banner-desc {
+    color: #555555;
+  }
 }
 
 section#our-team {
