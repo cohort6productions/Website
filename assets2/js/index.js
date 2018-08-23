@@ -47,20 +47,20 @@ class ModalFunctions {
         var LinkedIn = '<a class="linkedin-link" href="' + members[name][1] + '"><i class="fab fa-linkedin-in"></i>LinkedIn</a>'
         var personalWebsite = '<a class="website-link" href="' + members[name][2] + '"><i class="fas fa-globe-asia"></i>Personal Website</a>'
 
+        $(".modal-header #team-member-name").html(members[name][0]);
+        $(".modal-body .team-member-icon").attr("class", "team-member-icon icon-" + name);
+        $(".modal-body .team-member-icon").addClass("team-member-icon-large");
+        $(".modal-body #linkedIn-holder").html(LinkedIn);
+        $(".modal-body #website-holder").html(personalWebsite);
         setTimeout(function () {
 
             $("main").addClass("modal-show");
             $("#team-member-modal").addClass("modal-show");
 
-            $(".modal-header #team-member-name").html(members[name][0]);
-            $(".modal-body .team-member-icon").attr("class", "team-member-icon icon-" + name);
-            $(".modal-body .team-member-icon").addClass("team-member-icon-large");
-            $(".modal-body #linkedIn-holder").html(LinkedIn);
-            $(".modal-body #website-holder").html(personalWebsite);
             setTimeout(function () {
                 $(".modal-dialog").addClass("modal-show");
             }, 200);
-        }, 200);
+        }, 400);
     }
     closeModal() {
         $(".modal-dialog").removeClass("modal-show");
