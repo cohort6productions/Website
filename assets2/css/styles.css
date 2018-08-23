@@ -230,12 +230,14 @@ header .heading-span1 .punchline {
 header .heading-span2 {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   padding: 2% 18%;
+  font-size: 1rem;
 }
 header .heading-span2 span {
   font-weight: 300;
   color: #111111;
   text-align: center;
   letter-spacing: 0.05rem;
+  font-size: 1.2 rem;
 }
 @media (max-width: 599px) {
   header .heading-span2 span {
@@ -284,12 +286,12 @@ section#what-we-do img {
 }
 section#what-we-do h5 {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 section#what-we-do p {
   font-weight: 300;
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.05rem;
   text-align: center;
 }
@@ -437,7 +439,6 @@ section#our-work .container div .banner-box .project-desc-web p {
   font-size: 1rem;
   max-width: 40%;
   line-height: normal;
-  font-size: 10px;
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
@@ -697,7 +698,7 @@ section#our-team ul.team-members {
   justify-content: center;
   /* max-width: 900px; */
   margin: 0 auto;
-  padding-top: 5%;
+  padding: 0;
 }
 section#our-team li.team-member {
   width: 100%;
@@ -711,8 +712,8 @@ section#our-team li.team-member {
 }
 section#our-team li.team-member .member-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 30% 70%;
+  display: flex;
+  padding: 0 0 0 5px;
 }
 section#our-team .team-members a,
 section#our-team .team-members a:visited,
@@ -782,6 +783,10 @@ section#contact {
   justify-content: center;
   padding: 0 20% 0 -20%;
 }
+section#contact p,
+section#contact a {
+  font-size: 1rem;
+}
 section#contact .container .contact-header {
   font-weight: 700;
   text-align: left;
@@ -796,7 +801,6 @@ section#contact .container .contain-content .contact-main {
   padding-right: 6%;
 }
 section#contact .container .contain-content .contact-main .contact-text {
-  font-size: 0.8rem;
   letter-spacing: 0.05rem;
 }
 section#contact .container .contain-content .contact-main h5,
@@ -812,7 +816,7 @@ section#contact .container .contain-content div {
   line-height: normal;
 }
 section#contact .container .contain-content div .contact-social h5 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 section#contact .container .contain-content div .contact-social div {
