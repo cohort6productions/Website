@@ -14,7 +14,6 @@ $white: #ffffff;
 $grey: #f9f9f9;
 $black: #111111;
 
-//sdsds
 //templates
 @mixin light {
     font-weight: 300;
@@ -79,6 +78,18 @@ h3 {
     font-size: 2.5rem;
 }
 
+// Added style for overall common elements
+.sections-header {
+    @include bold;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+.content-sections {
+    padding: 13vh 10vw;
+}
+//End of added style for overall common elements
+
 .team-member-icon {
     width: 80px;
     height: 80px;
@@ -141,6 +152,14 @@ h3 {
     background-image: url("../image/Team/Terence.JPG")
 }
 
-@import 'scss/nav';
-@import 'scss/sections';
-@import 'scss/modal';
+
+@import 'scss/components/nav';
+@import 'scss/components/header';
+@import 'scss/components/why-cohort-6';
+@import 'scss/components/what-we-do';
+@import 'scss/components/why-clients-love-us';
+@import 'scss/components/our-work';
+@import 'scss/components/our-team';
+@import 'scss/components/testimonials';
+@import 'scss/components/contact';
+@import 'scss/components/modal';

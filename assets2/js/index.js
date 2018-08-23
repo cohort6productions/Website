@@ -73,7 +73,30 @@ class ModalFunctions {
 
 var modalFunctions = new ModalFunctions();
 
-$(document).ready(() => {    
+$(document).ready(() => {
+
+    // nav bar animation
+    $("body").mousemove(function(e){
+        if (e.clientY <= 50) {
+            $(".navbar").slideDown();
+        }
+        else {
+            $(".navbar").slideUp();
+        }
+    })
+
+    // our-work section
+    $(".single-project-btn").on("click", function(){
+        // move hr tag
+        $(".showing-project").remove();
+        $(this).append(`<hr class="showing-project" />`);
+        // change banner
+        var project = "#" + $(this).data("name") + "-banner";
+        $(".banner-box").addClass("hide-banner");
+        $(project).removeClass("hide-banner");
+    })
+
+    // generate team-members section
     Object.keys(members).forEach(member => {
         $(".team-members").append(
         `
