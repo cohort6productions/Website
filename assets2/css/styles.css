@@ -36,11 +36,18 @@ footer {
   padding-top: 5%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Spectral", Times, "Times New Roman", Serif;
 }
 
-p, span, body {
+p,
+span,
+body {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 300;
 }
@@ -48,6 +55,16 @@ p, span, body {
 h3 {
   text-align: center;
   font-size: 2.5rem;
+}
+
+.sections-header {
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.content-sections {
+  padding: 13vh 10vw;
 }
 
 .team-member-icon {
@@ -134,7 +151,6 @@ nav.transparentNav {
 header {
   height: 100vh;
   width: 100vw;
-  margin: 0;
   background-image: url("../image/Hero section/macantosh.jpg");
   background-position: center;
   background-size: cover;
@@ -144,42 +160,72 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.25rem;
-  padding: 0 15%;
-  text-align: center;
-  color: #ffffff;
 }
-header div {
-  color: #F9F9F9;
-}
-header .punchline {
+header .heading-span1 .punchline {
   font-weight: 700;
   font-family: "Spectral", Times, "Times New Roman", Serif;
-  font-size: 4.8rem;
   text-transform: uppercase;
   color: #111111;
 }
+@media (max-width: 599px) {
+  header .heading-span1 .punchline {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  header .heading-span1 .punchline {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 900px) {
+  header .heading-span1 .punchline {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  header .heading-span1 .punchline {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 1800px) {
+  header .heading-span1 .punchline {
+    font-size: 6rem;
+  }
+}
 header .heading-span2 {
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
-  font-size: 1rem;
   padding: 2% 18%;
 }
 header .heading-span2 span {
-  font-size: 1.2 rem;
   font-weight: 300;
   color: #111111;
   text-align: center;
   letter-spacing: 0.05rem;
 }
-
-.sections-header {
-  font-weight: 700;
-  font-size: 2.8rem;
-  text-transform: uppercase;
+@media (max-width: 599px) {
+  header .heading-span2 span {
+    font-size: 0.81rem;
+  }
 }
-
-.content-sections {
-  padding: 13vh 10vw;
+@media (min-width: 600px) {
+  header .heading-span2 span {
+    font-size: 1.084rem;
+  }
+}
+@media (min-width: 900px) {
+  header .heading-span2 span {
+    font-size: 1.22rem;
+  }
+}
+@media (min-width: 1200px) {
+  header .heading-span2 span {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1800px) {
+  header .heading-span2 span {
+    font-size: 1.6rem;
+  }
 }
 
 section#why-cohort-6 {
@@ -203,12 +249,12 @@ section#what-we-do img {
 }
 section#what-we-do h5 {
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 section#what-we-do p {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 0.05rem;
   text-align: center;
 }
@@ -280,41 +326,224 @@ section#why-clients-love-us div.container div div.why-clients-love-us-sections u
 }
 
 section#our-work {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   color: #111111;
 }
-section#our-work .carousel {
-  width: 688px;
-  height: 341px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+section#our-work .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-section#our-work .carousel .w-100 {
-  width: 688px;
-  height: 341px;
-  object-fit: contain;
-  object-position: center;
-}
-section#our-work .service-box {
-  padding: 5% 2%;
-}
-section#our-work .service-box > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-bottom: 5%;
-}
-section#our-work .our-work-btn {
+section#our-work .container h3 {
   text-align: center;
 }
-section#our-work .project-dealing-room {
-  /* height: 80vh; */
-  background-image: url("../images/project/dealing-room.jpg");
+section#our-work .container div .our-work-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+section#our-work .container div .our-work-btn div {
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  padding: 0 2%;
+}
+section#our-work .container div .our-work-btn div hr {
+  width: 6vw;
+  border-color: #0E387C;
+  border-width: 5px;
+  margin-top: 0.5rem;
+}
+section#our-work .container div .banner-box {
+  width: 80vw;
+  max-width: 1055px;
+  display: block;
+  position: relative;
+}
+section#our-work .container div .banner-box .project-banner {
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+section#our-work .container div .banner-box .project-banner-mobile {
+  display: none;
+}
+section#our-work .container div .banner-box .project-desc-web {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#our-work .container div .banner-box .project-desc-web h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: normal;
+}
+section#our-work .container div .banner-box .project-desc-web p {
+  font-size: 1rem;
+  max-width: 25vw;
+  line-height: normal;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+section#our-work .container div .banner-box .project-desc-web .project-links img {
+  width: 1.5vw;
+  margin-right: 1%;
+}
+section#our-work .container div .banner-box .project-desc-web .project-links .app-store-icon {
+  width: 0;
+}
+section#our-work .container div .banner-box .project-desc-web .project-links .play-store-icon {
+  width: 0;
+}
+section#our-work .container div .hide-banner {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  section#our-work .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#our-work .container h3 {
+    text-align: center;
+  }
+  section#our-work .container div .our-work-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  section#our-work .container div .our-work-btn div {
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding: 0 2%;
+  }
+  section#our-work .container div .our-work-btn div hr {
+    width: 6vw;
+    border-color: #0E387C;
+    border-width: 5px;
+    margin-top: 0.5rem;
+  }
+  section#our-work .container div .banner-box {
+    width: 80vw;
+    max-width: 1055px;
+    height: 75vh;
+    max-height: calc(523px + 300px);
+    display: block;
+    position: relative;
+  }
+  section#our-work .container div .banner-box .project-banner {
+    display: none;
+  }
+  section#our-work .container div .banner-box .project-banner-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section#our-work .container div .banner-box .project-desc-web {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: auto;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section#our-work .container div .banner-box .project-desc-web h4 {
+    font-size: 3rem;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    margin-top: 2%;
+  }
+  section#our-work .container div .banner-box .project-desc-web p {
+    width: 40%;
+    max-width: 25vw;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: normal;
+    color: #172A4E;
+    margin-bottom: 0;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links {
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links img {
+    width: 4vw;
+    margin-right: 1%;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links .app-store-icon {
+    width: 12vw;
+  }
+  section#our-work .container div .banner-box .project-desc-web .project-links .play-store-icon {
+    width: 14vw;
+  }
+  section#our-work .container div .hide-banner {
+    display: none;
+  }
+}
+.dealing-room-banner-web {
+  background-image: url("../image/Our work/Dealing Room/web.jpg");
+}
+
+.dealing-room-banner-mobile {
+  background-image: url("../image/Our work/Dealing Room/mobile.jpg");
+}
+
+.coin-market-news-banner-web {
+  background-image: url("../image/Our work/Coin Market News/web.jpg");
+}
+
+.coin-market-news-banner-mobile {
+  background-image: url("../image/Our work/Coin Market News/mobile.jpg");
+}
+
+.coin-market-news-banner-desc {
+  color: #F9F9F9;
+}
+@media (max-width: 1023px) {
+  .coin-market-news-banner-desc {
+    color: #555555;
+  }
 }
 
 section#our-team {
@@ -331,9 +560,9 @@ section#our-team ul.team-members {
   justify-content: center;
   /* max-width: 900px; */
   margin: 0 auto;
-  padding: 0;
+  padding-top: 5%;
 }
-section#our-team ul.team-members li.team-member {
+section#our-team li.team-member {
   width: 100%;
   padding: 0;
   margin: 10px 0px 3% 0;
@@ -343,10 +572,10 @@ section#our-team ul.team-members li.team-member {
   align-items: center;
   justify-content: start;
 }
-section#our-team ul.team-members li.team-member .member-container {
+section#our-team li.team-member .member-container {
   width: 100%;
-  display: flex;
-  padding: 0 0 0 5px;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 section#our-team .team-members a,
 section#our-team .team-members a:visited,
@@ -416,11 +645,7 @@ section#contact {
   justify-content: center;
   padding: 0 20% 0 -20%;
 }
-section#contact p,
-section#contact a {
-  font-size: 1rem;
-}
-section#contact .container h3.contact-header {
+section#contact .container .contact-header {
   font-weight: 700;
   text-align: left;
   padding-left: 0;
@@ -428,13 +653,13 @@ section#contact .container h3.contact-header {
 }
 section#contact .container .contain-content {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
 }
 section#contact .container .contain-content .contact-main {
   padding-right: 6%;
 }
 section#contact .container .contain-content .contact-main .contact-text {
+  font-size: 0.8rem;
   letter-spacing: 0.05rem;
 }
 section#contact .container .contain-content .contact-main h5,
@@ -450,7 +675,7 @@ section#contact .container .contain-content div {
   line-height: normal;
 }
 section#contact .container .contain-content div .contact-social h5 {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 section#contact .container .contain-content div .contact-social div {
@@ -461,37 +686,111 @@ section#contact .container .contain-content div .contact-icons {
   width: 30px;
   padding-right: 10px;
 }
-section#contact .container .contain-content div:not(.contact-main) {
+section#contact .container .contain-content .contact-main-2 {
   display: flex;
   flex-direction: column;
 }
-section#contact .container .contain-content div:not(.contact-main) div {
+section#contact .container .contain-content .contact-main-2 div {
   padding-top: 0;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
-  section#contact .contain-content > div:not(.contact-main) {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  section#contact .contain-content > div:not(.contact-main) div {
-    padding-right: 13%;
-  }
+section#contact .contact-mobile-bottom {
+  display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .contain-content {
     flex-direction: row;
   }
   .contain-content .contact-main {
     width: 45%;
   }
-  .contain-content > div:not(.contact-main) {
+  .contain-content .contact-main-2 {
     width: 50%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .contain-content .contact-main-2 div {
+    padding-right: 13%;
   }
 }
 @media (max-width: 1023px) {
-  section#contact .contact-add > p {
+  section#contact div .contain-content {
+    flex-direction: column;
+  }
+  section#contact div .contain-content .contact-main .contact-text {
+    width: 40vw;
+  }
+  section#contact div .contain-content .contact-main div .contact-add > p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  section#contact {
+    background-image: none;
+    background-color: white;
+    padding-bottom: 0;
+  }
+  section#contact .container {
+    padding-bottom: 10%;
+  }
+  section#contact .container .contact-header {
+    text-align: center;
+  }
+  section#contact .container .contain-content {
+    text-align: center;
+  }
+  section#contact .container .contain-content .contact-main {
+    padding-right: 0;
+  }
+  section#contact .container .contain-content .contact-main .contact-text {
+    width: 60vw;
+    margin: 5% auto 15% auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section#contact .container .contain-content .contact-main-2 .contact-add {
+    padding-right: 0;
+    font-size: 1.5rem;
+  }
+  section#contact .container .contain-content .contact-main-2 .contact-social {
+    display: none;
+  }
+  section#contact .contact-mobile-bottom {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../image/Contact us/contact-mobile.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#contact .contact-mobile-bottom .contact-social-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section#contact .contact-mobile-bottom .contact-social-mobile h5 {
+    font-size: 1.5rem;
+  }
+  section#contact .contact-mobile-bottom .contact-social-mobile div {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section#contact .contact-mobile-bottom .contact-social-mobile div img {
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 7px;
+  }
+}
+@media (max-width: 400px) {
+  section#contact .contain-content .contact-main-2 .contact-add > a > p {
     font-size: 0.9rem;
   }
 }
