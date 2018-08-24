@@ -81,54 +81,6 @@ h3 {
   background-size: cover;
 }
 
-.icon-andrewc {
-  background-image: url("../image/Team/AndrewCheung.JPG");
-}
-
-.icon-andrewl {
-  background-image: url("../image/Team/AndrewLaw.JPG");
-}
-
-.icon-brad {
-  background-image: url("../image/Team/Brad.JPG");
-}
-
-.icon-harrison {
-  background-image: url("../image/Team/Harrison.JPG");
-}
-
-.icon-ivan {
-  background-image: url("../image/Team/Ivan.JPG");
-}
-
-.icon-jacob {
-  background-image: url("../image/Team/Jacob.JPG");
-}
-
-.icon-judith {
-  background-image: url("../image/Team/Judith.JPG");
-}
-
-.icon-lucas {
-  background-image: url("../image/Team/Lucas.JPG");
-}
-
-.icon-mangal {
-  background-image: url("../image/Team/Mangal.JPG");
-}
-
-.icon-parker {
-  background-image: url("../images/team/parker.jpeg");
-}
-
-.icon-stephen {
-  background-image: url("../image/Team/Stephen.JPG");
-}
-
-.icon-terence {
-  background-image: url("../image/Team/Terence.JPG");
-}
-
 .dealing-room-banner-web {
   background-image: url("../image/Our work/Dealing Room/web.jpg");
 }
@@ -763,7 +715,6 @@ section#our-work .container div .hide-banner {
   }
 }
 section#our-team {
-  background-color: #f9f9f9;
   color: #111111;
   padding-top: 5%;
 }
@@ -920,7 +871,7 @@ section#contact {
   color: #111111;
   width: 100vw;
   height: 100vh;
-  background-image: url("../image/Contact us/contact.png");
+  background-image: url("../image/Contact us/contactbanner.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;

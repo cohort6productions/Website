@@ -1,17 +1,10 @@
 //Globlas import
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Spectral:300,400,700');
 //Globals go in here
+
 //Fonts
-$font-stack: Helvetica,
-sans-serif;
-$headers-and-stress: "Spectral",
-Times,
-"Times New Roman",
-Serif;
-$bodys-and-content: "Open Sans",
-Helvetica,
-Arial,
-Sans-Serif;
+$headers-and-stress: "Spectral",Times,"Times New Roman",Serif;
+$bodys-and-content: "Open Sans",Helvetica,Arial,Sans-Serif;
 //Colors
 $primary-color: #172a4e;
 $secondary-color: #ffd700;
@@ -19,6 +12,7 @@ $white: #ffffff;
 $grey: #f9f9f9;
 $black: #111111;
 //templates
+// Font weight
 @mixin light {
     font-weight: 300;
 }
@@ -37,6 +31,7 @@ $black: #111111;
 // @include for-size(tablet-landscape-up) {}
 // @include for-size(desktop-up) {}
 // @include for-size(big-desktop-up) {}
+
 @mixin for-size($size) {
     @if $size==phone-only {
         @media (max-width: 599px) {
@@ -154,53 +149,53 @@ h3 {
     background-size: cover;
 }
 
-.icon-andrewc {
-    background-image: url("../image/Team/AndrewCheung.JPG")
-}
+// .icon-andrewc {
+//     background-image: url("../image/Team/AndrewCheung.JPG")
+// }
 
-.icon-andrewl {
-    background-image: url("../image/Team/AndrewLaw.JPG")
-}
+// .icon-andrewl {
+//     background-image: url("../image/Team/AndrewLaw.JPG")
+// }
 
-.icon-brad {
-    background-image: url("../image/Team/Brad.JPG")
-}
+// .icon-brad {
+//     background-image: url("../image/Team/Brad.JPG")
+// }
 
-.icon-harrison {
-    background-image: url("../image/Team/Harrison.JPG")
-}
+// .icon-harrison {
+//     background-image: url("../image/Team/Harrison.JPG")
+// }
 
-.icon-ivan {
-    background-image: url("../image/Team/Ivan.JPG")
-}
+// .icon-ivan {
+//     background-image: url("../image/Team/Ivan.JPG")
+// }
 
-.icon-jacob {
-    background-image: url("../image/Team/Jacob.JPG")
-}
+// .icon-jacob {
+//     background-image: url("../image/Team/Jacob.JPG")
+// }
 
-.icon-judith {
-    background-image: url("../image/Team/Judith.JPG")
-}
+// .icon-judith {
+//     background-image: url("../image/Team/Judith.JPG")
+// }
 
-.icon-lucas {
-    background-image: url("../image/Team/Lucas.JPG")
-}
+// .icon-lucas {
+//     background-image: url("../image/Team/Lucas.JPG")
+// }
 
-.icon-mangal {
-    background-image: url("../image/Team/Mangal.JPG")
-}
+// .icon-mangal {
+//     background-image: url("../image/Team/Mangal.JPG")
+// }
 
-.icon-parker {
-    background-image: url("../images/team/parker.jpeg")
-}
+// .icon-parker {
+//     background-image: url("../images/team/parker.jpeg")
+// }
 
-.icon-stephen {
-    background-image: url("../image/Team/Stephen.JPG")
-}
+// .icon-stephen {
+//     background-image: url("../image/Team/Stephen.JPG")
+// }
 
-.icon-terence {
-    background-image: url("../image/Team/Terence.JPG")
-}
+// .icon-terence {
+//     background-image: url("../image/Team/Terence.JPG")
+// }
 
 .dealing-room-banner-web {
 	background-image: url("../image/Our\ work/Dealing\ Room/web.jpg");
