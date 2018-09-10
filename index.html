@@ -1,396 +1,867 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <!-- <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-ML9NTRG');
-    </script> -->
-    <!-- End Google Tag Manager -->
-    <title>Cohort 6 Productions</title>
-    <!-- Required meta tags -->
+    <!-- title -->
+    <title>Cohort 6 Productions - Javascript and Web Development Studio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets2/css/styles.css">
-    <!-- <link rel="stylesheet" href="assets2/css/custom.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="author" content="Cohort 6 Productions">
+    <!-- description -->
+    <meta name="description" content="Cohort 6 Productions is a web development studio dedicated to web technologies. We help startups and SMEs build toward their success.">
+    <!-- keywords -->
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- et line icon -->
+    <link rel="stylesheet" href="css/et-line-icons.css" />
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- themify icon -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- swiper carousel -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- justified gallery -->
+    <link rel="stylesheet" href="css/justified-gallery.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- revolution slider -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="css/bootsnav.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!--[if IE]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML9NTRG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <main>
-        <nav class="navbar navbar-expand-sm transparentNav">
-            <a class="navbar-brand" href="#">Cohort 6 Productions</a>
-            <!-- <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main"
-                aria-expanded="false" aria-label="Toggle navigation"></button>
-            <div class="collapse navbar-collapse" id="navbar-main">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Menu One</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu Two</a>
-                    </li>
-                        <a class="nav-link" href="#">Menu Three</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu Four</a>
-                    </li>
-                </ul>
-            </div> -->
-        </nav>
-        <!-- <header id="header" class="jumbotron jumbotron-fluid"> -->
-        <header id="header" class="">
-            <div class="container">
-                <div class="heading-span1">
-                    <h1 class="punchline">Your dream
-                        <br/> our code
-                    </h1>
-                </div>
-                <div class="heading-span2">
-                    <span>We are a digital studio dedicated to web technologies.
-                        <br/>We help startups, and SMEs build towards their success.
-                    </span>
-                </div>
-                <!-- <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#why-cohort-6" role="button">See more</a>
-            </p> -->
+<body class="left-nav-sidebar">
+    <header>
+        <div class="left-nav">
+            <!-- start logo -->
+            <div class="sidebar-part1">
+                <a href="index.html" title="Cohort 6 Productions" class="logo"><img src="images/logos/c6plogo-icon.png"
+                        data-rjs="images/logos/c6plogo-icon@2x.png" alt="Pofo"></a>
             </div>
-        </header>
-        <!-- 
-        <section id="why-cohort-6">
-            <div class="container">
-                <h3>Why Cohort 6 Productions</h3>
-                <br/>
-            </div>
-            <div class="container">
-                <p>We want to do one thing, and do it well. We believe that stands for every business that comes to us as well.
-                    We help them to focus on the single thing that is most important to them and help them reach the goal by
-                    supporting them with the best practice development.</p>
-            </div>
-        </section> -->
+            <!-- end logo -->
+            <div class="sidebar-part2">
+                <div class="sidebar-middle">
+                    <div class="sidebar-middle-menu alt-font font-weight-600">
+                        <nav class="navbar bootsnav alt-font">
+                            <div id="navbar-menu" class="collapse navbar-collapse no-padding">
+                                <ul class="nav navbar-nav margin-80px-bottom">
 
-        <section class="content-sections" id="what-we-do">
-            <div class="container">
-                <h3 class="sections-header">What do we do</h3>
-                <br/>
-                <div class="row">
-                    <div class="col-md-4 col-6 service-box">
-                        <img alt="Mobile Apps" src="assets2/image/What do we do/Mobile app.svg" />
-                        <h5>Mobile Apps</h5>
-                        <p>From Andriod to iOS, from online to offline, we connect businesses to their clients</p>
-                    </div>
-                    <div class="col-md-4 col-6 service-box">
-                        <img alt="Web Applications" src="assets2/image/What do we do/Web applications.svg" />
-                        <h5>Web Applications</h5>
-                        <p>Encourages customers to go to your businesses without frictions of installing extra applications</p>
-                    </div>
-                    <div class="col-md-4 col-6 service-box">
-                        <img alt="Design" src="assets2/image/What do we do/Designs.svg" />
-                        <h5>Design</h5>
-                        <p>We, not only design for what meets the eye, but also for the experience with sympathy</p>
-                    </div>
-                    <div class="col-md-4 col-6 service-box">
-                        <img alt="Products and Tools" src="assets2/image/What do we do/Products and tools.svg" />
-                        <h5>Products and Tools</h5>
-                        <p>We automate business operations to retain knowledge and reduces costly errors</p>
-                    </div>
-                    <div class="col-md-4 col-6 service-box">
-                        <img alt="Websites" src="assets2/image/What do we do/Websites.svg" />
-                        <h5>Websites</h5>
-                        <p>Delivering precise and undistracted message is the key to a good website for any businesses</p>
-                    </div>
-                    <div class="col-md-4 col-6 service-box">
-                        <img alt="Maintenance" src="assets2/image/What do we do/Deployment and maintenance.svg" />
-                        <h5>Maintenance</h5>
-                        <p>We also make sure that we take care of the heavy lifting other than the fun stuff</p>
-                    </div>
-                </div>
-        </section>
 
-        <!-- <section id="why-clients-love-us">
-            <div class="container">
-                <h3>Why Clients Love Us</h3>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" href="#portfolio" target="_self" title="Portfolio">Portfolio
+                                            <i class="fas fa-angle-right"></i></a>
+                                        <ul class="dropdown-menu second-level">
+                                            <li class="dropdown">
+                                                <a href="#portfolio" title="Dealing Room" data-toggle="dropdown">Dealing
+                                                    Room</a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#portfolio" title="Coin Market News" data-toggle="dropdown">Coin
+                                                    Market News</a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#portfolio" title="Wevent" data-toggle="dropdown">Wevent</a>
+                                            </li>
 
-                <div>
-                    <div class="why-clients-love-us-sections why-clients-love-us-left">
-                        <div class="why-love-us-pic">
-                            <img src="assets2/images/picture.png" />
-                        </div>
-                        <div>
-                            <h4>Future Proof</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. </p>
-
-                            <ul>
-                                <li>
-                                    <span>
-                                        <img src="assets2/image/Why do clients love us/checked.svg" />
-                                    </span>
-                                    <div>
-                                        <h6>One thing</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span>
-                                        <img src="assets2/image/Why do clients love us/checked.svg" />
-                                    </span>
-                                    <div>
-                                        <h6>One thing</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. </p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="why-clients-love-us-sections why-clients-love-us-right">
-                        <div class="why-love-us-pic">
-                            <img src="assets2/images/picture.png" />
-                        </div>
-                        <div>
-                            <h4>Customer Centric</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. </p>
-
-                            <ul>
-                                <li>
-                                    <span>
-                                        <img src="assets2/image/Why do clients love us/checked.svg" />
-                                    </span>
-                                    <div>
-                                        <h6>One thing</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span>
-                                        <img src="assets2/image/Why do clients love us/checked.svg" />
-                                    </span>
-                                    <div>
-                                        <h6>One thing</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="why-clients-love-us-sections why-clients-love-us-left">
-                        <div class="why-love-us-pic">
-                            <img src="assets2/images/picture.png" />
-                        </div>
-                        <div>
-                            <h4>Bespoke Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. </p>
-                            <ul>
-                                <li>
-                                    <span>
-                                        <img src="assets2/image/Why do clients love us/checked.svg" />
-                                    </span>
-                                    <div>
-                                        <h6>One thing</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span>
-                                        <img src="assets2/image/Why do clients love us/checked.svg" />
-                                    </span>
-                                    <div>
-                                        <h6>One thing</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <section id="our-work">
-            <div class="container">
-                <h3 class="sections-header">Our Work</h3>
-                <div>
-                    <!-- btn area -->
-                    <div class="our-work-btn">
-                        <div class="single-project-btn" data-name="dealing-room">Dealing Room
-                            <hr class="showing-project" />
-                        </div>
-                        <div class="single-project-btn" data-name="coin-market-news">Coin Market News</div>
-                    </div>
-
-                    <!-- banner area -->
-                    <div class="banner-box" id="dealing-room-banner">
-                        <div class="project-banner dealing-room-banner-web"></div>
-                        <div class="project-banner-mobile dealing-room-banner-mobile"></div>
-                        <div class="project-desc-web dealing-room-desc">
-                            <h4>Dealing Room<hr class="mobile-h4-hr" /></h4>
-                            <p>A scalable web-based POS that focuses on improving turnover rate of slow moving goods by combining
-                                concepts of a trading floor and restaurant-bar setting.</p>
-                            <div class="project-links">
-                                <img src="assets2/image/Our work/Icons/browser.svg" href="" alt="brower icon" />
-                                <img src="assets2/image/Our work/Icons/github.svg" href="" alt="github icon" />
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" href="javascript:void(0);" title="Blog">Tech Stacks</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" href="javascript:void(0);" title="Blog">Testimonials</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" href="javascript:void(0);" title="Blog">Reservation</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" href="javascript:void(0);" title="Blog">Talk To Us</a>
+                                    </li>
+                                    <li>
+                                        <div class="side-left-menu-close close-side"></div>
+                                    </li>
+                                </ul>
                             </div>
+                        </nav>
+                        <div class="icon-social-medium sm-display-none">
+                            <a href="https://www.linkedin.com/company/cohort-6-productions/" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i
+                                    class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://github.com/cohort6productions" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i
+                                    class="fab fa-github" aria-hidden="true"></i></a>
+                            <!-- <a href="https://dribbble.com/" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i
+                                    class="fab fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="https://plus.google.com" target="_blank" class="text-extra-dark-gray text-deep-pink-hover margin-10px-right"><i
+                                    class="fab fa-google-plus-g" aria-hidden="true"></i></a>-->
+                            <a href="https://www.facebook.com/cohort6productions/" target="_blank" class="text-extra-dark-gray text-deep-pink-hover"><i
+                                    class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         </div>
-
+                        <div class="right-bg"><img src="images/digital-text.png" alt="Pofo"></div>
                     </div>
-
-                    <!-- banner area -->
-                    <div class="banner-box hide-banner" id="coin-market-news-banner">
-                        <div class="project-banner coin-market-news-banner-web"></div>
-                        <div class="project-banner-mobile coin-market-news-banner-mobile"></div>
-                        <div class="project-desc-web coin-market-news-banner-desc">
-                            <h4>CoinMarketNews<hr class="mobile-h4-hr" /></h4>                            
-                            <p>Stay up-to-date with the latest cryptocurrency developments, news, and prices with CoinMarketNews.
-                                Available now on iOS and Android.</p>
-                            <div class="project-links container">
-                                <img src="assets2/image/Our work/Icons/browser.svg" href="" alt="brower icon" />
-                                <img src="assets2/image/Our work/Icons/github.svg" href="" alt="github icon" />
-                                <img src="assets2/image/Our work/Icons/app store.png" href="" alt="app store icon" class="app-store-icon" />
-                                <img src="assets2/image/Our work/Icons/google playstore.png" href="" alt="google playstore icon" class="play-store-icon" />
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-
-            </div>
-        </section>
-
-        <section class="content-sections" id="our-team">
-            <div class="container">
-                <h3 class="sections-header">Our Team</h3>
-                <div>
-                    <ul class="team-members">
-                        <!-- see index.js for content -->
-                    </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- <section id="testimonials">
-            <div class="container">
-                <h3>Testimonials</h3>
-                <div>
+            <div class="sidebar-part3">
+                <div class="bottom-menu-icon">
+                    <a href="javascript:void(0);" class="right-menu-button text-extra-dark-gray nav-icon" id="showRightPush">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start slider section -->
+    <section class="no-padding wow fadeIn no-transition">
+        <article class="content">
+            <div id="rev_slider_151_1_wrapper" class="rev_slider_wrapperd fullscreenbanner" data-alias="blur-effect-slider"
+                data-source="gallery" style="background-color:#2d3032;padding:0px;">
+                <!-- start revolution slider 5.4.1 fullscreen mode -->
+                <div id="rev_slider_151_1" class="rev_slider fullscreenbanner" data-version="5.4.1">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <!-- slider item -->
+                        <li data-index="rs-411" data-transition="fadethroughtransparent" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="default" data-thumb="images/blur1-100x50.jpg" data-rotate="0"
+                            data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7"
+                            data-saveperformance="off" data-title="One" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <!-- main image -->
+                            <img src="./images/herobanners/programming.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg"
+                                data-no-retina>
+                            <!-- layers -->
+                            <div CLASS="opacity-extra-medium bg-extra-dark-gray"></div>
+                            <div id="rrzt_411" class="rev_row_zone rev_row_zone_top slider-typography" style="z-index: 9;">
+                                <div class=" slider-text-middle-main">
+                                    <div class=" slider-text-middle padding-thirteen-left">
+                                        <!-- layer nr. 1 -->
+                                        <div class="tp-caption" id="slide-411-layer-14" data-x="['left','left','left','left']"
+                                            data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                            data-voffset="['100','100','100','100']" data-type="row" data-columnbreak="2"
+                                            data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);">
+                                            <!-- layer nr. 2 -->
+                                            <div class="tp-caption " id="slide-411-layer-15" data-x="['left','left','left','left']"
+                                                data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                                data-voffset="['100','100','100','100']" data-type="column"
+                                                data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                style="z-index: 10; width: 100%;">
+                                                <!-- layer nr. 3 -->
+                                                <div class="tp-caption tp-resizeme blurslider-gradient alt-font text-white font-weight-600 title-extra-large margin-30px-bottom"
+                                                    id="slide-411-layer-1" data-x="['left','left','center','center']"
+                                                    data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                                    data-voffset="['0','0','230','110']" data-fontsize="['130','130','100','55']"
+                                                    data-lineheight="['120','120','100','60']" data-type="text"
+                                                    data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":"+290","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                                    style="z-index: 11; letter-spacing: -1px;"><a href="#" class="text-white text-white-hover">Web
+                                                        <br>Into The Future</a></div>
+
+                                                <!-- layer nr. 4 -->
+                                                <div class="tp-caption tp-resizeme text-extra-large text-medium margin-50px-top font-weight-300 alt-font xs-margin-15px-top"
+                                                    id="slide-411-layer-2" data-x="['left','left','center','center']"
+                                                    data-hoffset="['0','50','0','0']" data-y="['top','top','top','top']"
+                                                    data-voffset="['0','430','460','290']" data-type="text"
+                                                    data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":"+490","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                                    style="z-index: 12;"> <a href="#" class="text-extra-medium-gray">Website
+                                                        / Landing Page</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- slider item -->
+                        <li data-index="rs-412" data-transition="fadethroughtransparent" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="default" data-thumb="images/blurbg14-100x50.jpg" data-rotate="0"
+                            data-saveperformance="off" data-title="Two" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <!-- main image -->
+                            <img src="./images/herobanners/mobileapp.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg"
+                                data-no-retina>
+                            <!-- layers -->
+                            <div class="opacity-extra-medium bg-black"></div>
+                            <div id="rrzt_412" class="rev_row_zone rev_row_zone_top slider-typography" style="z-index: 5;">
+                                <div class=" slider-text-middle-main">
+                                    <div class=" slider-text-middle padding-thirteen-left">
+                                        <!-- layer nr. 10 -->
+                                        <div class="tp-caption  " id="slide-412-layer-14" data-x="['left','left','left','left']"
+                                            data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                            data-voffset="['100','100','100','100']" data-type="row" data-columnbreak="2"
+                                            data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);">
+                                            <!-- layer nr. 11 -->
+                                            <div class="tp-caption  " id="slide-412-layer-15" data-x="['left','left','left','left']"
+                                                data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                                data-voffset="['100','100','100','100']" data-type="column"
+                                                data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                style="z-index: 6; width: 100%;">
+                                                <!-- layer nr. 12 -->
+                                                <div class="tp-caption tp-resizeme blurslider-gradient alt-font text-white font-weight-600 title-extra-large margin-30px-bottom"
+                                                    id="slide-412-layer-1" data-x="['left','left','center','center']"
+                                                    data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                                    data-voffset="['0','0','230','110']" data-fontsize="['130','130','100','55']"
+                                                    data-lineheight="['120','120','100','60']" data-type="text"
+                                                    data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":"+290","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                                    style="z-index: 11; letter-spacing: -1px;"><a href="#" class="text-white text-white-hover">Stay
+                                                        In Touch</a></div>
+
+                                                <!-- layer nr. 13 -->
+                                                <div class="tp-caption tp-resizeme text-extra-large text-medium margin-50px-top text-extra-medium-gray font-weight-300 alt-font xs-margin-15px-top"
+                                                    id="slide-412-layer-2" data-x="['left','left','center','center']"
+                                                    data-hoffset="['0','50','0','0']" data-y="['top','top','top','top']"
+                                                    data-voffset="['0','430','460','290']" data-type="text"
+                                                    data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":"+490","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                                    style="z-index: 12;"> <a href="#" class="text-extra-medium-gray">iOS
+                                                        / Android</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- slider item -->
+                        <li data-index="rs-413" data-transition="fadethroughtransparent" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="default" data-thumb="images/blurbg10-100x50.jpg" data-rotate="0"
+                            data-saveperformance="off" data-title="Three" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <!-- main image -->
+                            <img src="./images/herobanners/timesquare.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg"
+                                data-no-retina>
+                            <!-- layers -->
+                            <div class="opacity-extra-medium bg-black"></div>
+                            <div id="rrzt_413" class="rev_row_zone rev_row_zone_top slider-typography" style="z-index: 5;">
+                                <div class=" slider-text-middle-main">
+                                    <div class=" slider-text-middle padding-thirteen-left">
+                                        <!-- layer nr. 19 -->
+                                        <div class="tp-caption  " id="slide-413-layer-14" data-x="['left','left','left','left']"
+                                            data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                            data-voffset="['100','100','100','100']" data-type="row" data-columnbreak="2"
+                                            data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                            style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);">
+                                            <!-- layer nr. 20 -->
+                                            <div class="tp-caption  " id="slide-413-layer-15" data-x="['left','left','left','left']"
+                                                data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
+                                                data-voffset="['100','100','100','100']" data-width="none" data-height="none"
+                                                data-whitespace="nowrap" data-type="column" data-responsive_offset="on"
+                                                data-responsive="off" data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                style="z-index: 6; width: 100%;">
+                                                <!-- layer nr. 21 -->
+                                                <div class="tp-caption tp-resizeme blurslider-gradient alt-font text-white font-weight-600 title-extra-large margin-30px-bottom"
+                                                    id="slide-413-layer-1" data-x="['left','left','center','center']"
+                                                    data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                                    data-voffset="['0','0','230','110']" data-fontsize="['130','130','100','55']"
+                                                    data-lineheight="['120','120','100','60']" data-type="text"
+                                                    data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":"+290","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                                    style="z-index: 11; letter-spacing: -1px;"><a href="#" class="text-white text-white-hover">Tell
+                                                        the<br>World</a></div>
+
+                                                <!-- layer nr. 22 -->
+                                                <div class="tp-caption tp-resizeme text-extra-large text-medium margin-50px-top text-extra-medium-gray font-weight-300 alt-font xs-margin-15px-top"
+                                                    id="slide-413-layer-2" data-x="['left','left','center','center']"
+                                                    data-hoffset="['0','50','0','0']" data-y="['top','top','top','top']"
+                                                    data-voffset="['0','430','460','290']" data-type="text"
+                                                    data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":"+490","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                                    style="z-index: 12;"> <a href="#" class="text-extra-medium-gray">Strategy
+                                                        / Consultation</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
                     </ul>
+                    <div style="" class="tp-static-layers">
+
+                        <!-- layer nr. 28 -->
+                        <div class="tp-caption   tp-static-layer" id="slider-151-layer-29" data-x="['right','right','right','right']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['-50','-50','119','119']" data-width="['260','260','200','70']" data-height="none"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="text"
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 17; min-width: 260px; max-width: 260px; white-space: nowrap; font-size: 15px; line-height: 15px; font-weight: 500; color: rgba(255, 255, 255, 1.00);">1
+                            <div class="blurslider-line" style="display:inline-block;width:40px;height:1px;background:#ff214f;margin: 10px 20px 4px 15px;"></div>Web
+                            Development</div>
+
+                        <!-- layer nr. 29 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-static-layer" id="slider-151-layer-22"
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['-50','-50','102','102']" data-width="['300','300','240','30%']" data-height="50"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape"
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":"bytrigger","speed":800,"frame":"0","from":"x:[-100%];","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"x:[-100%];opacity:1;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power4.easeOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-blendmode="overlay" data-lasttriggerstate="reset" style="z-index: 18;background-color:rgba(0, 0, 0, 0.25);cursor:pointer;">
+                        </div>
+
+                        <!-- layer nr. 30 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-static-layer" id="slider-151-layer-21"
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['-50','-50','102','102']" data-width="['300','300','240','30%']" data-height="50"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape"
+                            data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slider-151-layer-22","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slider-151-layer-22","delay":""},{"event":"click","action":"jumptoslide","slide":"rs-411","delay":""}]'
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"x:[-100%];","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Power4.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-blendmode="overlay" style="z-index: 19;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);cursor:pointer;">
+                        </div>
+
+                        <!-- layer nr. 31 -->
+                        <div class="tp-caption   tp-static-layer" id="slider-151-layer-28" data-x="['right','right','right','right']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['0','0','68','68']" data-width="['260','260','200','70']" data-height="none"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="text"
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 20; min-width: 260px; max-width: 260px; white-space: nowrap; font-size: 15px; line-height: 15px; font-weight: 500; color: rgba(255, 255, 255, 1.00);">2
+                            <div class="blurslider-line" style="display:inline-block;width:40px;height:1px;background:#ff214f;margin: 10px 20px 4px 15px;"></div>Mobile
+                            Applications</div>
+
+                        <!-- layer nr. 32 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-static-layer" id="slider-151-layer-24"
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['1','1','51','51']" data-width="['300','300','240','30%']" data-height="50"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape"
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":"bytrigger","speed":800,"frame":"0","from":"x:[-100%];","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"x:[-100%];opacity:1;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power4.easeOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-blendmode="overlay" data-lasttriggerstate="reset" style="z-index: 21;background-color:rgba(0, 0, 0, 0.4);cursor:pointer;">
+                        </div>
+
+                        <!-- layer nr. 33 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-static-layer" id="slider-151-layer-23"
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['1','1','51','51']" data-width="['300','300','240','30%']" data-height="50"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape"
+                            data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slider-151-layer-24","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slider-151-layer-24","delay":""},{"event":"click","action":"jumptoslide","slide":"rs-412","delay":""}]'
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"x:[-100%];","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Power4.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-blendmode="overlay" style="z-index: 22;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);cursor:pointer;">
+                        </div>
+
+                        <!-- layer nr. 34 -->
+                        <div class="tp-caption   tp-static-layer" id="slider-151-layer-27" data-x="['right','right','right','right']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['50','50','17','17']" data-width="['260','260','200','70']" data-height="none"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="text"
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 23; min-width: 260px; max-width: 260px; white-space: nowrap; font-size: 15px; line-height: 15px; font-weight: 500; color: rgba(255, 255, 255, 1.00);">3
+                            <div class="blurslider-line" style="display:inline-block;width:40px;height:1px;background:#ff214f;margin: 10px 20px 4px 15px;"></div>Digital
+                            Marketing</div>
+
+                        <!-- layer nr. 35 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-static-layer" id="slider-151-layer-26"
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['52','52','0','0']" data-width="['300','300','240','30%']" data-height="50"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape"
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":"bytrigger","speed":800,"frame":"0","from":"x:[-100%];","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"x:[-100%];opacity:1;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power4.easeOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-blendmode="overlay" data-lasttriggerstate="reset" style="z-index: 24;background-color:rgba(0, 0, 0, 0.4);cursor:pointer;">
+                        </div>
+
+                        <!-- layer nr. 36 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-static-layer" id="slider-151-layer-25"
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','bottom','bottom']"
+                            data-voffset="['52','52','0','0']" data-width="['300','300','240','30%']" data-height="50"
+                            data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape"
+                            data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slider-151-layer-26","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slider-151-layer-26","delay":""},{"event":"click","action":"jumptoslide","slide":"rs-413","delay":""}]'
+                            data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0"
+                            data-endslide="2" data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"x:[-100%];","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Power4.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-blendmode="overlay" style="z-index: 25;background-color:rgba(0, 0, 0, 0.2);border-color:rgba(0, 0, 0, 0);cursor:pointer;">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> -->
+            <!-- end revolution slider -->
 
-        <section class="content-sections" id="contact">
-            <div class="container">
-                <h3 class="contact-header">We love to help</h3>
-                <div class="contain-content">
-                    <div class="contact-main">
-                        <!-- <h5>a</h5> -->
-                        <p class="contact-text">If you want to go fast, go alone. If you want to go far, go together. Let
-                            us share the burden of what is holding you back and how we can help you succeed.</p>
-                    </div>
-                    <div class="contact-main-2">
-                        <div class="contact-add">
-                            <a href="mailto:info@cohort6productions.com">
-                                <p>info@cohort6productions.com</p>
-                            </a>
-                            <p>Hong Kong SAR</p>
+        </article>
+    </section>
+    <!-- end slider section -->
+
+    <!-- start story section -->
+    <section class="wow fadeIn animated animated">
+        <div class="container">
+            <div class="row equalize sm-equalize-auto">
+                <div class="col-md-5 col-sm-12 col-xs-12 text-center sm-margin-30px-bottom wow fadeInLeft">
+                    <div class="display-table width-100 height-100">
+                        <div class="display-table-cell vertical-align-middle width-100 height-100">
+                            <img src="./images/herobanners/workdesk.jpg" alt="" class="border-radius-6 width-100">
                         </div>
-                        <div class="contact-social">
-                            <h5>Find Us On</h5>
-                            <div>
-                                <!-- <img class="contact-icons" src="assets2/image/Social meida icon/medium.svg" /> -->
-                                <img class="contact-icons" src="assets2/image/Social meida icon/linkedin.svg" />
-                                <!-- <img class="contact-icons" src="assets2/image/Social meida icon/facebook.svg" /> -->
-                                <img class="contact-icons" src="assets2/image/Social meida icon/whatsapp.svg" />
-                                <!-- <img class="contact-icons" src="assets2/image/Social meida icon/twitter.svg" /> -->
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="display-table width-100 height-100">
+                        <div class="display-table-cell vertical-align-middle padding-twelve-lr sm-text-center sm-no-padding width-100">
+                            <span class="text-deep-pink alt-font margin-10px-bottom display-inline-block text-medium">Your
+                                dream,
+                                our work.</span>
+                            <h6 class="alt-font text-extra-dark-gray">We are a digital studio dedicated to web
+                                technologies.
+                                We help startups, and SMEs build towards their success.</h6>
+                            <p>There are lots of distractions when running a business, and most of the time not having the right tool and people for execution is the worst of all problems. We focus on finding and creating tools and solutions for you to enable you to focus on what you do best.</p>
+                            <!-- <a href="services-simple.html" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top"><i
+                                    class="fas fa-play-circle icon-very-small margin-5px-right no-margin-left"
+                                    aria-hidden="true"></i>Who are we?</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end story section -->
+
+
+    <!-- start feature box section -->
+    <section class="parallax wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('./images/herobanners/codes.jpg');">
+        <div class="container">
+            <div class="row">
+                <!-- start feature box item -->
+                <div class="col-md-4 last-paragraph-no-margin sm-margin-30px-bottom wow fadeInRight">
+                    <div class="padding-50px-all md-padding-40px-all xs-padding-30px-all bg-white box-shadow text-center">
+                        <div class="padding-35px-all display-inline-block border-radius-100 margin-40px-bottom xs-margin-30px-bottom bg-light-gray"><img
+                                src="images/icons/website.png" alt="" /></div>
+                        <div class="text-small alt-font text-medium-gray text-uppercase">Web Development</div>
+                        <span class="alt-font text-extra-dark-gray font-weight-600 display-block margin-20px-bottom">Websites
+                            &amp; Landing Pages</span>
+                        <p>We build user-friendly websites and landing pages to bring more clients and business to you.</p>
+                    </div>
+                </div>
+                <!-- end feature box block -->
+                <!-- start feature box item -->
+                <div class="col-md-4 last-paragraph-no-margin sm-margin-30px-bottom wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="padding-50px-all md-padding-40px-all xs-padding-30px-all bg-white box-shadow text-center">
+                        <div class="padding-35px-all display-inline-block border-radius-100 margin-40px-bottom xs-margin-30px-bottom bg-light-gray"><img
+                                src="images/icons/responsive.png" alt="" /></div>
+                        <div class="text-small alt-font text-medium-gray text-uppercase">Mobile Development</div>
+                        <span class="alt-font text-extra-dark-gray font-weight-600 display-block margin-20px-bottom">iOS
+                            &amp; Android</span>
+                        <p>From offline to online, we build useful mobile applications for your business to connect with your customers.</p>
+                    </div>
+                </div>
+                <!-- end feature box block -->
+                <!-- start feature box item -->
+                <div class="col-md-4 last-paragraph-no-margin wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="padding-50px-all md-padding-40px-all xs-padding-30px-all bg-white box-shadow text-center">
+                        <div class="padding-35px-all display-inline-block border-radius-100 margin-40px-bottom xs-margin-30px-bottom bg-light-gray"><img
+                                src="images/icons/idea.png" alt="" /></div>
+                        <div class="text-small alt-font text-medium-gray text-uppercase">Digital Marketing</div>
+                        <span class="alt-font text-extra-dark-gray font-weight-600 display-block margin-20px-bottom">Audits
+                            &amp; Strategies</span>
+                        <p>Delivering a precise and concrete message along with a good product is the heart of a profitable business.</p>
+                    </div>
+                </div>
+                <!-- end feature box block -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end feature box section -->
+
+    <!-- start portfolio section -->
+    <section class="wow fadeIn padding-90px-top bg-light-gray sm-padding-50px-top xs-padding-30px-top" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- start filter navigation -->
+                    <ul class="portfolio-filter nav nav-tabs border-none portfolio-filter-tab-1 font-weight-600 alt-font text-uppercase text-center margin-80px-bottom text-small sm-margin-40px-bottom xs-margin-20px-bottom">
+                        <li class="nav active"><a href="javascript:void(0);" data-filter="*" class="xs-display-inline light-gray-text-link text-very-small">All</a></li>
+                        <li class="nav"><a href="javascript:void(0);" data-filter=".web" class="xs-display-inline light-gray-text-link text-very-small">Web</a></li>
+                        <li class="nav"><a href="javascript:void(0);" data-filter=".mobile" class="xs-display-inline light-gray-text-link text-very-small">Mobile</a></li>
+                        <!-- <li class="nav"><a href="javascript:void(0);" data-filter=".advertising" class="xs-display-inline light-gray-text-link text-very-small">Advertising</a></li> -->
+                        <li class="nav"><a href="javascript:void(0);" data-filter=".branding" class="xs-display-inline light-gray-text-link text-very-small">Branding</a></li>
+                        <!-- <li class="nav"><a href="javascript:void(0);" data-filter=".design" class="xs-display-inline light-gray-text-link text-very-small">Design</a></li> -->
+                        <!-- <li class="nav"><a href="javascript:void(0);" data-filter=".photography" class="xs-display-inline light-gray-text-link text-very-small">Photography</a></li> -->
+                    </ul>
+                    <!-- end filter navigation -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 no-padding xs-padding-15px-lr">
+                    <div class="filter-content overflow-hidden">
+                        <ul class="portfolio-grid work-3col gutter-medium hover-option6 lightbox-portfolio">
+                            <li class="grid-sizer"></li>
+                            <!-- start portfolio-item item -->
+                            <li class="web mobile branding grid-item wow fadeInUp last-paragraph-no-margin">
+                                <figure>
+                                    <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
+                                        <img src="./images/projects/dealingroom.jpg" alt="" />
+                                        <div class="portfolio-icon">
+                                            <!-- Start of hover icon -->
+                                            <a href="https://www.dealingroom.live">
+                                                <i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i>
+                                            </a>
+                                            <!-- <a class="gallery-link" title="Image Gallery" href="http://placehold.it/800x650">
+                                                <i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i>
+                                            </a> -->
+                                            <!-- <a href="https://github.com/cheungdzinyung/DealingRoom">
+                                                <i class="fab fa-github text-extra-dark-gray" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="https://www.dealingroom.live">
+                                                <i class="fas fa-home text-extra-dark-gray" aria-hidden="true"></i>
+                                            </a> -->
+                                            <!-- End of hover icon -->
+                                        </div>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <a href="https://www.dealingroom.live"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">Dealing
+                                                            Room</span></a>
+                                                    <p class="text-medium-gray text-extra-small text-uppercase">Branding
+                                                        &amp; Web Development</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="mobile grid-item wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                                <figure>
+                                    <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
+                                        <img src="./images/projects/coinmarketnews.jpg" alt="" />
+                                        <div class="portfolio-icon">
+                                            <a href="https://www.coinmarketnews.app/"><i class="fas fa-link text-extra-dark-gray"
+                                                    aria-hidden="true"></i></a>
+                                            <!-- <a class="gallery-link" title="IMAGE TITLE" href="http://placehold.it/800x650"><i
+                                                    class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <a href="https://www.coinmarketnews.app/"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">Coin
+                                                            Market News</span></a>
+                                                    <p class="text-medium-gray text-extra-small text-uppercase">Crypto
+                                                        News Mobile Application</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="mobile grid-item wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
+                                <figure>
+                                    <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
+                                        <img src="./images/projects/wevent.jpeg" alt="" />
+                                        <div class="portfolio-icon">
+                                            <a href="http://hivent.xyz/"><i class="fas fa-link text-extra-dark-gray"
+                                                    aria-hidden="true"></i></a>
+                                            <!-- <a class="gallery-link" title="IMAGE TITLE" href="http://placehold.it/800x650"><i
+                                                    class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <figcaption class="bg-white">
+                                        <div class="portfolio-hover-main text-center">
+                                            <div class="portfolio-hover-box vertical-align-middle">
+                                                <div class="portfolio-hover-content position-relative">
+                                                    <a href="http://hivent.xyz/"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">Wevent</span></a>
+                                                    <p class="text-medium-gray text-extra-small text-uppercase">Event
+                                                        Management Mobile Application</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- end portfolio item -->
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio section -->
+
+
+    <!-- start clients slider section -->
+    <section class="wow fadeIn">
+        <div class="container text-center">
+            <div class="swiper-slider-clients swiper-container black-move">
+                <div class="swiper-wrapper">
+                    <!-- start client slider item -->
+                    <div class="swiper-slide text-center"><img src="images/logos/react.png" alt="react"></div><!-- end client slider item -->
+                    <!-- start client slider item -->
+                    <div class="swiper-slide text-center"><img src="images/logos/sass.png" alt="sass"></div><!-- end client slider item -->
+                    <!-- start client slider item -->
+                    <div class="swiper-slide text-center"><img src="images/logos/node.png" alt="nodejs"></div><!-- end client slider item -->
+                    <!-- start client slider item -->
+                    <div class="swiper-slide text-center"><img src="images/logos/amazon.png" alt="amazon web service"></div><!-- end client slider item -->
+                    <!-- start client slider item -->
+                    <div class="swiper-slide text-center"><img src="images/logos/circleci.png" alt="circle ci"></div><!-- end client slider item -->
+                    <!-- start client slider item -->
+                    <div class="swiper-slide text-center"><img src="images/logos/postgresql.png" alt="postgresql"></div><!-- end client slider item -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end clients slider section -->
+
+    <!-- start testimonial slider style 01 section -->
+    <section class="wow fadeIn bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12 center-col text-center margin-100px-bottom xs-margin-40px-bottom">
+                    <div class="position-relative overflow-hidden width-100">
+                        <span class="text-small text-outside-line-full alt-font font-weight-600 text-uppercase">See why
+                            our clients love us</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row position-relative">
+                <div class="swiper-container swiper-pagination-bottom black-move blog-slider swiper-three-slides">
+                    <div class="swiper-wrapper">
+                        <!-- start testimonial item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide sm-margin-four-bottom">
+                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all xs-padding-30px-all">
+                                <img src="./images/testimonial/alex.jpg" class="border-radius-100 width-40 margin-25px-bottom sm-margin-15px-bottom"
+                                    alt="" />
+                                <p class="sm-margin-15px-bottom xs-margin-20px-bottom">I wanted to hire the best; they were professional at how they handle my cases, even when things did not go exactly as imagined.</p>
+                                <span class="text-extra-dark-gray text-small text-uppercase display-block line-height-10 alt-font font-weight-600">Alex
+                                    Lau</span>
+                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Country
+                                    Manager</span>
+                            </div>
+                        </div>
+                        <!-- end testimonial item -->
+                        <!-- start testimonial item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide sm-margin-four-bottom">
+                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all xs-padding-30px-all">
+                                <img src="./images/testimonial/sheli.jpg" class="border-radius-100 width-40 margin-25px-bottom sm-margin-15px-bottom"
+                                    alt="" />
+                                <p class="sm-margin-15px-bottom xs-margin-20px-bottom">I've wasted thousands of dollars testing other teams, freelancers, and
+                                    outsource companies. They know what they are doing.</p>
+                                <span class="text-extra-dark-gray text-small text-uppercase display-block line-height-10 alt-font font-weight-600">Sheli
+                                    Bowman</span>
+                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Managing
+                                    Director</span>
+                            </div>
+                        </div>
+                        <!-- end testimonial item -->
+                        <!-- start testimonial item -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide sm-margin-four-bottom">
+                            <div class="margin-half-all bg-white box-shadow-light text-center padding-fourteen-all xs-padding-30px-all">
+                                <img src="./images/testimonial/andres.jpg" class="border-radius-100 width-40 margin-25px-bottom sm-margin-15px-bottom"
+                                    alt="" />
+                                <p class="sm-margin-15px-bottom xs-margin-20px-bottom">This is an excellent company! I
+                                    personally enjoyed the energy and the professional support the whole team gave to
+                                    us into creating website.</p>
+                                <span class="text-extra-dark-gray text-small text-uppercase display-block line-height-10 alt-font font-weight-600">Andrew
+                                    Cheung</span>
+                                <span class="text-light-gray2 text-extra-small text-uppercase text-medium-gray">Director
+                                    of Business Development</span>
+                            </div>
+                        </div>
+                        <!-- end testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-three-slides height-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonial slider style 01 section -->
+
+    <!-- Start call to action section -->
+    <section class="wow fadeIn cover-background half-section" style="background-image: url('./images/herobanners/contact.jpg');">
+        <div class="opacity-medium bg-extra-dark-gray"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 center-col position-relative text-center">
+                    <span class="text-extra-large text-white alt-font display-inline-block margin-5px-top margin-30px-right xs-no-margin-right xs-no-margin-top xs-margin-15px-bottom xs-width-100">Let's
+                        talk about your business and how we can help.</span>
+                    <a href="https://app.hubspot.com/meetings/ivanoung" class="btn btn-white btn-small vertical-align-top xs-no-margin-right">Reserve
+                        a time</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End call to action section -->
+
+    <!-- start footer -->
+    <footer class="footer-modern-dark bg-extra-dark-gray padding-five-tb xs-padding-30px-tb">
+        <div class="footer-widget-area padding-40px-bottom xs-padding-30px-bottom">
+            <div class="container">
+                <div class="row equalize xs-equalize-auto">
+                    <!-- start slogan -->
+                    <div class="col-md-4 col-sm-12 col-xs-12 xs-text-center sm-margin-three-bottom xs-margin-20px-bottom display-table">
+                        <div class="display-table-cell vertical-align-middle">
+                            <h6 class="text-dark-gray width-70 md-width-100 no-margin-bottom">Hong Kong Based Digital
+                                Studio</h6>
+                        </div>
+                    </div>
+                    <!-- end slogan -->
+                    <!-- start contact information -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 xs-text-center xs-margin-20px-bottom display-table">
+                        <div class="display-table-cell vertical-align-middle">
+                            <span class="display-block">RM c2, 1/F BLK C 16, Shing Yip St,<br>East Sun Ind, Kwun Tong,
+                                Hong Kong.</span>
+                            <a href="mailto:info@cohort6productions.com" title="info@cohort6productions.com">info@cohort6productions.com</a>
+                            | + (852) 6126 3333
+                        </div>
+                    </div>
+                    <!-- end contact information -->
+                    <!-- start social media -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 social-style-2 xs-text-center display-table">
+                        <div class="display-table-cell vertical-align-middle">
+                            <a href="index.html"><img class="footer-logo" src="images/logos/c6plogo-smbnr.png" data-rjs="images/logos/c6plogo-smbnr@2x.png"
+                                    alt="Pofo"></a>
+                            <div class="social-icon-style-8">
+                                <ul class="text-extra-small margin-20px-top xs-no-margin-bottom text-uppercase no-padding no-margin-bottom list-style-none">
+                                    <li class="display-inline-block margin-10px-right"><a href="https://www.linkedin.com/company/cohort-6-productions/"
+                                            target="_blank" title="LinkedIn">LinkedIn</a></li>
+                                    <li class="display-inline-block margin-10px-right"><a href="https://www.facebook.com/cohort6productions/"
+                                            target="_blank" title="Facebook">Facebook</a></li>
+                                    <!-- 
+                                        <li class="display-inline-block margin-10px-right"><a href="http://instagram.com" target="_blank" title="Instagram">Instagram</a></li>
+                                        <li class="display-inline-block"><a href="http://dribbble.com" target="_blank" title="Dribbble">Dribbble</a></li>                                                               -->
+
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <!-- end social media -->
                 </div>
             </div>
-            <div class="contact-mobile-bottom">
-                <div class="contact-social-mobile">
-                    <h5>Find Us On</h5>
-                    <div>
-                        <!-- <img class="contact-icons" src="assets2/image/Social meida icon/medium.svg" /> -->
-                        <img class="contact-icons" src="assets2/image/Social meida icon/linkedin.svg" />
-                        <!-- <img class="contact-icons" src="assets2/image/Social meida icon/facebook.svg" /> -->
-                        <img class="contact-icons" src="assets2/image/Social meida icon/whatsapp.svg" />
-                        <!-- <img class="contact-icons" src="assets2/image/Social meida icon/twitter.svg" /> -->
-                    </div>
+        </div>
+        <div class="container">
+            <!-- start copyright -->
+            <div class="footer-bottom border-top border-color-medium-dark-gray padding-40px-top xs-padding-30px-top">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-left text-small xs-text-center">Cohort 6 Productions</div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-right text-small xs-text-center">&COPY; 2018 All
+                        Rights Reserved by Cohort 6 Productions</div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <section class="modal fade" id="team-member-modal" tabindex="-1" role="dialog" aria-labelledby="team-member-name" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="team-member-name"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="team-member-icon"></div>
-                    <p>
-                        <b>See More: </b>
-                    </p>
-                    <span class="link-holders" id="linkedIn-holder"></span>
-                    <span class="link-holders" id="website-holder"></span>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-    </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-    <script src="assets2/js/index.js"></script>
+            <!-- end copyright -->
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll to top -->
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+    <!-- end scroll to top -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <!-- menu navigation -->
+    <script type="text/javascript" src="js/bootsnav.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <!-- animation -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- page scroll -->
+    <script type="text/javascript" src="js/page-scroll.js"></script>
+    <!-- swiper carousel -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!-- counter -->
+    <script type="text/javascript" src="js/jquery.count-to.js"></script>
+    <!-- parallax -->
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <!-- magnific popup -->
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <!-- portfolio with shorting tab -->
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <!-- images loaded -->
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- pull menu -->
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/hamburger-menu.js"></script>
+    <!-- counter -->
+    <script type="text/javascript" src="js/counter.js"></script>
+    <!-- fit video -->
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- equalize -->
+    <script type="text/javascript" src="js/equalize.min.js"></script>
+    <!-- skill bars -->
+    <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
+    <!-- justified gallery -->
+    <script type="text/javascript" src="js/justified-gallery.min.js"></script>
+    <!--pie chart-->
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+    <!-- instagram -->
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <!-- retina -->
+    <script type="text/javascript" src="js/retina.min.js"></script>
+    <!-- revolution -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
+    <!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+    <!-- setting -->
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
