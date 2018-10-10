@@ -1,5 +1,18 @@
 # Cohort 6 Productions Homepage
 
+## Version 1.1.0 - 20181010
+Moving towards a more complete website. Filling in the website with the newest case study, will prepare a case study for clients to download with their email address.
+
+### Added
+- Original intended color scheme
+- "Brand Catalyst HK" case study
+- SCSS for the styling sheet
+
+### Pending
+- Text within the case study
+- The transparant color of the header is conflicting with the hero section of the case study. Will have to find a way to fix it
+
+
 ## Version 1.1.0 - 20180913
 
 ### Added
