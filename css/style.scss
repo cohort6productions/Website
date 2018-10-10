@@ -444,7 +444,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn.btn-white {background:#ffffff; border-color: #ffffff; color: #232323}
 .btn.btn-white:hover, .btn.btn-white:focus {background: transparent; color: #fff}
 .btn.btn-black {background:#000000; border-color: #000000; color: #fff}
-.btn.btn-black:hover, .btn.btn-black:focus {background: transparent; color: #000}
+.btn.btn-black:hover, .btn.btn-black:focus {background: transparent; color: $highlight}
 .btn.btn-dark-gray {background: #232323; border-color: #232323; color: #fff}
 .btn.btn-dark-gray:hover, .btn.btn-dark-gray:focus {background: transparent; color: #232323}
 .btn.btn-light-gray {background: #dbdbdb; border-color: #dbdbdb; color: #232323}
@@ -458,7 +458,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn.btn-transparent-black {background: transparent; border-color: #000000; color: #000000}
 .btn.btn-transparent-black:hover, .btn.btn-transparent-black:focus {background: #000000; border-color: #000000; color: #ffffff}
 .btn.btn-transparent-dark-gray {background: transparent; border-color: #232323; color: #232323}
-.btn.btn-transparent-dark-gray:hover, .btn.btn-transparent-dark-gray:focus {background: #232323; border-color: #232323; color: #ffffff}
+.btn.btn-transparent-dark-gray:hover, .btn.btn-transparent-dark-gray:focus {background: $main-color; border-color: #232323; color: #ffffff}
 .btn.btn-transparent-light-gray {background: transparent; border-color: #dbdbdb; color: #dbdbdb}
 .btn.btn-transparent-light-gray:hover, .btn.btn-transparent-light-gray:focus {background: #dbdbdb; border-color: #dbdbdb; color: #232323}
 .btn.btn-transparent-deep-pink {background: transparent; border-color: #ff214f; color: #ff214f}
