@@ -1,5 +1,14 @@
 # Cohort 6 Productions Homepage
 
+## Version 1.1.1 - 20181011
+Fixed the header problem. Will have to stick to one version of header and hero session for now. Also fixed the missing project link to brand catalyst on the homepage.
+
+### Pending
+- Text within the case study
+
+### Fixed
+- The transparant color of the header is conflicting with the hero section of the case study. Will have to find a way to fix it
+
 ## Version 1.1.0 - 20181010
 Moving towards a more complete website. Filling in the website with the newest case study, will prepare a case study for clients to download with their email address.
 
