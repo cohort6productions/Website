@@ -1,5 +1,14 @@
 # Cohort 6 Productions Homepage
 
+## Version 1.2.0 - 20181021
+Added a new case study of "Brand Catalyst", also fixing the color theme of C6P to better fit the brand design.
+
+### Added
+- "Brand Catalyst" case study
+- Color theme
+- Missing Alt and href title tags
+
+
 ## Version 1.1.1 - 20181011
 Fixed the header problem. Will have to stick to one version of header and hero session for now. Also fixed the missing project link to brand catalyst on the homepage.
 
@@ -8,6 +17,7 @@ Fixed the header problem. Will have to stick to one version of header and hero s
 
 ### Fixed
 - The transparant color of the header is conflicting with the hero section of the case study. Will have to find a way to fix it
+
 
 ## Version 1.1.0 - 20181010
 Moving towards a more complete website. Filling in the website with the newest case study, will prepare a case study for clients to download with their email address.
@@ -44,11 +54,13 @@ Next step should focus on converting the template into SASS for better style man
 ### Removed
 - All old files
 
+
 ## Version 0.0.1 - 20180821
 ### Added
 - Added a new image for hero session
 ### Edited
 ### Removed
+
 
 ## Version 0.0.1 - 20180820
 ### Added
