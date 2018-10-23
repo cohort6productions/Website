@@ -1,5 +1,16 @@
 # Cohort 6 Productions Homepage
 
+## Version 1.2.0 - 20181023
+Added a new case study of "Brand Catalyst", also fixing the color theme of C6P to better fit the brand design.
+
+### Added
+- Media query using SCSS
+- Different size of image for different screen size
+- New image naming convention
+
+## Fixed
+- Replaced placeholder image when video section does not show
+
 ## Version 1.2.0 - 20181021
 Added a new case study of "Brand Catalyst", also fixing the color theme of C6P to better fit the brand design.
 
